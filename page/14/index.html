@@ -68,14 +68,14 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-ios-e5-bc-80-e5-8f-91-e4-b8-8eflash-e5-bc-80-e5-8f-91" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e5-85-b3-e4-ba-8e-e5-af-b9-e5-9b-be-e7-89-87-e7-9b-b8-e4-bc-bc-e5-ba-a6-e6-af-94-e8-be-83-e7-9a-84-e6-80-9d-e8-80-83" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/03/03/ios-e5-bc-80-e5-8f-91-e4-b8-8eflash-e5-bc-80-e5-8f-91/" class="article-date">
-  <time datetime="2011-03-03T14:03:04.000Z" itemprop="datePublished">2011-03-03</time>
+    <a href="/zdblog-hexo/2007/06/15/e5-85-b3-e4-ba-8e-e5-af-b9-e5-9b-be-e7-89-87-e7-9b-b8-e4-bc-bc-e5-ba-a6-e6-af-94-e8-be-83-e7-9a-84-e6-80-9d-e8-80-83/" class="article-date">
+  <time datetime="2007-06-15T06:08:45.000Z" itemprop="datePublished">2007-06-15</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/Flash/">Flash</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Flash/窄多废话/">窄多废话</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>►<a class="article-category-link" href="/zdblog-hexo/categories/PHP/窄多废话/">窄多废话</a>
   </div>
 
   </div>
@@ -86,7 +86,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/03/03/ios-e5-bc-80-e5-8f-91-e4-b8-8eflash-e5-bc-80-e5-8f-91/">iOS开发与Flash开发</a>
+      <a class="article-title" href="/zdblog-hexo/2007/06/15/e5-85-b3-e4-ba-8e-e5-af-b9-e5-9b-be-e7-89-87-e7-9b-b8-e4-bc-bc-e5-ba-a6-e6-af-94-e8-be-83-e7-9a-84-e6-80-9d-e8-80-83/">关于对图片相似度比较的思考</a>
     </h1>
   
 
@@ -94,20 +94,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近花了点时间看了看<a href="http://v.163.com/special/opencourse/iphonekaifa.html" target="_blank" rel="external">网易的斯坦福大学iPhone开发公开课程</a>，学习了一下Objective-c的开发。虽说Objective-c是完全基于C语言的超集，但是语法表达方式还是和C很不同的。方括号的表达方式让人印象深刻，但作为动态语言，学习的时候觉得和学习Flash开发没什么两样，只不过一个是XCode，一个是CS5。一个有巨大的App市场，一个有覆盖率很广的跨操作系统的占有率。</p>
-<p>其实这两种开发我都是很有兴趣，但是考虑到开发的成本，苹果笔记本加九十九美元每年的开发费用，和Flash比起来，Flash可以说是免费开发的，不会有什么障碍。对于我这种新手来说，iOS开发的成本显得特别高昂。所以也加大了开发的风险，这不由得让我更加关注Flash的开发和应用。</p>
-<p>今天还有个FLash 3D的好消息，就是基于Molehill 3D API的Pixel Bender 3D语言的推出，拉近了Flash在三维应用方面与iOS的差距。虽然和成熟的iOS App市场比，Flash还有很多不足和不完善的地方。但是我相信，这种差距早晚会被Flash所赶超。因为我自始自终还是看好跨平台和跨操作系统的应用。</p>
-<p>当然现在iOS的开发如此火爆，iOS确实抢尽了市场的风头。新手对它的了解还是不可或缺的。</p>
-<p>&nbsp;</p>
+        <p><img src="http://www.zhaiduo.com/wp-content/data/mwsnap071.jpg" alt=""><br>Google推出了可以<a href="http://images.google.com/images?gbv=2&amp;svnum=10&amp;hl=en&amp;newwindow=1&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=bruce+willis&amp;imgtype=face" target="_blank" rel="external">进行人脸搜索的服务</a>，能够帮你找到包含人脸的图片。<a href="http://www.myheritage.com/FP/Company/tryFaceRecognition.php" target="_blank" rel="external">MyHeritage</a>也有帮助你寻找和你脸部相似的明星照片的服务。我们先不管它们到底有多准确。图像方面的技术运用已经越来越多。我们可以看看PHP这方面能否有所作为。<a href="http://www.sephiroth.it/index.php" target="_blank" rel="external">sephiroth.it</a>向大家提供了一个把FLASH截屏通过PHP转存为图片的例子，通过对他的分析，我们可以了解到其基本原理大概如下：</p>
+<p>把截屏中每一个像素的颜色资料保存起来，成为一个字符串，然后发送给PHP程序进行处理。PHP所作的无非就是前者的逆过程。通过分解字符串获得每一个像素点的资料，然后利用强大的GD模块来生成图片。</p>
+<p>那么如此看来，每一个图片对我们来说就是一个保存着所有像素点资料的数组，如果我们需要对两个图片进行分析比较，找出两张最相像的图片，关键就是需要对这两个矩阵进行相似度的比较，也就是找到一个高效并且准确度高的矩阵相似度算法。这里有一些相关资料，我们可以参考：</p>
+<p><a href="http://perlchina.sun126.com/cgi-bin/ccb/topic_view.cgi?forum=11&amp;publishtime_id=0011070530122936&amp;article_id=0011070530122936&amp;xxx=0&amp;class=&amp;new_window=1" target="_blank" rel="external">Perl的比较字符串相似度函数</a></p>
+<p><a href="http://hpdb.hbu.cn/thesis/2005/lsp/output_intr/xiangxideshuoming/li5.asp" target="_blank" rel="external">得分矩阵（scoring matrix）</a><br><a href="http://googlechinablog.com/2007/01/blog-post.html" target="_blank" rel="external">矩阵运算和文本处理中的分类问题</a></p>
+<p><strong>《矩阵分析与应用》，张贤达，清华大学出版社</strong><br>本书将矩阵的分析分为梯度分析、奇异值分析、特征分析、子空间分析与投影分析五大部分，以一种新的体系、系统、全面地介绍矩阵分析的主要理论、方法及应用。</p>
+<p><strong>《</strong>矩阵理论及其应用<strong>》黄有度，朱士信 编著 合肥工业大学出版社</strong><br>矩阵理论以线性代数为基础，要求学习者对线性代数的基本概念和计算方法已牢固掌握并能熟练运用。</p>
+<p><strong>矩阵分析·第1卷（英文版）作者：（美）霍恩，（美）约翰逊 著</strong></p>
+<p>本书主要内容有：特征值、特征向量和相似性、酉相似、Schur三角化及其推论、正规矩阵、标准形和包括Jordan标准形在内的各种分解、LU分解、QR分解和酉矩阵、Hermite矩阵和复对称矩阵、向量范数和矩阵范数、特征值的估计和扰动、正定矩阵、非负矩阵。作者Roger A.Horn 线性代数和矩阵理论领域国际知名权威。</p>
+<p><strong>模糊数学教程</strong></p>
+<p>本书是一部关于模糊数学的基本概念、原理、方法、应用等基础知识方面的教材。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/03/03/ios-e5-bc-80-e5-8f-91-e4-b8-8eflash-e5-bc-80-e5-8f-91/" data-id="cikqzbasz00jp2drfg369lfmv" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/06/15/e5-85-b3-e4-ba-8e-e5-af-b9-e5-9b-be-e7-89-87-e7-9b-b8-e4-bc-bc-e5-ba-a6-e6-af-94-e8-be-83-e7-9a-84-e6-80-9d-e8-80-83/" data-id="cikr0cqfy01d8z5rfqobkxohi" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/iOS/">iOS</a></li></ul>
-
     </footer>
   </div>
   
@@ -115,14 +119,14 @@
 
 
   
-    <article id="post-windows7-freeze-screen" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e5-85-b3-e4-ba-8e-e5-a4-9a-e5-ad-97-e8-8a-82-e5-ad-97-e7-ac-a6-e7-9a-84-e7-bc-96-e7-a0-81-e5-88-a4-e6-96-ad" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/02/26/windows7-freeze-screen/" class="article-date">
-  <time datetime="2011-02-26T13:57:12.000Z" itemprop="datePublished">2011-02-26</time>
+    <a href="/zdblog-hexo/2007/06/14/e5-85-b3-e4-ba-8e-e5-a4-9a-e5-ad-97-e8-8a-82-e5-ad-97-e7-ac-a6-e7-9a-84-e7-bc-96-e7-a0-81-e5-88-a4-e6-96-ad/" class="article-date">
+  <time datetime="2007-06-14T09:39:02.000Z" itemprop="datePublished">2007-06-14</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/电脑/">电脑</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
   </div>
 
   </div>
@@ -133,7 +137,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/02/26/windows7-freeze-screen/">Windows7屏幕僵死的问题</a>
+      <a class="article-title" href="/zdblog-hexo/2007/06/14/e5-85-b3-e4-ba-8e-e5-a4-9a-e5-ad-97-e8-8a-82-e5-ad-97-e7-ac-a6-e7-9a-84-e7-bc-96-e7-a0-81-e5-88-a4-e6-96-ad/">关于多字节字符的编码判断</a>
     </h1>
   
 
@@ -141,16 +145,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前段时间工作的笔记本Windows7老是死机，很容易屏幕僵死，鼠标也被冻住毫无反应。只有强按电源键重启，很容易造成磁盘错误。本来以为是光电鼠标接触的问题，换回无线鼠标貌似问题解决，但是好景不长，很快问题依旧，但是死机的频率有所降低，不过出现了一个新的问题，系统会不停的短暂死机，就像一段动画被断断续续的播放。后来以为是系统的缺陷，更新到最新的升级包，安装软件也依次测试没有发现特别明显的问题。最后在高级系统属性里面视觉效果改为最佳性能还是仍然死机。就在最后毫无头绪之时我试着增加了一下虚拟内存里分页文件的大小，并且chkdsk /f系统盘，排除磁盘错误。貌似问题解决，经过这两天的实机观察，暂时没有死机的迹象。</p>
+        <p>ASCII和UTF-8在0x00到0x7F都是相同的编码。多字节字符的第一个字节编码范围是从0xC0到0xFD，表明接下来有多少个字节。其他字节范围都是从0xC0到0xBF。UTF-8编码中有一段从不使用0xFE and 0xFF.UTF-8作为ASCII在多字节字符方面的补充，所以和Unicode的定义稍有不同。Unicode是2个或4个字节的字符串，分别为UCS-2和UCS-4。将一个ASCII或Latin-1的字符转成UCS-2只需简单地在每个ASCII字节前插入0x00，转成UCS-4则须在每个ASCII字节前插入三个0x00。UTF8编码后的大小是不一定，不像Unicode。UTF8是有标志位的，第一个0为标志位，剩下的表示0x00到0x7F的内容。如果是1，跟着后面如果是10表示还有一个字节（0xxxxxxx 110xxxxxx），就是两个字节。所以110表示3个字节，1110就是四个，已此类推。</p>
+<p>附：256位编码表<br><img src="http://www.zhaiduo.com/wp-content/data/_hexchrt.GIF" alt=""></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/02/26/windows7-freeze-screen/" data-id="cikqzbagu00302drf9ko64lck" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/06/14/e5-85-b3-e4-ba-8e-e5-a4-9a-e5-ad-97-e8-8a-82-e5-ad-97-e7-ac-a6-e7-9a-84-e7-bc-96-e7-a0-81-e5-88-a4-e6-96-ad/" data-id="cikr0cqg201dbz5rfyp5uacgm" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/win7/">win7</a></li></ul>
-
     </footer>
   </div>
   
@@ -158,10 +161,52 @@
 
 
   
-    <article id="post-windows7-e4-b8-8b-e6-97-a0-e6-b3-95-e7-bc-96-e8-be-91-e6-b3-a8-e5-86-8c-e8-a1-a8-e7-9a-84-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-javascript-e5-9c-a8-e7-ba-bf-e7-be-8e-e5-8c-96-e5-99-a8" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/02/17/windows7-e4-b8-8b-e6-97-a0-e6-b3-95-e7-bc-96-e8-be-91-e6-b3-a8-e5-86-8c-e8-a1-a8-e7-9a-84-e9-97-ae-e9-a2-98/" class="article-date">
-  <time datetime="2011-02-17T10:47:11.000Z" itemprop="datePublished">2011-02-17</time>
+    <a href="/zdblog-hexo/2007/06/14/javascript-e5-9c-a8-e7-ba-bf-e7-be-8e-e5-8c-96-e5-99-a8/" class="article-date">
+  <time datetime="2007-06-13T16:09:01.000Z" itemprop="datePublished">2007-06-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/javascript/">javascript</a>►<a class="article-category-link" href="/zdblog-hexo/categories/javascript/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/06/14/javascript-e5-9c-a8-e7-ba-bf-e7-be-8e-e5-8c-96-e5-99-a8/">javascript在线美化器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近在查看一些大网站的js文件，学习学习。但是整个文件没有换行，读起来实在不方便。感觉像我之前提过的<a href="http://www.zhaiduo.com/?p=78" target="_blank" rel="external">javascript压缩器</a>压缩过。在网上发现了这个网站<a href="http://elfz.laacz.lv/beautify/" target="_blank" rel="external">Free Online Beautifier for JavaScript</a>。一个在线的javascript 美化器，试用了一下，还不错。而且提供PHP源码下载，有兴趣的可以自己研究研究。<br>美化前<br><img src="http://www.zhaiduo.com/wp-content/data/mwsnap044.jpg" alt=""></p>
+<p>美化后<br><img src="http://www.zhaiduo.com/wp-content/data/mwsnap043.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/06/14/javascript-e5-9c-a8-e7-ba-bf-e7-be-8e-e5-8c-96-e5-99-a8/" data-id="cikr0cpmy00jfz5rf3eqmjtt7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-apple-e6-8e-a8-e5-87-bawindows-e7-89-88-e7-9a-84safari-3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/06/12/apple-e6-8e-a8-e5-87-bawindows-e7-89-88-e7-9a-84safari-3/" class="article-date">
+  <time datetime="2007-06-12T05:07:36.000Z" itemprop="datePublished">2007-06-12</time>
 </a>
     
   <div class="article-category">
@@ -176,7 +221,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/02/17/windows7-e4-b8-8b-e6-97-a0-e6-b3-95-e7-bc-96-e8-be-91-e6-b3-a8-e5-86-8c-e8-a1-a8-e7-9a-84-e9-97-ae-e9-a2-98/">Windows7下无法编辑注册表的问题</a>
+      <a class="article-title" href="/zdblog-hexo/2007/06/12/apple-e6-8e-a8-e5-87-bawindows-e7-89-88-e7-9a-84safari-3/">Apple推出Windows版的Safari 3 Beta</a>
     </h1>
   
 
@@ -184,62 +229,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前段时间为了帮朋友找回忘记的密码，装过一个找回Windows星号密码的软件。今天Win7升级IE9后发现，IE的默认主页被恶意修改了。</p>
-<p>本以为问题不大，查找注册表，发现注册表HKEY_USERS….SoftwareMicrosoftInternet ExplorerMain的Start Page被修改，谁知修改成about:blank的时候报错说没有权限编辑。</p>
-<p>最终的解决办法如下：</p>
-<p>用管理员身份运行C:Windowsregedit.exe，右键查看Main的权限，发现用户名是Everyone，只有读取的权限。点击高级，查看所有者，下面有个选项是替换子容器和对象的所有者。勾选此选项，确定后回到Everyone的权限设置，然后再勾选完全控制。修改成功，不再有权限限制。</p>
-<p><a href="http://www.zhaiduo.com/wp-content/uploads/2011/02/20110217184100.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2011/02/20110217184100.jpg" alt="" title="20110217184100"></a></p>
-<p>不明白的是，IE都9.0了，主页还是那么容易被修改，难怪用IE的人越来越少。Windows的注册表机制还真是垃圾，可以一直被人玩弄到win7，也苦了我们这些普通的windows使用者。</p>
+        <p><img src="http://www.zhaiduo.com/wp-content/data/mwsnap063.jpg" alt=""><br>好消息，神秘的Safari终于可以让windows用户如愿以偿。Safari曾经让学习网页标准化(Web Standard)的朋友大伤脑筋，因为设计一个网页要考虑到不同浏览器的效果，Opera、IE、FireFox、Manthon都可以在Windows上安装测试，唯独Safari不行，不是任何人都买的起苹果机的，如果为了一个浏览器去安装虚拟操作系统也不太合算。虽然有不少网站提供Safari在线预览的服务，不过毕竟也没有自己的Windows机上测试直接。如今Apple终于不负众望，放下了它高贵的架子，为广大Windows用户提供传说中的经典浏览器-Safari。<br>下载地址：<a href="http://www.apple.com/safari/download/" target="_blank" rel="external">Safari for Windows XP or Vista</a></p>
+<h3 id="Safari在Windows-系统安装最低配置要求"><a href="#Safari在Windows-系统安装最低配置要求" class="headerlink" title="Safari在Windows 系统安装最低配置要求"></a>Safari在Windows 系统安装最低配置要求</h3><ul>
+<li>操作系统Windows XP or Vista</li>
+<li>最少 256MB 内存</li>
+<li>500Mhz 奔腾级别Pentium-class或更高级CPU<br>补充：刚试用了一下，(我的系统XP Pro，256M内存)感觉的中文的支持不太好，会不会是字体的问题。打开Blog居然死了一次机，占用了不少资源，还是没有FireFox好用。看来Apple要打开浏览器的市场，还要多多努力啊！<br><img src="http://www.zhaiduo.com/wp-content/data/mwsnap067.jpg" alt=""><br><img src="http://www.zhaiduo.com/wp-content/data/mwsnap065.jpg" alt=""><img src="http://www.zhaiduo.com/wp-content/data/mwsnap066.jpg" alt=""></li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/02/17/windows7-e4-b8-8b-e6-97-a0-e6-b3-95-e7-bc-96-e8-be-91-e6-b3-a8-e5-86-8c-e8-a1-a8-e7-9a-84-e9-97-ae-e9-a2-98/" data-id="cikqzbah400362drfwa00nskz" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/win7/">win7</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/注册表/">注册表</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e4-bd-93-e9-aa-8c-e7-a7-9f-e8-bd-a6" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2011/01/25/e4-bd-93-e9-aa-8c-e7-a7-9f-e8-bd-a6/" class="article-date">
-  <time datetime="2011-01-25T13:46:15.000Z" itemprop="datePublished">2011-01-25</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/自助游/">自助游</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/01/25/e4-bd-93-e9-aa-8c-e7-a7-9f-e8-bd-a6/">体验租车</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>常在电梯里看见租车的广告，一个是租车网，还有一个是E嗨。趁着过年回家的机会决定租辆车来体验体验。在网上对比了两个网站，觉得租车网稍微实惠一些。但是考虑到网上选车的不确定性，我并没有在网上预订，只是注册了个账号。</p>
-<p>到了目标城市后，很快联系到一个租车网的门店，得知所剩的车辆并不是太多，看来春节租车很是火爆。在400电话下单后，终于如愿以偿的拿到一辆雪弗莱，配上GPS导航仪和相关保险，出车的速度还挺快，唯一不足是车很脏，好在他们愿意免费清洗。</p>
-<p>终于上了路，原来租车这么简单和容易，这应该是一门很好的生意，联想的眼光不错啊~另外开车回家过年的感觉的确很爽！当然一定要注意安全。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/01/25/e4-bd-93-e9-aa-8c-e7-a7-9f-e8-bd-a6/" data-id="cikqzbbnh01ep2drf09t5lbpo" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/06/12/apple-e6-8e-a8-e5-87-bawindows-e7-89-88-e7-9a-84safari-3/" data-id="cikr0cqpv01l8z5rfe18hry0j" class="article-share-link">Share</a>
       
       
     </footer>
@@ -249,108 +249,10 @@
 
 
   
-    <article id="post-shopex-widgets" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e5-85-a8-e7-90-83internet-e7-bd-91-e7-ab-99-e6-9c-89-e4-b8-89-e5-88-86-e4-b9-8b-e4-b8-80-e4-bd-bf-e7-94-a8php" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/01/19/shopex-widgets/" class="article-date">
-  <time datetime="2011-01-18T18:17:36.000Z" itemprop="datePublished">2011-01-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>►<a class="article-category-link" href="/zdblog-hexo/categories/PHP/网站技术/">网站技术</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/01/19/shopex-widgets/">开发ShopEx Widget版块</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>根据客户的要求，需要给ShopEx商城定制一个产品展示橱窗的版块，这是我第一次做ShopEx的Widget版块开发，感觉费了点周章。不过总算开发成功，说说我的感受。<br><a href="http://www.zhaiduo.com/wp-content/uploads/2011/01/20110119002035.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2011/01/20110119002035.jpg" alt="" title="20110119002035"></a></p>
-<p>首先要进行ShopEx的二次开发，需要掌握一些额外的技术：</p>
-<ol>
-<li><a href="http://mootools.net/docs/core" target="_blank" rel="external">MooTools</a> Javascript脚本库</li>
-<li>PHP <a href="http://www.smarty.net/docs/en/index.tpl" target="_blank" rel="external">Smarty</a>模板技术</li>
-<li>ShopEx的Widget和Theme的架构原理、目录结构<br>Widget文件：_config.html default.html widgest.php widget_cfg_yourwidget.php widget_cfg_yourwidget.php<br>Theme文件：index.html theme.xml info.xml<br>系统模板：core/shop/view和controller<br>其次需要认识ShopEx模板和Widget版块之间的关系。ShopEx模板有个主要特点是模板文件主要勾勒网页框架，而大部分细节的模板部分都放到Widget内部，这就是所谓的版块。</li>
-</ol>
-<p>另外再加上一些小窍门，Widget版块的开发可以说是得心应手，水到渠成啦～<br>例如：</p>
-<p>快速连接数据库：$db = &amp;$this-&gt;system-&gt;database();</p>
-<p>Mootools：<br>$$(‘.class’).addEvent(‘click’, function(){})<br>$(this).getParent().getStyle(‘height’).toInt()<br>$(this).getFirst(“div”)<br>$(this).innerHTML=””<br>$$(‘.link’).each(function(e){})</p>
-<p>不过在我开发的过程中，调试模板花了一些时间，没有错误提示很难追踪错误源头。把}&gt;漏掉了一个&gt;还真不好找。</p>
-<p>还有一个兼容性问题，Mootools在Ie9 Beta下，return document.id(this.createElement(a)).set(b)出现这样的错误“script5022: exception thrown and not caught”，但是在IE9的兼容模式下一切正常。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/01/19/shopex-widgets/" data-id="cikqzbalh00a52drfoh7c6uk4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/shopex/">shopex</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/商城开发/">商城开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/模板定制/">模板定制</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e7-9c-9f-e5-81-87-e5-9b-ba-e5-8a-9b-e6-9e-9c-e5-a5-b6-e7-b2-89-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2011/01/17/e7-9c-9f-e5-81-87-e5-9b-ba-e5-8a-9b-e6-9e-9c-e5-a5-b6-e7-b2-89-ef-bc-9f/" class="article-date">
-  <time datetime="2011-01-17T07:26:39.000Z" itemprop="datePublished">2011-01-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/杂项/">杂项</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/01/17/e7-9c-9f-e5-81-87-e5-9b-ba-e5-8a-9b-e6-9e-9c-e5-a5-b6-e7-b2-89-ef-bc-9f/">真假固力果奶粉？</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今早老婆新开了一罐从网上买的固力果奶粉，发现这一罐和其它罐有些不同，和之前开的那罐比，然后又新开了一罐，明显这罐奶粉呈颗粒状，味道偏淡，隐约还有一些过期油味。想想有些心惊，三聚氰胺的阴影还残留在脑海，难道被我们撞上不成？仔细观察，发现奶粉罐底部有个撞凹的部分，怀疑是罐体变形漏气导致奶粉变质。仔细品尝了一下其它罐装奶粉，又发现并无异常。为了保险起见，还是决定再去香港买些原装的奶粉回来做个对比。</p>
-<p>看来以后买奶粉要更加小心，奶粉还真是心里的一道坎啊！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/01/17/e7-9c-9f-e5-81-87-e5-9b-ba-e5-8a-9b-e6-9e-9c-e5-a5-b6-e7-b2-89-ef-bc-9f/" data-id="cikqzbb4j00xs2drf349bml4h" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/奶粉/">奶粉</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-shopex-template" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2011/01/13/shopex-template/" class="article-date">
-  <time datetime="2011-01-13T07:36:52.000Z" itemprop="datePublished">2011-01-13</time>
+    <a href="/zdblog-hexo/2007/06/10/e5-85-a8-e7-90-83internet-e7-bd-91-e7-ab-99-e6-9c-89-e4-b8-89-e5-88-86-e4-b9-8b-e4-b8-80-e4-bd-bf-e7-94-a8php/" class="article-date">
+  <time datetime="2007-06-10T13:28:16.000Z" itemprop="datePublished">2007-06-10</time>
 </a>
     
   <div class="article-category">
@@ -365,7 +267,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/01/13/shopex-template/">ShopEx的模板</a>
+      <a class="article-title" href="/zdblog-hexo/2007/06/10/e5-85-a8-e7-90-83internet-e7-bd-91-e7-ab-99-e6-9c-89-e4-b8-89-e5-88-86-e4-b9-8b-e4-b8-80-e4-bd-bf-e7-94-a8php/">全球Internet网站有三分之一使用PHP</a>
     </h1>
   
 
@@ -373,17 +275,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>ShopEx是国内比较成熟的网上商城管理系统，用它的人也很多，ShopEx模板的定制自然就是一门生意。虽然ShopEx并不是完全开源，但是它的模板的灵活性和强大的可视化编辑功能足以满足用户对商城系统的各种需求。记得客户问我觉得ShopEx和Ecshop有什么区别，他给我的答案是“ShopEx后台很好用，也很容易用”。这也可以说是ShopEx的最大优势。</p>
-<p>ShopEx4.8.5的模板主要保存在themes目录下，通过theme.xml来统筹可视化模板。和模板相关的挂件并没有放在themes里面，而是独立放在plugins的widgets内容。定制模板的过程很快，根本不需要写程序，不像zencart的模板定制，涉及到很多程序模块，开发效率来说高很多。一套基本的ShopEx的模板2-3天完全可以搞定。</p>
+        <p><img src="http://www.zhaiduo.com/wp-content/data/versionsdownenmini.png" alt="versionsdownenmini.png"><br>根据nexen.net<a href="http://www.nexen.net/chiffres_cles/phpversion/16990-php_statistics_for_april_2007.php" target="_blank" rel="external">四月份对PHP的统计报告</a>，全球互联网上已经有33.96%的网站使用PHP技术，继续持续稳定的占据互联网的三分天下。而在其中版本4.4及其以上的版本占据62%的市场份额，远远高于其他版本。同时4.4也是最热门的版本，不过，总体上讲，PHP4的使用人数持续下降，但仍然有八成的网站仍在使用。个人感觉PHP5对PHP4的优势并不是太明显，虽然PHP5有着很多诱人的特性，对OOP也更加支持，不过从PHP4迁移到PHP5非常容易，甚至不需要怎么修改代码，所以觉得并不是很必要。当然个人也不排斥PHP5，毕竟版本高些，有些东西是PHP4没有的，由于目前很少用到PHP5中的新特性，项目很小，OOP的运用比较少，所以也暂时没有升级的打算。只要自己注意代码编写的规范性，留意某些差异细节（如private和var），升级还是很容易的。在我看来，我追求的PHP不是OOP，也不是什么Framework，也不管它是什么版本，我需要的只是一个简单、快速和安全的PHP，这也是我coding的原则。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/01/13/shopex-template/" data-id="cikqzbalm00af2drf3grkuilg" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/06/10/e5-85-a8-e7-90-83internet-e7-bd-91-e7-ab-99-e6-9c-89-e4-b8-89-e5-88-86-e4-b9-8b-e4-b8-80-e4-bd-bf-e7-94-a8php/" data-id="cikr0cqht01elz5rfldo5mrbs" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/模板/">模板</a></li></ul>
-
     </footer>
   </div>
   
@@ -391,54 +290,10 @@
 
 
   
-    <article id="post-ucenter-e7-9a-84-e7-bb-88-e6-9e-81-e9-80-9a-e4-bf-a1-e5-a4-b1-e8-b4-a5" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e5-9c-a8-e6-9b-bc-e8-b0-b7tat-e5-8f-97-e9-aa-97-e7-9a-84-e7-bb-8f-e5-8e-86" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/01/07/ucenter-e7-9a-84-e7-bb-88-e6-9e-81-e9-80-9a-e4-bf-a1-e5-a4-b1-e8-b4-a5/" class="article-date">
-  <time datetime="2011-01-06T21:22:39.000Z" itemprop="datePublished">2011-01-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/01/07/ucenter-e7-9a-84-e7-bb-88-e6-9e-81-e9-80-9a-e4-bf-a1-e5-a4-b1-e8-b4-a5/">Ucenter的终极通信失败</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天帮客户整合ShopEx和Ecshop到discuz x1.5，发现全新的discuz x1.5安装后，Ucenter仍然出现通信失败的错误。经过排查，排除掉IP和UC_KEY不吻合的问题。分析uc_server的function dfopen发现问题来自fsockopen，返回的是“HTTP 错误 403 - 禁止访问”。原来客户的虚拟主机不支持socke绑定，所以会出现host与实际ip不一致的情况。这可以说是uc_server和uc_client的终极BUG，这种认证方式在无法绑定socket或fsockopen被禁止的主机下完全无效。</p>
-<p>如果你还在为你的通信失败伤透脑筋，奉劝你换个hosting试一试。否则只有泪奔的命！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/01/07/ucenter-e7-9a-84-e7-bb-88-e6-9e-81-e9-80-9a-e4-bf-a1-e5-a4-b1-e8-b4-a5/" data-id="cikqzbak0007l2drfxx0mrlc2" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/discuz/">discuz</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/出错/">出错</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e5-86-8d-e6-8e-a2-e9-a6-99-e6-b8-af-e5-a5-b6-e7-b2-89" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2011/01/05/e5-86-8d-e6-8e-a2-e9-a6-99-e6-b8-af-e5-a5-b6-e7-b2-89/" class="article-date">
-  <time datetime="2011-01-05T15:38:06.000Z" itemprop="datePublished">2011-01-05</time>
+    <a href="/zdblog-hexo/2007/06/06/e5-9c-a8-e6-9b-bc-e8-b0-b7tat-e5-8f-97-e9-aa-97-e7-9a-84-e7-bb-8f-e5-8e-86/" class="article-date">
+  <time datetime="2007-06-06T13:37:03.000Z" itemprop="datePublished">2007-06-06</time>
 </a>
     
   <div class="article-category">
@@ -453,7 +308,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/01/05/e5-86-8d-e6-8e-a2-e9-a6-99-e6-b8-af-e5-a5-b6-e7-b2-89/">再探香港奶粉</a>
+      <a class="article-title" href="/zdblog-hexo/2007/06/06/e5-9c-a8-e6-9b-bc-e8-b0-b7tat-e5-8f-97-e9-aa-97-e7-9a-84-e7-bb-8f-e5-8e-86/">在曼谷TAT受骗的经历</a>
     </h1>
   
 
@@ -461,18 +316,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天有空去香港，顺便又带了几罐奶粉回来。原本以为还有<a href="http://www.zhaiduo.com/2010/10/%e7%8e%b0%e5%9c%a8%e4%bb%8e%e9%a6%99%e6%b8%af%e5%b8%a6%e5%a5%b6%e7%b2%89%e4%b8%80%e4%b8%aa%e4%ba%ba%e6%9c%80%e5%a4%9a6%e7%bd%90/" target="_blank" rel="external">每人六罐奶粉的限制</a>，出发的时候也没有带箱子来装奶粉。但是到了下午7点半回来进关的时候，一切出乎意料的简单，根本无人过问，看来选择合适的时间从香港带奶粉，带iPad，带什么都还是可以的。不过想想自己毕竟来回香港的次数不多，这个结论不具统计意义，还是以前的老话，真的看运气啊。</p>
-<p>另外，关于奶粉，由于儿子喝的惠氏火气比较大，这段时间已经给儿子换过明治、雪印、固力果、美素和牛栏。发现去火效果比较好，同时根据大便的干燥程度，换喝这几种不同的奶粉。</p>
-<p>这段时间也网购了几罐奶粉，价格比自己去香港还便宜。按照卖家的说法他们是用批发价从香港和德国等地进得货。儿子喝过后感觉还行，考虑到时间和价钱因素，我们也打算以后还是主要网购国外奶粉。以后不用再拖着大箱子，拖奶逛香港啦～</p>
+        <p>在外几个星期自助旅行，虽然总的来说还算顺利，但难免也有一些不太愉快的经历。这是我当时记录的一段在曼谷的<font size="-1">the Tourism Authority of Thailand (<strong>TAT</strong>)</font>门下的旅行社受骗的经历。</p>
+<p><img src="http://www.zhaiduo.com/wp-content/data/dscf9446.JPG" alt=""><img src="http://www.zhaiduo.com/wp-content/data/dscf9445.JPG" alt=""></p>
+<p>既然是自助旅行，所以到曼谷之前我都是自己想办法亲自去车站买车票的。可就是到了曼谷，我却鬼使神差的去所谓的TAT部门去订票。 刚上机场到靠山路的BUS，遇到了一位上海的哥们儿，在和他的闲谈中我了解到了他在曼谷的受气经历，而且再三表示不会再来泰国。我也谈到了订去清迈的火车票的打算。那位哥们儿有意无意的问我为什么不去TAT订票，这是我第一次听说TAT。当时我还是坚持自己去火车站订票的。车到靠山路，别过那位哥们儿，大家各走各路，找了个200泰铢的GH赶紧出门，准备去华南蓬火车站订票。</p>
+<p>出门就有很多TUKTUK，虽然我已经了解LonelyPlanet上提到靠山路附近TukTUk的欺骗伎俩，但是还是难拒TukTUk司机的热情（可能是我太单纯），这位胖叔叔满脸笑容，自称带我去考山路附近的所有景点只要3美元，在得知我要去订火车票时，他也毫不犹豫地提到了TAT，并且说靠山路附近就有一家，我犹豫了，想想TAT是政府背景，如果能订票确实也挺方便。看着胖叔叔近乎诚恳的笑容，我还是上了车，被他带到了之前提到的TAT门市。</p>
+<p>刚进门，满面笑容的工作人员就邀我坐下，亲切地询问我希望的去的地方和行程安排。 其间得知我是来自中国，更自称他周围的好几个同事也是华人，门市也不时有游客进进出出，我的警惕性进一步降低。这位中年男人记下我希望的行程，我也表示很满意，当我询问他价格的时候，他迅速在计算器上打出了两个数字69(我初初以为是69美元)，并且马上开始联系订票和安排行程。想到来回火车票加一夜住宿和一天的Trekking，大概三天时间只要69美元还不错。另外我知道很多地方只收泰铢的时候，我向他们表示我没有多少泰铢，能否用美元支付的时候，他们立即安排了一位女士，说可以带我去银行换钱。当我进一步询问69美元可以换多少泰铢的时候，那位女士却用计算器打出了四个数字：6900，看了一惊，察觉有问题。6900泰铢可不是69美元，6900除以4也差不多有200美元，于是表示价格太贵，希望取消预定。可那位女士却坚持带我先去银行，想想反正我也需要，先去换钱。我换了100美元，3400泰铢，那位女士见我只换100美元，脸色立变，在我的坚持下，她也只有打电话回去通报。</p>
+<p>在我们急忙赶回TAT的这个门市，一到门口我立即感觉气氛不对，心想难道我买了东西不能退货，难道是黑店？不过应该没什么可担心的，我也不想不辞而别，而且我还登记了护照号码，不想破坏中国人的形象。于是硬着头皮进了门。果然如我所料，之前那位给我规划行程的中年男人已经不再接待我，那位女士要我进办公室详谈。我也壮着胆子跟进了办公室。办公室里也坐着一个中年男人，自称是manager。不过面色难看，我看是来找茬儿的。刚一坐下，这位男人立即严声闻我是不是订了3天的清迈行程，我说是，但是对我来说200美元玩3天太贵，我希望取消。那位男人有些激动了，说不要玩花样，下了单就要给钱。心想，操啊！果真是黑店，哪有不能取消的订单啊，这还是有政府背景的门市吗？</p>
+<p>我深吸一口气，想想反正要去清迈，不如取消行程中的TRekking部分，看他们要多少钱。于是我转转口风，说只是想取消Trekking的部分。刚开始那位经理还是一口坚持，几番争辩之后，大家相视无语，面红耳赤，最终那位经理和之前那位女士说了一下，于是出去拿了火车票和旅馆的单近来，说是同意我取消trekking部分，不过要收费3400泰铢，当时的情况我也无心继续纠缠，脑子里有点混乱，想想钱剪了一半，也就答应付了钱。那位女士也匆匆把我送出门外，好像担心我们大吵大闹，对其他刚来咨询的游客有影响（其实我想，不过还真不是我的性格）。</p>
+<p>出了门上了TukTuk 被风一吹，再看看火车票，来回火车票514+611泰铢=1125泰铢，一晚的住宿最多也就500-600B，还是亏了将近2000B，晕啊，没想自己真的在听完之前那位上海的兄弟的遭遇之后，不到半天的时间，也被骗了。想回去找他们理论理论，又想想之前的紧张气氛，想到自己一个人在外，还有很长的路要走，不想为了这件事影响整个行程，还是安全要紧，于是也就放弃了回去理论的打算。当做是花钱买教训吧（不过还好，之后3天的清迈之旅给我留下很好的回忆）。</p>
+<p>下面是那家TAT办事处的地址和相关资料，我申明我所描述的内容完全属实，并不想继续和那些所谓的TAT纠缠，只是希望在泰国，要去TAT订票的朋友多一个心眼，不要重蹈我的覆辙。</p>
+<p>TAT办事处：<strike>WORLD PEACE TRAVEL CO., LTD.</strike><br>地址：<strike>25/11 Phisanulok Road, Dusit, Bangkok 10300 THAILAND</strike><br>曼谷到清迈火车票：TRAIN 109 - 14:30(DEP TIME) - 05:10(ARR TIME) - CLASS:2 - COACH TYPE: BNS32 - PRICE: 541<br>清迈到曼谷火车票：TRAIN 10 - 21:00(DEP TIME) - 09:10(ARR TIME) - CLASS:2 - COACH TYPE: APN76 - PRICE: 611<br>在清迈住的旅馆：2/3-7 Soi2 Rajchiengsan Road. T.Haiya A.Muang Chaingmai</p>
+<p>（<a href="http://www.zhaiduo.com//?page_id=153" title="四国游日记存档" target="_blank" rel="external">更多日记存档</a>）</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/01/05/e5-86-8d-e6-8e-a2-e9-a6-99-e6-b8-af-e5-a5-b6-e7-b2-89/" data-id="cikqzbbj601b32drf0rro9mej" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/06/06/e5-9c-a8-e6-9b-bc-e8-b0-b7tat-e5-8f-97-e9-aa-97-e7-9a-84-e7-bb-8f-e5-8e-86/" data-id="cikr0cq96017oz5rfip5l7ubw" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/奶粉/">奶粉</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/香港/">香港</a></li></ul>
-
     </footer>
   </div>
   
@@ -480,14 +341,14 @@
 
 
   
-    <article id="post-apache2-2-wth-openssl-win7" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e5-9b-be-e7-89-87-e7-bb-88-e4-ba-8e-e6-95-b4-e7-90-86-e5-a5-bd-e4-ba-86" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2010/12/28/apache2-2-wth-openssl-win7/" class="article-date">
-  <time datetime="2010-12-28T05:39:10.000Z" itemprop="datePublished">2010-12-28</time>
+    <a href="/zdblog-hexo/2007/06/02/e5-9b-be-e7-89-87-e7-bb-88-e4-ba-8e-e6-95-b4-e7-90-86-e5-a5-bd-e4-ba-86/" class="article-date">
+  <time datetime="2007-06-01T19:08:13.000Z" itemprop="datePublished">2007-06-02</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/安装/">安装</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/自助游/">自助游</a>►<a class="article-category-link" href="/zdblog-hexo/categories/自助游/轻松一刻/">轻松一刻</a>
   </div>
 
   </div>
@@ -498,7 +359,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2010/12/28/apache2-2-wth-openssl-win7/">Windows7下面为Apache2.2增加OpenSSL支持</a>
+      <a class="article-title" href="/zdblog-hexo/2007/06/02/e5-9b-be-e7-89-87-e7-bb-88-e4-ba-8e-e6-95-b4-e7-90-86-e5-a5-bd-e4-ba-86/">图片终于整理好了</a>
     </h1>
   
 
@@ -506,28 +367,1100 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天需要在https下测试程序，发现现在给本地Apache2.2增加OpenSSL支持已经变得非常容易，安装过程如下：</p>
-<ol>
-<li>下载安装<a href="http://www.slproweb.com/products/Win32OpenSSL.html" target="_blank" rel="external">Win32OpenSSL</a><br>包括：Win32 OpenSSL v1.0.0c和Visual C++ 2008 Redistributables，安装在C:/OpenSSL-Win32/目录</li>
-<li>复制C:/OpenSSL-Win32/bin下libeay32.dll和ssleay32.dll到C:/WINDOWS/system32</li>
-<li>进入命令行模式，生成crt证书<br>C:OpenSSL-Win32bin&gt;openssl req -config openssl.cfg -new -out zhaiduo.csr -keyout zhaiduo.pem<br>C:OpenSSL-Win32bin&gt;openssl rsa -in zhaiduo.pem -out zhaiduo.key<br>C:OpenSSL-Win32bin&gt;openssl x509 -in zhaiduo.csr -out zhaiduo.crt -req -signkey zhaiduo.key -days 3650</li>
-<li>给Apache增加mod_ssl<br>打开LoadModule ssl_module modules/mod_ssl.so<br>打开Include conf/extra/httpd-ssl.conf</li>
-<li>修改http-ssl.conf配置<br>SSLCertificateFile “C:/OpenSSL-Win32/bin/server.crt”<br>SSLCertificateKeyFile “C:/OpenSSL-Win32/bin/server.key”</li>
-<li>然后重启apache，打开<a href="https://localhost/" target="_blank" rel="external">https://localhost/</a>，Firefox会提示是否接受不安全的证书，导入即可。简单吧～<br>另外如果出现403 FOrbidden的错误，你可以查看一下error.log，如果是<br>client denied by server configuration 你需要给&lt; VirtualHost <em>default</em>:443 &gt;增加一个Directory<blockquote>
-<p>&lt; Directory “https_dir” &gt;<br>AllowOverride None<br>Order allow,deny<br>allow from all<br>&lt; /Directory &gt;</p>
+        <p>缅甸</p>
+<embed type="application/x-shockwave-flash" src="http://picasaweb.google.com/s/c/bin/slideshow.swf" width="400" height="267" flashvars="host=picasaweb.google.com&RGB=0x000000&feed=http%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fzhaiduo%2Falbumid%2F5071164195190722497%3Fkind%3Dphoto%26alt%3Drss" pluginspage="http://www.macromedia.com/go/getflashplayer">
+
+<p>泰国</p>
+<embed type="application/x-shockwave-flash" src="http://picasaweb.google.com/s/c/bin/slideshow.swf" width="400" height="267" flashvars="host=picasaweb.google.com&captions=1&RGB=0x000000&feed=http%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fzhaiduo%2Falbumid%2F5071166634732148257%3Fkind%3Dphoto%26alt%3Drss" pluginspage="http://www.macromedia.com/go/getflashplayer">
+
+<p>柬埔寨</p>
+<embed type="application/x-shockwave-flash" src="http://picasaweb.google.com/s/c/bin/slideshow.swf" width="400" height="267" flashvars="host=picasaweb.google.com&captions=1&RGB=0x000000&feed=http%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fzhaiduo%2Falbumid%2F5071167991941814721%3Fkind%3Dphoto%26alt%3Drss" pluginspage="http://www.macromedia.com/go/getflashplayer">
+
+<p>越南</p>
+<embed type="application/x-shockwave-flash" src="http://picasaweb.google.com/s/c/bin/slideshow.swf" width="400" height="267" flashvars="host=picasaweb.google.com&captions=1&RGB=0x000000&feed=http%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fzhaiduo%2Falbumid%2F5071169181647756481%3Fkind%3Dphoto%26alt%3Drss" pluginspage="http://www.macromedia.com/go/getflashplayer">
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/06/02/e5-9b-be-e7-89-87-e7-bb-88-e4-ba-8e-e6-95-b4-e7-90-86-e5-a5-bd-e4-ba-86/" data-id="cikr0cq9g017wz5rfnp6ihzyz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-30-e5-a4-a9-e4-b8-9c-e5-8d-97-e4-ba-9a-e5-9b-9b-e5-9b-bd-e6-8b-96-e9-9e-8b-e8-87-aa-e7-94-b1-e8-a1-8c-e6-80-bb-e7-bb-93" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/05/31/30-e5-a4-a9-e4-b8-9c-e5-8d-97-e4-ba-9a-e5-9b-9b-e5-9b-bd-e6-8b-96-e9-9e-8b-e8-87-aa-e7-94-b1-e8-a1-8c-e6-80-bb-e7-bb-93/" class="article-date">
+  <time datetime="2007-05-30T16:04:29.000Z" itemprop="datePublished">2007-05-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/05/31/30-e5-a4-a9-e4-b8-9c-e5-8d-97-e4-ba-9a-e5-9b-9b-e5-9b-bd-e6-8b-96-e9-9e-8b-e8-87-aa-e7-94-b1-e8-a1-8c-e6-80-bb-e7-bb-93/">30天东南亚四国拖鞋自由行总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>三十天的跌跌撞撞终于在中南半岛上画了一个完美的弧形(行程超过8000公里)。很高兴自己的这个梦想能够如愿以偿。现在回忆起来，一幕幕依然清晰，尤在眼前。美好的记忆需要保留，所以我会把我的经历都记录下来，也希望有需要的朋友可以参考。（<a href="http://www.zhaiduo.com/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%86%8C/%E5%9B%9B%E5%9B%BD%E6%B8%B8%E6%97%A5%E8%AE%B0%E5%AD%98%E6%A1%A3/" title="四国游日记存档" target="_blank" rel="external">日记存档</a>）<br><img src="http://www.zhaiduo.com/wp-content/data/zyx.jpg" alt=""></p>
+<p>旅行线路：</p>
+<p>昆明 -〉瑞丽 -〉进缅甸Myanmar（当地时间晚北京时间大约1个半小时） -〉曼德勒Mandalay  -〉良乌Nyang U （蒲甘Bagan）  -〉良信Nyaungshwe（因莱湖Inle Lake）  -〉仰光Yangon  -〉进泰国Thailand（当地时间晚北京时间大约1个小时） -〉曼谷Bangkok -〉清迈Chiang Mai -〉曼谷Bangkok -〉普吉Phuket -〉披披岛Ko Phi Phi -〉曼谷Bangkok -〉亚兰Aranya -〉进柬埔寨Cambodia（1000泰铢） -〉波贝Poipet -〉暹粒Siem Leap -〉金边Phnom Penh -〉巴维Bavet -〉进越南Vietnam -〉莫拜Moc Bai -〉胡志明市Ho Chi Minh -〉芽庄Nha Trang -〉河内Hanoi -〉同登Dong Dang -〉回国内CHina  -〉凭祥  -〉南宁</p>
+<p>交通工具：水陆空全部都试过，不过最多的还是以坐BUS为主，都是空调大巴，还不错，大部分还带有洗手间。缅甸Myanmar -〉曼德勒Mandalay是包车（小轿车）进的。曼德勒Mandalay到良乌Nyang U是坐的火车，仰光Yangon  -〉曼谷Bangkok是在airasia上订的票49美元，本来还有更便宜的（40美元），不过时间对不上，所以放弃了。曼谷Bangkok来回清迈Chiang Mai也是坐的火车。普吉Phuket -〉披披岛Ko Phi Phi 是坐船，很多老外躺在船顶晒太阳。波贝Poipet -〉暹粒Siem Leap是包的出租车，3个人，每人14美元。</p>
+<p>旅馆住宿：平均住一晚的费用是10美元（不到80块人民币），最便宜的一晚是180泰铢（不到50块人民币），最贵的是550泰铢。感觉比国内的住宿便宜。而且大部分的房间都是带空调，热水和电视的。也很干净。印像不错的是在胡志明范老五的mini家庭旅馆10美元一晚，很干净，环境也很温馨，卫生间也很干净和豪华。</p>
+<p>饮食小吃： 大部分食物都可以适应，酸辣的菜比较多，一般都是自助式的饭菜，不过不太新鲜。米粉还不错，配上新鲜的蔬菜和调料，味道还不错。热带水果很便宜，最喜欢吃红毛丹。最便宜的一顿饭只用了20泰铢牛肉炒饭，最贵的53000越南盾的PHO米粉和在暹粒旅游区的一顿5美元的鸡饭。</p>
+<p>费用花费： 总共花费1600美元，包括签证费，以及之间的一些准备费用。平均每个国家400美元。比去国内很多地方便宜。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/05/31/30-e5-a4-a9-e4-b8-9c-e5-8d-97-e4-ba-9a-e5-9b-9b-e5-9b-bd-e6-8b-96-e9-9e-8b-e8-87-aa-e7-94-b1-e8-a1-8c-e6-80-bb-e7-bb-93/" data-id="cikr0cqqr01m0z5rf990kq7ml" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bc-85-e7-94-b8-e5-8d-b0-e8-b1-a1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/05/25/e7-bc-85-e7-94-b8-e5-8d-b0-e8-b1-a1/" class="article-date">
+  <time datetime="2007-05-24T16:39:23.000Z" itemprop="datePublished">2007-05-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>►<a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/05/25/e7-bc-85-e7-94-b8-e5-8d-b0-e8-b1-a1/">缅甸印象</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>虽然我只在缅甸呆了12天，但是它仍留给我几个特别深刻的印象。</p>
+<p><img src="http://www.zhaiduo.com/wp-content/data/myanmar1.jpg" alt="myanmar1.jpg"><br>第一点，到了缅甸，你会感觉自己好像在东南亚又好像在印度。这是个很神奇的国度，我从来没有想象过宗教和普通老百姓的生活是如此的密切。整个国度弥漫着佛教的宽容和慈悲，生活不再是冲忙和压力，就像清早的阳光透过薄薄的雾气照射在不紧不慢骑着自行车去上班的人群身上和跪拜在佛像面前虔诚地祈祷的信众身上。</p>
+<p><img src="http://www.zhaiduo.com/wp-content/data/myanmar2.jpg" alt="myanmar2.jpg"><br>第二点，缅甸的公路似乎很久没有人维护过，很容易就看得出柏油马路所经历过的风风雨雨，似乎人们并不急于更新路面，也许这样的路面已经足够方便的引导缅甸人民去生活和祈祷。这种感觉在国内是前所未有的，国内不断翻新的路面和灰尘铺天盖地的情景让我感觉厌烦。</p>
+<p><img src="http://www.zhaiduo.com/wp-content/data/myanmar4.jpg" alt="myanmar4.jpg"><br>第三点，人们和动物更加紧密地生活在一起，在国内你很难想象有一条满街都是乌鸦和小鸟的街道，鸟群和人群不时填补着街道上的空白，这些都让我惊讶的说不出话来。很有意思的是，我在街上却很难看到老鼠，我常去照顾路边的走鬼（摊贩），很鸟儿们一块用餐，却没有拉过肚子。 而且不止在街上，很多地方你还能发现其它有趣的动物，例如田边的悠闲自得白色水鸟，寺庙旁小心谨慎的松鼠。。。总之，如果你喜欢小动物，而且不介意它们有时的放任无理，最好来这个国度看看。</p>
+<p><img src="http://www.zhaiduo.com/wp-content/data/myanmar3.jpg" alt="myanmar34.jpg"><br>第四点，这是一个只用穿拖鞋的国度，我可是不喜欢在进出寺庙的时候频繁穿袜子拖鞋，同时被人指指点点是”Japanese”。虽然你忍不住每次都要去纠正，但是这种情况还是不断发生，因为在这个国度，你能看见很多和日本有关的东西，来自日本的卡车和各种援助。难怪他们对Japanese有如此深的印象。同样很有趣的是，我没有问见过脚臭，哪怕是很肮脏的脚。我的脚本来有点湿气和小水泡，这样几天当了赤脚大仙，居然自己好了。看来光着脚拜访多一点菩萨还是很有用的。但是后来我去泰国清迈的素帖寺闻见我问过的最难闻的脚臭。</p>
+<p>其实缅甸这个神奇的国度还有很多令人回味的地方，我会好好回忆，再总结总结。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/05/25/e7-bc-85-e7-94-b8-e5-8d-b0-e8-b1-a1/" data-id="cikr0cpwx00vsz5rfrickrm0h" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bb-88-e4-ba-8e-e5-88-b0-e4-ba-86siam-reap" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/05/16/e7-bb-88-e4-ba-8e-e5-88-b0-e4-ba-86siam-reap/" class="article-date">
+  <time datetime="2007-05-16T08:44:27.000Z" itemprop="datePublished">2007-05-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>►<a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/05/16/e7-bb-88-e4-ba-8e-e5-88-b0-e4-ba-86siam-reap/">终于到了Siam Reap</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>坐了24小时的车，受的苦只有我的屁股才知道。下午18：00开始从普及汽车站出发，第二天早上6点多一点到曼谷，考虑到手上的泰铢不多，也不想再 在曼谷停留，所以在南部汽车站吃了顿猪脚饭，就打了个的去Mochit汽车站，那里可以买去波贝的车票。刚到Mochit正好赶上7点的车，好像一切挺顺 利。没想到好戏在后头。大概12点汽车开到了亚兰，找了个TukTuk直奔边境。</p>
+<p><img src="http://www.zhaiduo.com/wp-content/data/angkorwat.jpg" alt="angkorwat.jpg"><br>刚在门口就有许多人问你是不是要办visa签证，还有模有 样的拿出工作证给我看，好在我没上当，径直进去，再问问警察，警察点头我就放心了。泰国的出关手续一办完，隔一段路就是办柬埔寨签证的窗口，LP上讲只需 要20美元，可是工作人员一再要求只受1000泰铢，奶奶的，而且在隔壁就可以用美元换泰铢，但是兑换率只有1：34，抢钱。还好身上还有740B，只换 了10美元，我还担心这740B不知道该怎么办了，看来上天自由安排。</p>
+<p>终于搞定签证，期间一直有个小伙子热心帮忙，其实他只是要你答应他去他推荐的汽车站，然后拿些好处费。本来以为赶BUS应该没问题，谁知道一进柬埔 寨关口才知道传闻中的烂路有多烂。到了汽车站就更担心啦，根本看不到巴士，老外倒是不少，都是被骗来的，大部分都只有加钱包个车走，坐巴士想都别想。可是 我还是在那里傻等了2个多小时。本来说好的巴士价钱是10美元，后来和另外2个老外包车又加了4美元。2点半左右终于可以上路了。接下来就是一段屁股的摇 滚和桑巴之舞。摇了4个半小时，终于结束了24小时的马拉松式的巴士之路。好在路上有个风趣的美国老头，可以消磨掉一些疲倦。如今暹粒已在眼前，赶紧找个 有热水和空调的房间，终于可以休息一下。想想这也是第二次狂奔啦。第一次是从昆明到瑞丽，然后瑞丽到曼德勒。不过虽然一路艰辛，风景还是很值得一看的，我 不后悔。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/05/16/e7-bb-88-e4-ba-8e-e5-88-b0-e4-ba-86siam-reap/" data-id="cikr0cpxt00wrz5rf2txl70pg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-9c-a8-e6-99-ae-e5-8f-8a-ef-bc-88phuket-ef-bc-89-e7-9a-ae-e7-9a-ae-e5-b2-9b-e7-9a-84-e6-97-a5-e5-ad-90" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/05/13/e5-9c-a8-e6-99-ae-e5-8f-8a-ef-bc-88phuket-ef-bc-89-e7-9a-ae-e7-9a-ae-e5-b2-9b-e7-9a-84-e6-97-a5-e5-ad-90/" class="article-date">
+  <time datetime="2007-05-13T11:57:31.000Z" itemprop="datePublished">2007-05-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>►<a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/05/13/e5-9c-a8-e6-99-ae-e5-8f-8a-ef-bc-88phuket-ef-bc-89-e7-9a-ae-e7-9a-ae-e5-b2-9b-e7-9a-84-e6-97-a5-e5-ad-90/">在普及（PHUKET）皮皮岛的日子</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>从清迈回曼谷，马不停蹄就来到了普及岛，清迈骑车爬素贴寺太累也就没上网。泰国比缅甸现代很多，上网很方便，旅游区会贵一些，在靠山路是10B20分钟，普及是20B一个小时，皮皮岛就贵得离谱，2B一分钟。在皮皮岛只呆了2天一夜，因为还有很长的路要走，所以不敢消费太多，不过浮潜的确很过瘾，穿上救生衣很安全的，一群群的nimo小鱼就围绕在你身边和眼前，但是你一伸手却始终接触不到他们。 下午刚回到普及镇，终于有时间上网转转。</p>
+<p><img src="http://www.zhaiduo.com/wp-content/data/kophiphi.jpg" alt="kophiphi.jpg"></p>
+<p>现在回想在皮皮岛，物价的确很贵，一份普通的鸡肉炒饭也要50B，而且还是大排挡的水准，在高级的饭馆吃要了我75B，今天刚兑换了100美元，是3421B(泰铢)，和靠山路一样，我在靠山也换过3441，不过还是在机场还最合算(3450)，后悔换少了。在皮皮住不起高档旅馆（很多多在1000B以上），找了个公共浴室的房间（400B），老板娘还是中国人，不过不会讲国语啦。刚checkin就唧唧歪歪了很多，要爱护卫生，不要往便池里扔卫生纸等等。好像对中国人的印象并不好，我再不好受，也只有赔笑得份，是苦笑。皮皮还是白皮肤老外的天下，中国人也见过，一眼就看得出。还好没有看到什么令人尴尬的事，咱们中国人的素质也在提高啊。总的感觉皮皮水质一般，同样的水质我在海南也见过（大概是02年），也见到不少垃圾漂浮在海面上，不过并不影响水质，来的人越多，污染自然就越严重，看来都还没有一个比较圆满地解决方案。</p>
+<p><img src="http://www.zhaiduo.com/wp-content/data/kophiphi2.jpg" alt="kophiphi2.jpg"><br>在去清迈的火车上遇见的来之美国科罗拉多州的Matt说的一句话让我影响很深刻：“我们每一个人都有责任让更多的人知道环境污染的严重性，让更多的人来保护环境”。他问我中国的情况，我只有苦笑。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/05/13/e5-9c-a8-e6-99-ae-e5-8f-8a-ef-bc-88phuket-ef-bc-89-e7-9a-ae-e7-9a-ae-e5-b2-9b-e7-9a-84-e6-97-a5-e5-ad-90/" data-id="cikr0cq99017qz5rfqfvuow21" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bb-88-e4-ba-8e-e5-8f-af-e4-bb-a5-e7-94-a8-e4-b8-ad-e6-96-87-e5-8f-91-e8-b4-b4-e5-95-a6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/05/04/e7-bb-88-e4-ba-8e-e5-8f-af-e4-bb-a5-e7-94-a8-e4-b8-ad-e6-96-87-e5-8f-91-e8-b4-b4-e5-95-a6/" class="article-date">
+  <time datetime="2007-05-04T12:26:47.000Z" itemprop="datePublished">2007-05-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>►<a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/05/04/e7-bb-88-e4-ba-8e-e5-8f-af-e4-bb-a5-e7-94-a8-e4-b8-ad-e6-96-87-e5-8f-91-e8-b4-b4-e5-95-a6/">终于可以用中文发贴啦</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://www.zhaiduo.com/wp-content/data/yangon.jpg" alt="yangon-仰光"></p>
+<p>离开瑞丽后，上网一直很麻烦。国内的网站更是无法打开，连gmail和hotmail都要通过代理网站来收发邮件。昨天到仰光终于可以享受用中文打字的乐趣。但是MSN依然无法登陆。访问了国内我常去的几个网站，速度勉强能接受。感觉互联网方面缅甸还是很落后的。今天下了一天的雨，哪里也去不了，只能在附近和网吧溜达。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/05/04/e7-bb-88-e4-ba-8e-e5-8f-af-e4-bb-a5-e7-94-a8-e4-b8-ad-e6-96-87-e5-8f-91-e8-b4-b4-e5-95-a6/" data-id="cikr0cpxq00woz5rf52zctj4f" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bc-85-e7-94-b8-e7-ad-be-e8-af-81-e7-94-b3-e8-af-b7-e7-bb-8f-e9-aa-8c" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/04/23/e7-bc-85-e7-94-b8-e7-ad-be-e8-af-81-e7-94-b3-e8-af-b7-e7-bb-8f-e9-aa-8c/" class="article-date">
+  <time datetime="2007-04-23T03:04:51.000Z" itemprop="datePublished">2007-04-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>►<a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/04/23/e7-bc-85-e7-94-b8-e7-ad-be-e8-af-81-e7-94-b3-e8-af-b7-e7-bb-8f-e9-aa-8c/">缅甸签证申请经验</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://www.zhaiduo.com/wp-content/data/myanmar_kunming_consulate.jpg" alt="myanmar_kunming_consulate.jpg"><br>2点就可以拿加急签证，进行的也很顺利8点15到了龙园大厦，缅甸工作人员是8：30分上班，记住从大厦得左边进去,上电梯5楼出门右边过走廊就是。填表很容易，工作人员也很友善，不懂就问。加急签证3小时可以取，也就是下午1、2点. 办完自己的，再帮一位去缅甸做生意的大哥填完表才9点零几分。今天天气不错，阳光普照，就等着下午的车去瑞丽啦。</p>
+<p>因为住在威远街，护国街和青年路附近，所以到南屏步行街逛了逛。在好心人的建议下，我在护国路坐73路车（1元钱）去看了看滇池和西山。听说滇池附近的楼价平均也有4千多。昆明的便利店不是很多，买水找一家卖普洱茶的店铺就可以了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/04/23/e7-bc-85-e7-94-b8-e7-ad-be-e8-af-81-e7-94-b3-e8-af-b7-e7-bb-8f-e9-aa-8c/" data-id="cikr0cpwt00voz5rfra7emdbt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-yahoo-e6-90-9c-e7-b4-a2-e7-9a-84-e6-96-b0-e5-8a-a8-e5-90-91" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/04/05/yahoo-e6-90-9c-e7-b4-a2-e7-9a-84-e6-96-b0-e5-8a-a8-e5-90-91/" class="article-date">
+  <time datetime="2007-04-05T06:37:33.000Z" itemprop="datePublished">2007-04-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/搜索时代/">搜索时代</a>►<a class="article-category-link" href="/zdblog-hexo/categories/搜索时代/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/04/05/yahoo-e6-90-9c-e7-b4-a2-e7-9a-84-e6-96-b0-e5-8a-a8-e5-90-91/">Yahoo搜索的新动向</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>面对国际搜索市场被Google不断蚕食的现状，Yahoo不敢再怠慢，相继在英文和中文市场推出了Beta版的具有新的用户体验界面的新一代搜索:<a href="http://www.yisou.com/" target="_blank" rel="external"> 雅虎易搜</a>和<a href="http://au.alpha.yahoo.com/" target="_blank" rel="external"> Yahoo Alpha (beta)。</a>它们有一个技术上的共同点就是都采用了Ajax技术，搜索结果都集成相关图片，甚至是视频的内容。这似乎个Google现在所作的如出一辙，大家的目的都很统一：搜索界面更加人性化，方法更加多样化，搜索结果呢，也更加多媒体化。当然着也证明互联网今后发展的一个趋势，更多多媒体内容将成为今后互联网的主流。不过令我失望的是，还看不到这些所谓的BETA版本中，搜索结果的质的变化。用户使用搜索无非是想找到最合适的他想要的内容，现在看来，无论从技术还是现在的互联网环境看来，都还有一定距离。毕竟搜索不是一方就能做好的事，做开发的技术上要越来越精，让搜索越来越好用。而真正使用搜索的用户，也不能继续当搜索白吃，也应该培训培训，正确高效的使用关键字，才能准确快速的搜索到他所需要的资料。</p>
+<p>常常遇到很多人抱怨，搜索一点也不好用，走近一看原来是复制一大段文字粘贴到搜索框上这样搜索的，让人不得不叫妈呀！<br>总而言之，搜索的未来不再是只和搜索引擎公司有关，还要看看使用搜索的用户是否有进步。搜索引擎再聪明，使用者是傻瓜也无济于事。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/04/05/yahoo-e6-90-9c-e7-b4-a2-e7-9a-84-e6-96-b0-e5-8a-a8-e5-90-91/" data-id="cikr0cp8x001ez5rfikt8jabm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-a2-83-e5-a4-96-e6-97-85-e6-b8-b8-e4-bf-9d-e9-99-a9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/03/27/e5-a2-83-e5-a4-96-e6-97-85-e6-b8-b8-e4-bf-9d-e9-99-a9/" class="article-date">
+  <time datetime="2007-03-27T13:10:34.000Z" itemprop="datePublished">2007-03-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>►<a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/03/27/e5-a2-83-e5-a4-96-e6-97-85-e6-b8-b8-e4-bf-9d-e9-99-a9/">境外旅游保险</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>因为要出去溜达40天左右，也听朋友提到种种的可怕的境外遭遇，决定还是买个保险，买个心安算了。这里是我打算参考的几家保险公司:</p>
+<p><a href="http://www.aiush.com.cn/cn/13premium/travl_wgyz.asp" target="_blank" rel="external"><strong>美亚“万国游踪”国际旅游保障计划 </strong></a><br>涵盖十四项的保障利益，特别适用于海外旅游者及申根签证的申请者。可在 130 多个国家得到由专业的救援机构 AIG Assist提供的 24 小时紧急救援服务。</p>
+<p>保障特色</p>
+<ul>
+<li>周全保障，涵盖境外旅行期间意外伤害、疾病和财物保障</li>
+<li>符合申根签证的要求</li>
+<li>24小时全球保障和紧急医疗救援及旅行支援服务</li>
+<li>备有短期计划和全年计划供您灵活选择</li>
+<li>承保热门运动，包括滑雪、潜水、跳伞和骑马</li>
+<li>承保恐怖分子行为造成的损害</li>
+<li>航班延误在承保范围之内 。</li>
+</ul>
+<p>年龄选择 成年人<br>保险期限选择 40天<br>保险费 450</p>
+<p><strong><a href="http://www.e-picc.com.cn/EbsWeb/getLBWProposal.do?UIAction=RationList&amp;riskCode=LBW&amp;optType=Online&amp;periodNo=1&amp;hasIFrame=true&amp;eFlow=0" target="_blank" rel="external">中国人保财险-境外旅行人身意外伤害</a></strong></p>
+<p>适用人群：境外旅游的人士<br>投保年龄：年龄范围在18-75周岁<br>保障范围：保险期间发生的意外身故、残疾，意外医疗费用，<br>境外紧急救援，旅行行李物品损失，房屋及附属设<br>备损失，家庭财产损失(含盗抢)<br>保险金额：每一被保险人可获超过70万的保险保障<br>如果您选择旅行行李物品损失险，将免费获赠保额为1000元的旅行证件损失保险保障<br>计算保费:254元 30天</p>
+<p><a href="http://www.pa18.com/property_insurance/pa18Accident/enterTravelFreedom.do?WT.mc_id=pa18" target="_blank" rel="external"><strong>平安保险旅行意外伤害保险</strong></a><br>适用人群<br>境内、外短期出行人士<br>保障范围<br>提供出行途中因意外伤害造成的身故、残疾保障以及意外医疗费用赔偿<br>保期、保额<br>1－30天自由选择，意外伤害最高可达100万元，意外医疗最高可达50万元</p>
+<p>30天保费<a href="折后价">60万意外伤害+1万意外伤害医疗</a>： 186元　　此网上价格已为您省去 80元</p>
+<p><a href="https://ebiz.aia.com.cn/estore/purchase.do?productCode=OSTADD&amp;branchCode=N00001" target="_blank" rel="external"><strong>友邦四海旅行意外伤害保险</strong></a></p>
+<p>以下保险利益仅适用于境外旅行期间：<br>● 意外身故、烧伤及残疾给付 OSTADD<br>● 公共交通意外伤害附加合同 STPCA<br>● 医药补偿附加合同 OSTMR<br>● 运送和送返附加合同 OSTER<br>● 身故遗体送返附加合同 OSTRR<br>● 附加境外天惠丧葬费用医疗保险 OSTFF</p>
+<p>我的出行天数： 40天<br>我的保险计划： 保险计划承保年龄:18岁→60岁<br>保 险 费： 142元人民币 (50万以上)<br>晕,这么多保险，感觉挺复杂，对保险还是不太了解。个人感觉中国人保财险-境外旅行人身意外伤害比较符合我的要求，毕竟一般不太可能涉及到遗体。:-) 还是中国人保财险的比较实在。另外，网上很多人提到美亚保险。所以目前还在犹豫中。。。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/03/27/e5-a2-83-e5-a4-96-e6-97-85-e6-b8-b8-e4-bf-9d-e9-99-a9/" data-id="cikr0cq8u017fz5rf3zlnqgqc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-ad-be-e8-af-81-e7-94-b3-e8-af-b7-e7-bb-8f-e9-aa-8c-ef-bc-9a-e8-b6-8a-e5-8d-97-e5-92-8c-e6-b3-b0-e5-9b-bd" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/03/21/e7-ad-be-e8-af-81-e7-94-b3-e8-af-b7-e7-bb-8f-e9-aa-8c-ef-bc-9a-e8-b6-8a-e5-8d-97-e5-92-8c-e6-b3-b0-e5-9b-bd/" class="article-date">
+  <time datetime="2007-03-21T13:36:30.000Z" itemprop="datePublished">2007-03-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>►<a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/03/21/e7-ad-be-e8-af-81-e7-94-b3-e8-af-b7-e7-bb-8f-e9-aa-8c-ef-bc-9a-e8-b6-8a-e5-8d-97-e5-92-8c-e6-b3-b0-e5-9b-bd/">签证申请经验：越南和泰国</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>因为我在广州，考虑到签证申请的方便性，所以决定先办好越南签证和泰国签证。它们的申请过程远比我想象的简单，也不像网友说的类似“个人申请泰国旅游签证要求往返机票，最好找旅行社办理”的情况。整个过程费时5天，详细如下：</p>
+<p><strong>越南领事馆</strong><br>(海珠广场侨光路华夏大酒店左侧中信银行内左侧上二楼)<br>个人单次签证380元（30天停留）从办理到拿证5天时间，<br>材料只需要填表和交照片，以及缴费。</p>
+<p><strong>泰国领事馆签证</strong><br>（花园酒店内左侧沿旋转木梯上二楼）<br>个人单次签证160元，申请次日下午取得签证，30天停留，3个月有效。<br>材料只需要护照复印件2份，在职证明或不少于一万元存款证明，往返机票或英文版的行程表。<br>申请只限于上午9：00-11：30。下午通常来取证。</p>
+<p>总的来说，有条件的，能够自己去尝试的，最好自己去做一下。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/03/21/e7-ad-be-e8-af-81-e7-94-b3-e8-af-b7-e7-bb-8f-e9-aa-8c-ef-bc-9a-e8-b6-8a-e5-8d-97-e5-92-8c-e6-b3-b0-e5-9b-bd/" data-id="cikr0cpy000wwz5rfofftxh6x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-88-9d-e6-ad-a5-e7-a1-ae-e5-ae-9a-e4-b8-9c-e5-8d-97-e4-ba-9a-e8-87-aa-e5-8a-a9-e6-b8-b8-e8-a1-8c-e7-a8-8b" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/03/19/e5-88-9d-e6-ad-a5-e7-a1-ae-e5-ae-9a-e4-b8-9c-e5-8d-97-e4-ba-9a-e8-87-aa-e5-8a-a9-e6-b8-b8-e8-a1-8c-e7-a8-8b/" class="article-date">
+  <time datetime="2007-03-18T16:55:11.000Z" itemprop="datePublished">2007-03-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/03/19/e5-88-9d-e6-ad-a5-e7-a1-ae-e5-ae-9a-e4-b8-9c-e5-8d-97-e4-ba-9a-e8-87-aa-e5-8a-a9-e6-b8-b8-e8-a1-8c-e7-a8-8b/">初步确定东南亚自助游行程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>因为初次出境，所以选了比较近的几个国家（<a href="http://www.ctrip.com/Community/followme/replylist.asp?type=1&amp;writing=2139780" target="_blank" rel="external">缅甸/泰国/柬埔寨/越南</a>）。本来<a href="http://www.ctrip.com/Community/followme/replylist.asp?type=1&amp;writing=2138406" target="_blank" rel="external">很想去埃及</a>，不过只能申请团队签证，让我改变了主意。我还是习惯自助游的形式。考虑到单次签证和多次往返签证的区别，我选择了以满足一次出入境为条件的线路：</p>
+<blockquote>
+<p>云南-〉缅甸-〉泰国-〉柬埔寨-〉越南-〉广西<br>我参查过很多网友的旅游线路，包括在<a href="http://cache.tianya.cn/publicforum/ArticlesList/0/travel.shtml" target="_blank" rel="external">天涯的</a>，<a href="http://www.ctrip.com/Community/qa/qa.asp" target="_blank" rel="external">携程的</a>。这条线路已经有网友走过，觉得应该是可行的。也很感激网友的热心回答。关键是时间问题很难把握，现在到手的时间最少有20天，不知道够不够。目前能做的就是先把越南和泰国的签证拿到，柬埔寨落地签证就可以了。剩下就是缅甸签证了，看来还得去昆明解决。还有一些问题有待解决，先把它list出来：</p>
 </blockquote>
-</li>
-</ol>
-<p>如果是rsa server certificate commonname does not match server name，可以检查一下证书里面的certificate commonname是否与VirtualHost的ServerName一致。</p>
+<p>1、防疫针的问题？有必要吗？在那里打？听说要打最好提前4到6周。<br>2、如果时间不够，是否可以先放弃一些景点？买了本中文的东南亚LP，看看那些地方可以取舍，头大啊！<br>3、有网友说瑞丽到曼德勒包车不如坐飞机，因为花费差不多，而且没那么辛苦。这个问题可能到了昆明才知道如何解决。</p>
+<p>有兴趣的朋友可以与我联系，我的计划时间是5-1 到 5-21（五一长假加年假），我想这是最短时间，如果实在时间不够只有请假拉。<br><strong>:-）</strong></p>
+<p>关于自助旅行经验，我想也有一点点，在国内也去过一些地方，都不是跟团的，除了02年跟家里人去海南，都是背着背包<a href="http://www.zhaiduo.com/?page_id=104" target="_blank" rel="external">到处闲逛</a>。不过算不上驴友，也没户外的经验。能到处看看，感受感受不同地方的人文和风景，已经很满足了。希望这次出游顺利！</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/12/28/apache2-2-wth-openssl-win7/" data-id="cikqzbbw201la2drf0xrkstpi" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/03/19/e5-88-9d-e6-ad-a5-e7-a1-ae-e5-ae-9a-e4-b8-9c-e5-8d-97-e4-ba-9a-e8-87-aa-e5-8a-a9-e6-b8-b8-e8-a1-8c-e7-a8-8b/" data-id="cikr0cqbo019mz5rfh0banmxi" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Apache/">Apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/OpenSSL/">OpenSSL</a></li></ul>
+    </footer>
+  </div>
+  
+</article>
 
+
+  
+    <article id="post-iis-e7-bb-91-e5-ae-9a-e5-9f-9f-e5-90-8d-e5-8a-a0php-e7-a9-ba-e9-97-b4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/03/12/iis-e7-bb-91-e5-ae-9a-e5-9f-9f-e5-90-8d-e5-8a-a0php-e7-a9-ba-e9-97-b4/" class="article-date">
+  <time datetime="2007-03-11T17:20:35.000Z" itemprop="datePublished">2007-03-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/windows/">windows</a>►<a class="article-category-link" href="/zdblog-hexo/categories/windows/安装/">安装</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/03/12/iis-e7-bb-91-e5-ae-9a-e5-9f-9f-e5-90-8d-e5-8a-a0php-e7-a9-ba-e9-97-b4/">IIS绑定域名加PHP空间</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很久没有接触IIS了，帮朋友帮定了一个域名，空间是PHP的，可是网页总显示404找不到文件的错误。试着用index.html试了试，没问题，这才醒悟到空间还没有映射PHP的扩展，之后一切正常。看来还是老了，脑筋不够使啦! 晕，1:11am啦，睡了先。。。 <img src="http://www.zhaiduo.com/wp-content/data/mwsnap026.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/03/12/iis-e7-bb-91-e5-ae-9a-e5-9f-9f-e5-90-8d-e5-8a-a0php-e7-a9-ba-e9-97-b4/" data-id="cikr0cpns00kfz5rfu5ynz0xn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-mysql-server-has-gone-away" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/03/06/mysql-server-has-gone-away/" class="article-date">
+  <time datetime="2007-03-06T13:37:29.000Z" itemprop="datePublished">2007-03-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Mysql/">Mysql</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Mysql/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/03/06/mysql-server-has-gone-away/">MySQL server has gone away</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>有个客户的记录特别长，在导入database的时候出现如下错误：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>mysql -u root -p target_db &lt; target.sql<br>MySQL server has gone away<br>问题出在单个记录长度超过mysql默认设定的长度1024，max_allowed_packet = 1M，加大长度，修改my.cnf问题得以解决：<br>set-variable=max_allowed_packet=32M</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/03/06/mysql-server-has-gone-away/" data-id="cikr0cpjy00g3z5rffqvtpy9y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bb-88-e4-ba-8e-e6-94-b6-e5-88-b0-e4-ba-86-e6-8a-a4-e7-85-a7-ef-bc-8c-e4-b8-8b-e4-b8-80-e6-ad-a5-e6-98-afvisas" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/03/05/e7-bb-88-e4-ba-8e-e6-94-b6-e5-88-b0-e4-ba-86-e6-8a-a4-e7-85-a7-ef-bc-8c-e4-b8-8b-e4-b8-80-e6-ad-a5-e6-98-afvisas/" class="article-date">
+  <time datetime="2007-03-05T13:11:06.000Z" itemprop="datePublished">2007-03-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>►<a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/03/05/e7-bb-88-e4-ba-8e-e6-94-b6-e5-88-b0-e4-ba-86-e6-8a-a4-e7-85-a7-ef-bc-8c-e4-b8-8b-e4-b8-80-e6-ad-a5-e6-98-afvisas/">终于收到了护照，下一步是VISAs</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>趁着过年回家，在出入境管理处把护照办了，200元护照费，27的EMS快递，想不到的是40块的护照照片费。不过欣喜地是从填表到完成，整个过程不过半个小时。因为之前曾经有过一次不愉快的护照申请经历。公安局的签字让我的出国梦整整迟了2年，好在现在政策放宽，不再需要XX的签字。</p>
+<p>剩下来的就是准备和收集资料，计划好地方就可以申请签证了。虽说年岁以快30，但我的愿望却依然强烈。我相信梦想中景象很快就会出现在眼前。下面是广州本地的一些领事馆资料：</p>
+<blockquote>
+<p>丹麦驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=中国大酒店商业大厦" target="_blank" rel="external">中国大酒店商业大厦</a>1578房<br>邮政编码：510015 电 话：86660795 传 真：86670315</p>
+<p>英国驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=环市东路339号广东国际大酒店" target="_blank" rel="external">环市东路339号广东国际大酒店</a>二楼<br>邮政编码：510098 电 话：83336520，83351354-315 传 真：83336485</p>
+<p>澳大利亚驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=环市东路339号广东国际大酒店" target="_blank" rel="external">环市东路339号广东国际大酒店</a>主楼1509房<br>邮政编码：510098 电 话：83355911，83350909 传 真：83350718</p>
+<p>马来西亚驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=天河北路233号，中信广场" target="_blank" rel="external">天河北路233号，中信广场</a>1915-1918房<br>邮政编码：510613 电 话：87395660 ，38770766，38770763 传 真：87395669</p>
+<p>美国驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=沙面南街1号" target="_blank" rel="external">沙面南街1号</a><br>邮政编码：510133 电 话：81218000 传 真：81219001<br>美国驻广州总领事馆领事部（签证业务）<br>电话：85187600(总机) 传真：38844424<br>地址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=天河林和中路天誉花园" target="_blank" rel="external">天河林和中路天誉花园</a>第二期5楼</p>
+<p>法国驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=环市东路339号广东国际大酒店" target="_blank" rel="external">环市东路339号广东国际大酒店</a>801房<br>邮政编码：510098 电 话：83303405 传 真：83311893</p>
+<p>菲律宾驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=环市东路339号广东国际大酒店" target="_blank" rel="external">环市东路339号广东国际大酒店</a>主楼709-711室<br>邮政编码：510098 电 话：83311461、83310996 传 真：83330573</p>
+<p>日本驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=花园酒店花园大厦" target="_blank" rel="external">花园酒店花园大厦</a>1楼<br>邮政编码：510064 电 话：83343009 传 真：83338972</p>
+<p>韩国驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=体育东路羊城国际商贸中心" target="_blank" rel="external">体育东路羊城国际商贸中心</a>西塔18楼<br>电 话：38870555-102 传 真：38870923</p>
+<p>荷兰驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=环市东路339号广东国际大酒店" target="_blank" rel="external">环市东路339号广东国际大酒店</a>705房<br>邮政编码：510098 电 话：83302067-206 传 真：83303601</p>
+<p>波兰驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=沙面大街63号" target="_blank" rel="external">沙面大街63号</a><br>邮政编码：510130 电 话：81219993，81218991 传 真：81219995</p>
+<p>柬埔寨驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=花园酒店花园大厦" target="_blank" rel="external">花园酒店花园大厦</a>8114室<br>邮政编码：510064 电 话：83879005，83338999 传 真：83879006</p>
+<p>意大利驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=天河北路233号中信广场" target="_blank" rel="external">天河北路233号中信广场</a>5207<br>邮政编码：510613 电 话：38770556—7/8/9 传 真：38770270</p>
+<p>德国驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=环市东路339号广东国际大酒店" target="_blank" rel="external">环市东路339号广东国际大酒店</a>19楼<br>邮政编码：510098 电 话：83306533 传 真：83317033</p>
+<p>加拿大驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=中国大酒店商业大厦" target="_blank" rel="external">中国大酒店商业大厦</a>801房<br>邮政编码：510015 电 话：86660569 传 真：86672401</p>
+<p>瑞典驻广州总领事馆<br>馆 址:<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=天河北路233号中信广场" target="_blank" rel="external">天河北路233号中信广场</a>10楼<br>邮 编：510098 电 话：38912383 传 真：38912100</p>
+<p>越南驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=侨光路（海珠广场）华厦大酒店" target="_blank" rel="external">侨光路（海珠广场）华厦大酒店</a>B座二楼北部<br>邮政编码：510115 电 话：83305911，83305910 传 真：83305915</p>
+<p>泰国驻广州总领事馆<br>馆 址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=环市东路368号花园酒店" target="_blank" rel="external">环市东路368号花园酒店</a>2楼M07房（510064）<br>邮政编码：510064 电 话：83804277，83338989 传 真：83889959，83889567</p>
+<p>瑞士驻广州总领事馆<br>地址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=花园酒店" target="_blank" rel="external">花园酒店</a>811－812室<br>邮编：510064 电话：83338999－811/812 传真：83319480</p>
+<p>印度尼西亚驻广州总领事馆<br>地址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=广州东方宾馆" target="_blank" rel="external">东方宾馆</a> 电 话：86018772 传 真：86018773</p>
+<p>芬兰驻广州总领事馆<br>地址:<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=天河北路233号中信广场" target="_blank" rel="external">天河北路233号中信广场</a>3309B－12室<br>邮编：510613 电话：38770188 传真：38770288</p>
+<p>墨西哥驻广州领事馆<br>地址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=天河北路183号大都会广场" target="_blank" rel="external">天河北路183号大都会广场</a>14层02－03<br>邮编：510620 电话：22220981 传真：22221006</p>
+<p>新加坡驻厦门总领事馆广州领事办公室<br>地址：<a href="http://ditu.google.com/maps?hl=zh-CN&amp;q=广州市天河北路233号中信广场" target="_blank" rel="external">广州市天河北路233号中信广场</a>办公楼3318室<br>邮编：510613 电话：020-38912345-22 传真： 020-38912131</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/03/05/e7-bb-88-e4-ba-8e-e6-94-b6-e5-88-b0-e4-ba-86-e6-8a-a4-e7-85-a7-ef-bc-8c-e4-b8-8b-e4-b8-80-e6-ad-a5-e6-98-afvisas/" data-id="cikr0cpxf00wdz5rfi7rwacgt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-php-error-permission-denied-in-unknown-on-line-0" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/03/01/php-error-permission-denied-in-unknown-on-line-0/" class="article-date">
+  <time datetime="2007-03-01T08:19:35.000Z" itemprop="datePublished">2007-03-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>►<a class="article-category-link" href="/zdblog-hexo/categories/PHP/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/03/01/php-error-permission-denied-in-unknown-on-line-0/">PHP Error: Permission denied in Unknown on line 0</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天上传一个脚本到新的服务器，可是却莫名其妙的出现这样的出错：</p>
+<blockquote>
+<p>PHP Warning: Unknown(/<strong>*</strong>/<em>*</em>.php): failed to open stream: Permission denied in Unknown on line 0<br>经过检查，确认没有程序错误。根据错误的提示“Permission denied”，可能是文件权限的问题，于是修改权限为644，问题解决。事后想想，虽然是权限问题，可是这个错误提示也太模糊啦，初的一看，真让人一头雾水，不知道从何下手。很少对PHP提示的出错有些不知所措。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/03/01/php-error-permission-denied-in-unknown-on-line-0/" data-id="cikr0cpik00dzz5rfp3vksskp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bd-91-e9-a1-b5-e4-b8-ad-e7-9b-b4-e6-8e-a5-e5-b5-8c-e5-85-a5-e5-b0-8f-e5-9b-be-e7-89-87-e7-9a-84-e5-8a-9e-e6-b3-95" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/02/13/e7-bd-91-e9-a1-b5-e4-b8-ad-e7-9b-b4-e6-8e-a5-e5-b5-8c-e5-85-a5-e5-b0-8f-e5-9b-be-e7-89-87-e7-9a-84-e5-8a-9e-e6-b3-95/" class="article-date">
+  <time datetime="2007-02-13T04:16:53.000Z" itemprop="datePublished">2007-02-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/技术研究/">技术研究</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/02/13/e7-bd-91-e9-a1-b5-e4-b8-ad-e7-9b-b4-e6-8e-a5-e5-b5-8c-e5-85-a5-e5-b0-8f-e5-9b-be-e7-89-87-e7-9a-84-e5-8a-9e-e6-b3-95/">网页中直接嵌入小图片的办法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>到年底准备给朋友发发贺卡，可是觉得发送HTML页面和贺卡图片太麻烦，记得曾经看到过可以在网页中直接嵌入图片二进制代码，让网页与图片合二为一的简单办法，但是没仔细看，现在翻出来看看。原来根据<a href="http://www.faqs.org/rfcs/rfc2397.html" target="_blank" rel="external">RFC 2397</a>的说明，它们提供了一个在URL中嵌入数据的便捷方案。HTML中的URL可以用一下格式来表达数据：</p>
+<p>data:[<strong>&lt;</strong>mediatype<strong>&gt;</strong>][;base64],<strong>&lt;</strong>data<strong>&gt;</strong></p>
+<p>mediatype表示：文件类型；如：image/gif,image/jpeg,image/png,text/plain等。<br>base64表示后面的data用base64的编码，PHP可以用base64_encode。</p>
+<p>例如：</p>
+<p>&lt; img xsrc= “ data:image/gif;base64,base64编码的数据 “&gt;</p>
+<p>如果需要提到的是，这种方法只是用于标准的浏览器，如FireFox,Opera，IE我试过不行，不知道谁有好的解决办法。另外，data的数据也不宜太长，最好长度在1024以内。</p>
+<p>显示在网页里的效果：</p>
+<iframe width="48" height="48" frameborder="0" marginwidth="0" marginheight="0" src="http://www.zhaiduo.com/wp-content/data/me.html">&amp;amp;lt;/p&amp;amp;gt;</iframe>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/02/13/e7-bd-91-e9-a1-b5-e4-b8-ad-e7-9b-b4-e6-8e-a5-e5-b5-8c-e5-85-a5-e5-b0-8f-e5-9b-be-e7-89-87-e7-9a-84-e5-8a-9e-e6-b3-95/" data-id="cikr0cpw900v1z5rfgk1n7ta8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-powerset-google-e7-bb-88-e7-bb-93-e8-80-85-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/02/10/powerset-google-e7-bb-88-e7-bb-93-e8-80-85-ef-bc-9f/" class="article-date">
+  <time datetime="2007-02-10T03:12:32.000Z" itemprop="datePublished">2007-02-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/搜索时代/">搜索时代</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/02/10/powerset-google-e7-bb-88-e7-bb-93-e8-80-85-ef-bc-9f/">Powerset - Google终结者？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.nytimes.com/2007/02/09/technology/09license.html?_r=1&amp;ref=technology&amp;oref=slogin" target="_blank" rel="external"><strong>纽约时报</strong></a>介绍了一家以自然语言搜索技术为基础的关注于搜索的公司 - <strong>Powerset</strong>。Powerset是一家在硅谷的基于自然语言搜索的创新搜索引擎公司。他们利用自然语言的细微差别和结构组合，开发出的独有的创新的搜索技术，打破了基于关键字搜索的局限，正在构建一个真正的海量的搜索引擎，让搜索结果变得更加自然和直观。它会从根本上改变人们搜索网络的习惯，提供更加高质量的搜索结果。</p>
+<p>虽然目前看来，互联网搜索还是GOogle的天下，但是我们期望更多的搜索公司能和Google竞争，甚至是超越和颠覆。对于我们这些喜欢用搜索的人来说，只有好处没有坏处。每一次颠覆都是人类文明的巨大跨越。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/02/10/powerset-google-e7-bb-88-e7-bb-93-e8-80-85-ef-bc-9f/" data-id="cikr0cphm00d5z5rfg8dkvnjm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-chmod4-e4-bd-8d-e6-95-b0-e5-ad-97-e4-b8-ad-e7-ac-ac-e4-b8-80-e4-bd-8d-e7-9a-84-e5-90-ab-e4-b9-89" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/02/02/chmod4-e4-bd-8d-e6-95-b0-e5-ad-97-e4-b8-ad-e7-ac-ac-e4-b8-80-e4-bd-8d-e7-9a-84-e5-90-ab-e4-b9-89/" class="article-date">
+  <time datetime="2007-02-02T13:25:48.000Z" itemprop="datePublished">2007-02-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Linux-Unix/">Linux/Unix</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Linux-Unix/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/02/02/chmod4-e4-bd-8d-e6-95-b0-e5-ad-97-e4-b8-ad-e7-ac-ac-e4-b8-80-e4-bd-8d-e7-9a-84-e5-90-ab-e4-b9-89/">chmod4位数字中第一位的含义</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Linux/Unix 的系统命令chmod可以用来修改目标的访问权限。权限可以分为三级 : 拥有者(U)、群组(G)、其他(O)。</p>
+<p>如果filename的拥有者是root，那么使用chmod 4755 filename可使此程式具有root的权限来执行这个文件 ，</p>
+<p>ls -l filename 表现为：-rwsr-xr-x</p>
+<p>同理2代表同组。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/02/02/chmod4-e4-bd-8d-e6-95-b0-e5-ad-97-e4-b8-ad-e7-ac-ac-e4-b8-80-e4-bd-8d-e7-9a-84-e5-90-ab-e4-b9-89/" data-id="cikr0cqod01jxz5rf8qvhgj4w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e4-b8-8d-e8-a6-81-e5-86-8d-e7-94-a8php-e7-9a-84-e4-bb-a3-e7-a0-81-e7-ae-80-e5-86-99-e6-96-b9-e5-bc-8f" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/01/25/e4-b8-8d-e8-a6-81-e5-86-8d-e7-94-a8php-e7-9a-84-e4-bb-a3-e7-a0-81-e7-ae-80-e5-86-99-e6-96-b9-e5-bc-8f/" class="article-date">
+  <time datetime="2007-01-25T08:31:05.000Z" itemprop="datePublished">2007-01-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/01/25/e4-b8-8d-e8-a6-81-e5-86-8d-e7-94-a8php-e7-9a-84-e4-bb-a3-e7-a0-81-e7-ae-80-e5-86-99-e6-96-b9-e5-bc-8f/">不要再用PHP的代码简写方式&lt;?=$var?&gt;</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以前看过<a href="http://codex.wordpress.org/WordPress_Coding_Standards" target="_blank" rel="external">WP的代码规范</a>，其中对<strong>No Shorthand PHP</strong>的提示不是很重视，因为偷懒很多代码都用的是简写。最近终于尝到了苦头。PHP5下会出现如下错误：</p>
+<blockquote>
+<p>syntax error, unexpected $end in<br>面对PHP Version 5.1.6，很多代码原本原样的echo出来。看来有些懒还是不能偷的。作为一名php coder，有必要看看<a href="http://pear.php.net/manual/en/standards.php" target="_blank" rel="external">PEAR上的代码规范文档</a>，上面有很多举例。</p>
+</blockquote>
+<p>不过我觉得懒还是有的偷的，可以利用模板原理，自动生成标准规范的PHP代码，不用自己编写的PHP code，只需要编辑模板，这样就不用不厌其烦的敲入 <strong>&lt; ? PHP</strong>  啦。熟悉discuz的朋友应该知道，他的模板就是类似的应用。例如：</p>
+<p>模板写法：{if(条件) echo 结果}</p>
+<p>自动转换后： &lt; ? php if(条件) echo 结果; ?&gt;</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/01/25/e4-b8-8d-e8-a6-81-e5-86-8d-e7-94-a8php-e7-9a-84-e4-bb-a3-e7-a0-81-e7-ae-80-e5-86-99-e6-96-b9-e5-bc-8f/" data-id="cikr0cqky01h2z5rf2sszawi4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/short-tags/">short tags</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/unexpected-end/">unexpected $end</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-lonely-planet-e6-97-85-e8-a1-8c-e6-8c-87-e5-8d-97-e5-85-a8-e7-90-83-e6-97-85-e8-a1-8c-e8-80-85-e7-9a-84-e9-a6-96-e9-80-89" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/01/17/lonely-planet-e6-97-85-e8-a1-8c-e6-8c-87-e5-8d-97-e5-85-a8-e7-90-83-e6-97-85-e8-a1-8c-e8-80-85-e7-9a-84-e9-a6-96-e9-80-89/" class="article-date">
+  <time datetime="2007-01-17T13:09:48.000Z" itemprop="datePublished">2007-01-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/自助游/">自助游</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/01/17/lonely-planet-e6-97-85-e8-a1-8c-e6-8c-87-e5-8d-97-e5-85-a8-e7-90-83-e6-97-85-e8-a1-8c-e8-80-85-e7-9a-84-e9-a6-96-e9-80-89/">Lonely Planet旅行指南 - 全球旅行者的首选</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.zhaiduo.com/go/LP/" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/data/lp.jpg" alt="lp.jpg"><br>Lonely Planet 旅行指南系列 92折封顶！ </a></p>
+<p>“Lonely Planet旅行指南系列”，来自世界上最成功的独立旅行信息提供商Lonely Planet出版公司。30多年来，他们一直为旅行者提供独立、翔实、可信的旅行建议。他们出版的旅行指南因其无可比拟的权威性和独一无二的态度而成为各国旅行者的首选。</p>
+<p>为什么叫Lonely Planet？</p>
+<p>这个名字来自一首歌曲“Space Captain”, 歌中的原词本来是“Lovely Planet”，但托尼·惠勒听成了“Lonely Planet”。他喜欢这个美丽的错误，并坚持用了这个后来成为传奇的名字。</p>
+<p>数字Lonely Planet</p>
+<p>3：墨尔本，伦敦，旧金山三个办事处10：10 种语言出版旅行指南<br>20：20 个产品系列<br>32：创立32 年<br>300：每周在全球各大媒体出现300 次<br>350：来自20 个国家的350 名旅行者在全球各地为我们创作<br>400：全球400余名员工<br>600：600多个目的地（包括南极）的旅行指南，遍及世界</p>
+<p>媒体评语：<br>“世界旅行图书的领导者”。<br>——《时代周刊》<br>“对旅行者来说是个可以信任的伙伴”<br>——《纽约时报》<br>“对于充满好奇心和独立思想的旅行者而言，Lonely Planet是最佳选择。”<br>——《华尔街日报》<br>“牙刷，护照，防晒霜，Lonely Planet……”<br>——路透社</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/01/17/lonely-planet-e6-97-85-e8-a1-8c-e6-8c-87-e5-8d-97-e5-85-a8-e7-90-83-e6-97-85-e8-a1-8c-e8-80-85-e7-9a-84-e9-a6-96-e9-80-89/" data-id="cikr0cple00i0z5rfz3zsqlks" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-php-post-error-forbidden-you-dont-have-permission-to-access" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/01/08/php-post-error-forbidden-you-dont-have-permission-to-access/" class="article-date">
+  <time datetime="2007-01-08T04:16:16.000Z" itemprop="datePublished">2007-01-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/01/08/php-post-error-forbidden-you-dont-have-permission-to-access/">PHP post error: Forbidden - You don&#39;t have permission to access</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When we post a form with PHP, some errors maybe return, such as: 500 SERVER Error, or:</p>
+<blockquote>
+<p></p><p align="left">Forbidden<br>You don’t have permission to access /post.php on this server.Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.<br>Here are some explains may help:<br>We had installed a software to block attack against the web-server which caused the trouble for you.We have tweaked that to allow the URL format.<br>A similar reason same as the above explain, they will redirect your post, when your post includes some “security” words, such as: “inc”,”curl”.</p>
+</blockquote>
+<p>Further more optional reasons:</p>
+<blockquote>
+<p>In the control panel of hosting, the PHP scripts doesn’t need special permissions, but mod_php is configured in safe mode, so if I need PHP-CGI scripts or applications that install something, You need permissions (770). Besides, need to create a .htaccess file with the command: Options ExecCGI.<br>mod_security:<br>ModSecurityTM is an open source intrusion detection and prevention engine for web applications (or a web application firewall). Operating as an Apache Web server module or standalone, the purpose of ModSecurity is to increase web application security, protecting web applications from known and unknown attacks.</p>
+<p>While mod_security can be a very powerful tool, misconfigured or overly strict rule sets can interfere with vBulletins Operation. Below for Apache users you can use an htaccess file and add a specific rule to disable mod_security.</p>
+<p>Make or edit your forum .htaccess file and add the following code<br>Code:</p>
+<p>&lt; IfModule mod_security.c &gt;<br>SecFilterEngine Off<br>SecFilterScanPOST Off<br>&lt; /IfModule&gt;<br>or<br>&lt; IfModule mod_security.c&gt;<br>SecFilterInheritance Off<br>&lt; /IfModule&gt;</p>
+</blockquote>
+<h2 id="place-this-file-in-your-problem-directory"><a href="#place-this-file-in-your-problem-directory" class="headerlink" title="place this file in your problem directory."></a>place this file in your problem directory.</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/01/08/php-post-error-forbidden-you-dont-have-permission-to-access/" data-id="cikr0cpie00dsz5rfyzf16r3l" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/出错/">出错</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-js-e7-89-88wma-e7-9a-84media-player-e6-92-ad-e6-94-be-e5-99-a8-e6-8f-92-e4-bb-b6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2007/01/02/js-e7-89-88wma-e7-9a-84media-player-e6-92-ad-e6-94-be-e5-99-a8-e6-8f-92-e4-bb-b6/" class="article-date">
+  <time datetime="2007-01-02T06:19:46.000Z" itemprop="datePublished">2007-01-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/javascript/">javascript</a>►<a class="article-category-link" href="/zdblog-hexo/categories/javascript/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2007/01/02/js-e7-89-88wma-e7-9a-84media-player-e6-92-ad-e6-94-be-e5-99-a8-e6-8f-92-e4-bb-b6/">Js版WMA的media player播放器插件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在网页中快速插入音乐播放器，可以很方便的在博客中引用好听的wma音乐。主要javascript代码如下：</p>
+<blockquote>
+<p>var url=””;<br>var url_string=document.location.href;var re = new RegExp(“url=(.+)”,”ig”);<br>var arr = re.exec(url_string);var mString=RegExp.$1;<br>if(mString.match(/^<a href="http:///i" target="_blank" rel="external">http:///i</a>) &amp;&amp; mString.match(/.wma$/i)){url=mString;}<br>var width=350;var height=68;</p>
+<p>然后write media player播放器的code…你可以自行替换wma，从而可以播放其他格式的音乐文件，如：mp3。<br>点击查看wmaplayer.html的内容：<a href="http://www.zhaiduo.com/wp-content/data/mediaplayer.html" target="_blank" rel="external">wmaplayer.html</a></p>
+<iframe width="350" height="68" frameborder="0" marginwidth="0" marginheight="0" src="http://www.zhaiduo.com/wp-content/data/mediaplayer.html?url=http://fs9.139.com/0/438/andy258/share/200651921811230.wma"> </iframe>
+
+</blockquote>
+<p>引用方法: <font color="red"><br>《iframe width=”350” height=”68” frameborder=”0” marginwidth=”0” marginheight=”0” xsrc=”<a href="http://www.zhaiduo.com/wp-content/data/mediaplayer.html?url=wma文件地址&quot;》" target="_blank" rel="external">http://www.zhaiduo.com/wp-content/data/mediaplayer.html?url=wma文件地址&quot;》</a> 《/iframe》</font></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2007/01/02/js-e7-89-88wma-e7-9a-84media-player-e6-92-ad-e6-94-be-e5-99-a8-e6-8f-92-e4-bb-b6/" data-id="cikr0cplu00ilz5rfshr9imq3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e8-ae-b8-e5-a4-9a-e7-a4-be-e5-8c-ba-e4-bd-bf-e7-94-a8-e7-9a-84flash-e5-9b-be-e7-89-87-e5-b1-95-e7-a4-ba-e5-b0-8f-e6-8f-92-e4-bb-b6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2006/12/29/e8-ae-b8-e5-a4-9a-e7-a4-be-e5-8c-ba-e4-bd-bf-e7-94-a8-e7-9a-84flash-e5-9b-be-e7-89-87-e5-b1-95-e7-a4-ba-e5-b0-8f-e6-8f-92-e4-bb-b6/" class="article-date">
+  <time datetime="2006-12-29T10:57:38.000Z" itemprop="datePublished">2006-12-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Flash/">Flash</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Flash/javascript/">javascript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2006/12/29/e8-ae-b8-e5-a4-9a-e7-a4-be-e5-8c-ba-e4-bd-bf-e7-94-a8-e7-9a-84flash-e5-9b-be-e7-89-87-e5-b1-95-e7-a4-ba-e5-b0-8f-e6-8f-92-e4-bb-b6/">许多社区使用的flash图片展示小插件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这是个在许多社区首页都能看到的flash图片展示小插件，有朋友要，就把它整理了出来。<br>打包下载连接在<a href="http://www.zhaiduo.com/wp-content/data/swfer.rar" target="_blank" rel="external">这里</a>，需要的朋友另存，然后修改图片以及图片的路径就可以了。</p>
+<iframe width="350" height="200" frameborder="0" marginheight="0" marginwidth="0" src="http://www.zhaiduo.com/wp-content/data/swf_pic.html"> </iframe>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2006/12/29/e8-ae-b8-e5-a4-9a-e7-a4-be-e5-8c-ba-e4-bd-bf-e7-94-a8-e7-9a-84flash-e5-9b-be-e7-89-87-e5-b1-95-e7-a4-ba-e5-b0-8f-e6-8f-92-e4-bb-b6/" data-id="cikr0cpux00tnz5rf8n1i8ddm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-picasa-e7-bd-91-e7-bb-9c-e7-9b-b8-e5-86-8c-e6-b5-8b-e8-af-95" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2006/12/22/picasa-e7-bd-91-e7-bb-9c-e7-9b-b8-e5-86-8c-e6-b5-8b-e8-af-95/" class="article-date">
+  <time datetime="2006-12-22T05:27:20.000Z" itemprop="datePublished">2006-12-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/轻松一刻/">轻松一刻</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2006/12/22/picasa-e7-bd-91-e7-bb-9c-e7-9b-b8-e5-86-8c-e6-b5-8b-e8-af-95/">Picasa网络相册测试</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div style="text-align:center;width:194px;font-family:arial,sans-serif;font-size:83%"><br><div style="height:194px;background:url(http://picasaweb.google.com/f/img/transparent_album_background.gif) no-repeat left"><a href="http://picasaweb.google.com/zhaiduo/Money02" target="_blank" rel="external"><img src="http://lh6.google.com/image/zhaiduo/RYtoWTFWlME/AAAAAAAAAYU/MCBw-ThlxV4/s160-c/Money02.jpg" alt=""></a></div>
+
+<p>[</p>
+<div style="color:#4D4D4D;font-weight:bold;text-decoration:none;">money</div>
+
+<p>](<a href="http://picasaweb.google.com/zhaiduo/Money02" target="_blank" rel="external">http://picasaweb.google.com/zhaiduo/Money02</a>)</p>
+<div style="color:#808080"></div><br></div>
+
+<p>Picasa终于有了网络相册，是用了一下，感觉比Flickr快多了，上传图片到<a href="http://picasaweb.google.com/zhaiduo" target="_blank" rel="external">网上</a>也非常快。不错的软件！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2006/12/22/picasa-e7-bd-91-e7-bb-9c-e7-9b-b8-e5-86-8c-e6-b5-8b-e8-af-95/" data-id="cikr0cpho00d7z5rfy11arx6p" class="article-share-link">Share</a>
+      
+      
     </footer>
   </div>
   
@@ -538,7 +1471,7 @@
 
 
   <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/zdblog-hexo/page/13/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/12/">12</a><a class="page-number" href="/zdblog-hexo/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/zdblog-hexo/page/15/">15</a><a class="page-number" href="/zdblog-hexo/page/16/">16</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/47/">47</a><a class="extend next" rel="next" href="/zdblog-hexo/page/15/">__('next') &raquo;</a>
+    <a class="extend prev" rel="prev" href="/zdblog-hexo/page/13/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/12/">12</a><a class="page-number" href="/zdblog-hexo/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/zdblog-hexo/page/15/">15</a><a class="page-number" href="/zdblog-hexo/page/16/">16</a><a class="extend next" rel="next" href="/zdblog-hexo/page/15/">__('next') &raquo;</a>
   </nav>
 </section>
         

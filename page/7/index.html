@@ -68,259 +68,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-e6-a0-b7-e5-bc-8f-e8-a1-a8div-margin-e6-97-a0-e6-b3-95-e5-b1-85-e4-b8-ad-e7-9a-84-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e5-b1-80-e5-9f-9f-e7-bd-91-e5-8f-af-e4-bb-a5-e4-b8-8a-ef-bc-8c-e4-bd-86-e6-98-af-e6-97-a0-e6-b3-95ping-e9-80-9a-e7-bd-91-e5-85-b3-e7-9a-84-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/31/e6-a0-b7-e5-bc-8f-e8-a1-a8div-margin-e6-97-a0-e6-b3-95-e5-b1-85-e4-b8-ad-e7-9a-84-e9-97-ae-e9-a2-98/" class="article-date">
-  <time datetime="2012-07-30T16:48:42.000Z" itemprop="datePublished">2012-07-31</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/CSS/">CSS</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/31/e6-a0-b7-e5-bc-8f-e8-a1-a8div-margin-e6-97-a0-e6-b3-95-e5-b1-85-e4-b8-ad-e7-9a-84-e9-97-ae-e9-a2-98/">样式表DIV Margin无法居中的问题</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近在为客户把PSD文件转成网页，可是基本样式已经确定了后，客户又要求加入Bootstrap框架，提供bootstrap.css，网页样式需要包括新旧三方CSS样式，在新旧样式夹杂的情况下，状况百出，有些哭笑不得。</p>
-<p>旧的网页还在用xhtml1-transitional，却又偏偏夹杂着洋气的bootstrap。姑且我们不看Firefox13下bootstrap.css里面造成的密密麻麻的CSS样式警告。仅仅是在DIV居中的定义上，已经让我大跌眼镜。有个独立的DIV，作为container容器，需要固定宽度居中显示，懂点CSS的人都知道用margin:0 auto;就可以搞定。可就在新旧样式的夹杂下，Firefox、Chrome、IE8却偏偏不是固定宽度居中，而是100%显示。搞笑的是IE6和IE7却很配合，乖乖得居中。最后不得不在DIV前多加一个clear:both才解决了问题。</p>
-<p>关于：bootstrap.css里面造成的密密麻麻的CSS样式。我发现大部分是“未知属性 ‘-moz-border-radius’。  声明被丢弃。”错误。<br>根据<a href="http://forums.mozillazine.org/viewtopic.php?f=9&amp;t=2485853" target="_blank" rel="external">这里</a>的解释：Freifox4以后Firefox支持直接border-radius和box-shadow的定义，而不再需要使用“-moz”。</p>
-<p>Bootstrap是个很好的前端框架，美观、规范，可以让人学习到前端制作需要掌握和注意的方方面面。但是就这样草草率率的将Bootstrap揉进现有的网页，确实有欠考虑。用它之前还是多去<a href="https://github.com/twitter/bootstrap/" target="_blank" rel="external">了解它</a>。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/31/e6-a0-b7-e5-bc-8f-e8-a1-a8div-margin-e6-97-a0-e6-b3-95-e5-b1-85-e4-b8-ad-e7-9a-84-e9-97-ae-e9-a2-98/" data-id="cikqzbb7h01122drfe04xn8af" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/bootstrap/">bootstrap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-curl-put-file-e7-9a-84content-length-e9-87-8d-e5-a4-8d-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/28/curl-put-file-e7-9a-84content-length-e9-87-8d-e5-a4-8d-e9-97-ae-e9-a2-98/" class="article-date">
-  <time datetime="2012-07-27T16:39:42.000Z" itemprop="datePublished">2012-07-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/28/curl-put-file-e7-9a-84content-length-e9-87-8d-e5-a4-8d-e9-97-ae-e9-a2-98/">Curl PUT FILE的content-length重复问题</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>昨天用Dropbox OAuth API写PHP接口的时候遇到十分诡异的问题。Curl的request header里居然有两个重复一样的content-length：</p>
-<blockquote>
-<p>Content-length: 4288<br>Content-Length: 4288<br>API返回了错误:<br>Error (4xx)<br>We can’t find the page you’re looking for. Check out our Help Center and forums for help, or head back to home.<br>我很确定header数组里面只有一个Content-length，第二个Content-Length的L是大写，貌似是系统自动加上的。<br>如果不用Content-length，API会返回”HTTP Error 411 Length required”的错误。</p>
-</blockquote>
-<p>由于找不到合理的解释，只能用个trick，删除一个Content-length了事：</p>
-<blockquote>
-<p>curl_setopt($ch, CURLOPT_HTTPHEADER, array(‘Content-Length: ‘));</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/28/curl-put-file-e7-9a-84content-length-e9-87-8d-e5-a4-8d-e9-97-ae-e9-a2-98/" data-id="cikqzbbsh01if2drf405ng11z" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/API/">API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Dropbox/">Dropbox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/OAuth/">OAuth</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e8-b0-b7-e6-ad-8cadsense-e5-b9-bf-e5-91-8a-e6-a0-b9-e6-8d-ae-e7-bd-91-e9-a1-b5-e8-89-b2-e8-b0-83-e6-98-be-e7-a4-ba-e5-b9-bf-e5-91-8a" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/22/e8-b0-b7-e6-ad-8cadsense-e5-b9-bf-e5-91-8a-e6-a0-b9-e6-8d-ae-e7-bd-91-e9-a1-b5-e8-89-b2-e8-b0-83-e6-98-be-e7-a4-ba-e5-b9-bf-e5-91-8a/" class="article-date">
-  <time datetime="2012-07-22T10:44:55.000Z" itemprop="datePublished">2012-07-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/22/e8-b0-b7-e6-ad-8cadsense-e5-b9-bf-e5-91-8a-e6-a0-b9-e6-8d-ae-e7-bd-91-e9-a1-b5-e8-89-b2-e8-b0-83-e6-98-be-e7-a4-ba-e5-b9-bf-e5-91-8a/">谷歌Adsense广告根据网页色调显示广告?</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天在博客上看到一个有趣的现象，首页三个谷歌广告的颜色都出奇的相似，而且整个广告色调和我的页面色调一致，看起来很是舒服。</p>
-<p>不由的想到：难道是谷歌会根据网页色调来选择展示不同的广告？</p>
-<p>从技术上想，谷歌的相似图片搜索已经很成熟，用来匹配Adsense广告也不是问题。但是，在网上却找不到可以证实我这个猜想的资料。</p>
-<p>如果谷歌真的在使用这种根据色调展示广告的技术，那真是太专业了～。从SEO优化的角度讲，我们可以调整网页整体颜色，达到某种更佳的广告效应。这种在视觉上的优化可以说是广告优化的进一步深入，对广告受众心理的进一步揣摩。</p>
-<p><a href="http://www.zhaiduo.com/2012/07/%e8%b0%b7%e6%ad%8cadsense%e5%b9%bf%e5%91%8a%e6%a0%b9%e6%8d%ae%e7%bd%91%e9%a1%b5%e8%89%b2%e8%b0%83%e6%98%be%e7%a4%ba%e5%b9%bf%e5%91%8a/same_color_adsense_with_sam/" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2012/07/same_color_adsense_with_sam.jpg" alt="" title="same color adsense ads with same color webpage"></a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/22/e8-b0-b7-e6-ad-8cadsense-e5-b9-bf-e5-91-8a-e6-a0-b9-e6-8d-ae-e7-bd-91-e9-a1-b5-e8-89-b2-e8-b0-83-e6-98-be-e7-a4-ba-e5-b9-bf-e5-91-8a/" data-id="cikqzbb0200sw2drf3siddw88" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/SEO/">SEO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/adsense/">adsense</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/google/">google</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/视觉/">视觉</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e4-bc-81-e4-b8-9a-e7-bd-91-e7-ab-99-e5-ae-9a-e5-88-b6-e7-9a-84-e5-a5-bd-e5-a4-84" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/21/e4-bc-81-e4-b8-9a-e7-bd-91-e7-ab-99-e5-ae-9a-e5-88-b6-e7-9a-84-e5-a5-bd-e5-a4-84/" class="article-date">
-  <time datetime="2012-07-21T14:08:12.000Z" itemprop="datePublished">2012-07-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/网站定制/">网站定制</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/21/e4-bc-81-e4-b8-9a-e7-bd-91-e7-ab-99-e5-ae-9a-e5-88-b6-e7-9a-84-e5-a5-bd-e5-a4-84/">企业网站定制的好处</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>现今网上流行的网站内容管理系统(CMS)众多，如PHP的国外有：magento, zencart, joomla, drupal, xoops, typos, wordpress等，国内：dede和帝国等。而不少企业也选择了用这些流行的CMS程序来建站。虽然流行的CMS程序有技术、界面、易用性和安装的优势。但是和自己定制网站来比，还是有很多不足：</p>
-<ul>
-<li>CMS功能多而繁杂，企业往往用不上，甚至造成服务器资源浪费，增加了管理和维护成本</li>
-<li>精通某个流行CMS程序员的不多、不好找，能把系统改造的得体很不容易</li>
-<li>界面太多雷同，个性化成本也不低，比如界面的修改和SEO的优化</li>
-<li><p>安全性低，这类CMS多为开源系统，容易被黑客利用<br>而企业定制网站却有如下优势：</p>
-</li>
-<li><p>定制系统完全由程序员自己开发，对系统非常熟悉，修改、维护都很便利和快捷</p>
-</li>
-<li>网站后期管理、维护成本很便宜</li>
-<li>程序未开源，相对公开的漏洞较少，不易被攻击</li>
-<li><p>定制可以从非常细节、底层的地方开始，按客户意愿来实现。成本远低于重新翻修流行的CMS。<br>但是，定制网站也有如下劣势：</p>
-</li>
-<li><p>网站首期开发成本较高</p>
-</li>
-<li>对开发人员有依赖性</li>
-<li>系统性能不及流行的CMS<br>当然，企业完全可以根据自身的情况选择适合自己的建站方式，做到建站效率和利益的最大化。这才是企业建站的最终需求。</li>
-</ul>
-<p>&nbsp;</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/21/e4-bc-81-e4-b8-9a-e7-bd-91-e7-ab-99-e5-ae-9a-e5-88-b6-e7-9a-84-e5-a5-bd-e5-a4-84/" data-id="cikqzbbnr01ex2drfd8xm3bk3" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/企业建站/">企业建站</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e5-85-b3-e4-ba-8e-e5-9c-a8-e5-bb-ba-e8-a1-8c-e6-8e-a5-e5-8f-97-e5-9b-bd-e5-a4-96-e6-b1-87-e6-ac-be" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/21/e5-85-b3-e4-ba-8e-e5-9c-a8-e5-bb-ba-e8-a1-8c-e6-8e-a5-e5-8f-97-e5-9b-bd-e5-a4-96-e6-b1-87-e6-ac-be/" class="article-date">
-  <time datetime="2012-07-21T12:40:59.000Z" itemprop="datePublished">2012-07-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/赚钱/">赚钱</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/21/e5-85-b3-e4-ba-8e-e5-9c-a8-e5-bb-ba-e8-a1-8c-e6-8e-a5-e5-8f-97-e5-9b-bd-e5-a4-96-e6-b1-87-e6-ac-be/">关于在建行接受国外汇款</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>以前只是接受过支票和西联的海外汇款，支票时间长，手续费也不低。西联很快，而且不用钱。最近要接受一笔美国对建行的直接汇款，我以为很复杂，其实也挺简单。收款前，对方是BOA(美国银行)的卡，让我提供如下资料才能汇款：</p>
-<p>银行名称 CHINA CONSTRUCTION BANK<br>开户行地址  China Construction Bank XX Branch XXX Subbranch<br>Routing Number: 这个没有<br>Account Number: 卡号<br>SWIFT Number: SWIFT码(国际电汇码)<br>户名：姓名</p>
-<p>在建行的国际部可要求打印该行的SWIFT码和地址，但是并没有Routing Number。收到钱后确认，Routing Number确实没用。而且很快一天就到账。另外在外汇用途的申报上，最好就说家用，免得横生枝节。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/21/e5-85-b3-e4-ba-8e-e5-9c-a8-e5-bb-ba-e8-a1-8c-e6-8e-a5-e5-8f-97-e5-9b-bd-e5-a4-96-e6-b1-87-e6-ac-be/" data-id="cikqzbblx01dd2drf4kf9imls" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/收款/">收款</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/美元/">美元</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e5-85-b3-e4-ba-8e-e7-a1-ac-e7-9b-98-e6-8d-9f-e5-9d-8f-e7-9a-84-e4-bf-ae-e5-a4-8d" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/21/e5-85-b3-e4-ba-8e-e7-a1-ac-e7-9b-98-e6-8d-9f-e5-9d-8f-e7-9a-84-e4-bf-ae-e5-a4-8d/" class="article-date">
-  <time datetime="2012-07-20T18:13:39.000Z" itemprop="datePublished">2012-07-21</time>
+    <a href="/zdblog-hexo/2010/08/06/e5-b1-80-e5-9f-9f-e7-bd-91-e5-8f-af-e4-bb-a5-e4-b8-8a-ef-bc-8c-e4-bd-86-e6-98-af-e6-97-a0-e6-b3-95ping-e9-80-9a-e7-bd-91-e5-85-b3-e7-9a-84-e9-97-ae-e9-a2-98/" class="article-date">
+  <time datetime="2010-08-06T05:55:17.000Z" itemprop="datePublished">2010-08-06</time>
 </a>
     
   <div class="article-category">
@@ -335,7 +86,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/21/e5-85-b3-e4-ba-8e-e7-a1-ac-e7-9b-98-e6-8d-9f-e5-9d-8f-e7-9a-84-e4-bf-ae-e5-a4-8d/">关于硬盘损坏的修复</a>
+      <a class="article-title" href="/zdblog-hexo/2010/08/06/e5-b1-80-e5-9f-9f-e7-bd-91-e5-8f-af-e4-bb-a5-e4-b8-8a-ef-bc-8c-e4-bd-86-e6-98-af-e6-97-a0-e6-b3-95ping-e9-80-9a-e7-bd-91-e5-85-b3-e7-9a-84-e9-97-ae-e9-a2-98/">局域网可以上，但是无法ping通网关的问题</a>
     </h1>
   
 
@@ -343,15 +94,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>家里有两块旧的80G硬盘，用来当作备份。可是其中一块做启动盘，坏掉了，开机都不行，显示“Disk Error.”。<br>我尝试着用老毛桃USB启动盘里的硬盘扫描修复工具，均告失败。硬盘扫描的坏区也越少越多，赶紧把还能访问的分区资料备份出来。<br>多次扫描发现，80G的前20G已经无法使用，于是用分区工具删除了所有分区。<br>然后我试着写入新的MBR，成功，但是用Windows磁盘管理的分区功能是提示“一个未知错误”，分区失败。<br>接着换了老毛桃USB启动盘里的分区工具，把C盘20G划出来，但是不格式化，剩下的都做D盘（作为主分区），格式化居然成功。<br>最后把Ghost备份的系统盘还原到D盘，久违的Windows终于回来了。不过对于有伤的硬盘，使用的时候要多个心眼了。</p>
+        <p>公司再次出现一台电脑无法上网的问题。电脑为固定IP，指向固定网关和固定DNS。问题是突然出现的，但是局域网内部电脑和内部网站都可以正常访问。ping网关显示timeout，其他都正常。很怪异的现象，可疑的操作只有用过U盘。</p>
+<p>Windows事件有如下错误：<br>Time Provider NtpClient: An error occurred during DNS lookup of the manually configured peer ‘time.windows.com,0x1’. NtpClient will try the DNS lookup again in 15 minutes. The error was: A socket operation was attempted to an unreachable host. (0x80072751)</p>
+<p>试了很多办法都不行，杀毒，打开360的arp防火墙，arp -d，重设IP，绑定static MAC地址，winsocket fix，删除注册表winsock和winsock2，重装TCP/IP，甚至重装系统。</p>
+<p>最终买了块新的网卡，问题解决。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/21/e5-85-b3-e4-ba-8e-e7-a1-ac-e7-9b-98-e6-8d-9f-e5-9d-8f-e7-9a-84-e4-bf-ae-e5-a4-8d/" data-id="cikqzbblc01cy2drfrfn1y7gn" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/08/06/e5-b1-80-e5-9f-9f-e7-bd-91-e5-8f-af-e4-bb-a5-e4-b8-8a-ef-bc-8c-e4-bd-86-e6-98-af-e6-97-a0-e6-b3-95ping-e9-80-9a-e7-bd-91-e5-85-b3-e7-9a-84-e9-97-ae-e9-a2-98/" data-id="cikr0cq7g0161z5rff7sfst0s" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/故障/">故障</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/硬盘/">硬盘</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/无法上网/">无法上网</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
 
     </footer>
   </div>
@@ -360,14 +114,14 @@
 
 
   
-    <article id="post-safari-e7-a7-bb-e5-8a-a8-e7-89-88text-input-e7-9a-84-e5-8d-8a-e9-80-8f-e6-98-8e-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-google-e5-ae-a3-e5-b8-83-e5-81-9c-e6-ad-a2-e7-a0-94-e5-8f-91google-wave-e5-b9-b3-e5-8f-b0" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/15/safari-e7-a7-bb-e5-8a-a8-e7-89-88text-input-e7-9a-84-e5-8d-8a-e9-80-8f-e6-98-8e-e9-97-ae-e9-a2-98/" class="article-date">
-  <time datetime="2012-07-15T15:42:10.000Z" itemprop="datePublished">2012-07-15</time>
+    <a href="/zdblog-hexo/2010/08/06/google-e5-ae-a3-e5-b8-83-e5-81-9c-e6-ad-a2-e7-a0-94-e5-8f-91google-wave-e5-b9-b3-e5-8f-b0/" class="article-date">
+  <time datetime="2010-08-05T16:40:26.000Z" itemprop="datePublished">2010-08-06</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/MAC/">MAC</a>►<a class="article-category-link" href="/zdblog-hexo/categories/MAC/浏览器/">浏览器</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>
   </div>
 
   </div>
@@ -378,7 +132,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/15/safari-e7-a7-bb-e5-8a-a8-e7-89-88text-input-e7-9a-84-e5-8d-8a-e9-80-8f-e6-98-8e-e9-97-ae-e9-a2-98/">Safari移动版Text Input的半透明问题</a>
+      <a class="article-title" href="/zdblog-hexo/2010/08/06/google-e5-ae-a3-e5-b8-83-e5-81-9c-e6-ad-a2-e7-a0-94-e5-8f-91google-wave-e5-b9-b3-e5-8f-b0/">Google宣布停止研发Google Wave平台</a>
     </h1>
   
 
@@ -386,16 +140,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="http://www.zhaiduo.com/2012/07/safari%e7%a7%bb%e5%8a%a8%e7%89%88text-input%e7%9a%84%e5%8d%8a%e9%80%8f%e6%98%8e%e9%97%ae%e9%a2%98/safari_disabled_problem/" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2012/07/safari_disabled_problem.jpg" alt="" title="safari_disabled_problem"></a><br>在测试给搜索加上下拉菜单的时候，发现移动版的Safari浏览器(iPad和iPod)对disabled的Text input显示为半透明，而Mac版和Win版的Safari均无问题，而且其它浏览器也显示正常。经测试，取消掉disabled=”disabled”，Text input恢复正常。</p>
+        <p>(翻译自<a href="http://googlesystem.blogspot.com/2010/08/google-wave-to-be-discontinued.html" target="_blank" rel="external">Google Operating System</a>)<br>Google宣布<a href="http://googleblog.blogspot.com/2010/08/update-on-google-wave.html" target="_blank" rel="external">停止研发创新的交流平台Google Wave</a>，原因是Wave没有受到Google期望的那么受欢迎。他们也表示不再继续把Wave平台开发成独立平台，但是平台的维护将会维持到今年年底，并将把Wave使用的技术应用到其它平台。Wave的核心代码已经公开，欢迎大家继续把它发扬光大。</p>
+<p>Google Wave有很多有趣的功能，但是它的接口太让人迷惑和难以使用。许多人也认为Wave是Email的另外一个版本，它是一个结合了在线的文档编辑器的实时聊天工具。Wave允许你创建实时的文档，同时可以多人实时协作编辑，可以说是沟通版的Google Docs。Wave的开发基于公开的协议，所以可以把Wave集成到多种应用服务中。而且它是可扩展的，你可以创建子自己的小应用和机器人。</p>
+<p>Google Wave有很多潜能，但是Google却没能够使它产生令人瞩目的用户体验，也没有开发出一些具体的应用实例。而仅仅是推出了一个公共接口，并把它新版的Google Chat和Google Docs。很明显Google并不准备在这个小应用上继续投入，按照Eric Schmidt的话说就是：“我们想做能够影响大多数人的事情”。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/15/safari-e7-a7-bb-e5-8a-a8-e7-89-88text-input-e7-9a-84-e5-8d-8a-e9-80-8f-e6-98-8e-e9-97-ae-e9-a2-98/" data-id="cikqzbam300ay2drfne8vcwi8" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/08/06/google-e5-ae-a3-e5-b8-83-e5-81-9c-e6-ad-a2-e7-a0-94-e5-8f-91google-wave-e5-b9-b3-e5-8f-b0/" data-id="cikr0cpqb00nsz5rfvjs48ehn" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/iPhone/">iPhone</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/iPod/">iPod</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/前端技术/">前端技术</a></li></ul>
-
     </footer>
   </div>
   
@@ -403,14 +157,14 @@
 
 
   
-    <article id="post-e7-8e-b0-e5-9c-a8-e7-9a-84-e5-b9-b4-e8-bd-bb-e4-ba-ba-e8-82-bf-e4-b9-88-e5-91-a2-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e9-98-85-e8-af-bb-e5-88-86-e4-ba-ab-20100803" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/09/e7-8e-b0-e5-9c-a8-e7-9a-84-e5-b9-b4-e8-bd-bb-e4-ba-ba-e8-82-bf-e4-b9-88-e5-91-a2-ef-bc-9f/" class="article-date">
-  <time datetime="2012-07-09T13:25:16.000Z" itemprop="datePublished">2012-07-09</time>
+    <a href="/zdblog-hexo/2010/08/04/e9-98-85-e8-af-bb-e5-88-86-e4-ba-ab-20100803/" class="article-date">
+  <time datetime="2010-08-03T16:13:45.000Z" itemprop="datePublished">2010-08-04</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/分享/">分享</a>
   </div>
 
   </div>
@@ -421,7 +175,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/09/e7-8e-b0-e5-9c-a8-e7-9a-84-e5-b9-b4-e8-bd-bb-e4-ba-ba-e8-82-bf-e4-b9-88-e5-91-a2-ef-bc-9f/">现在的年轻人肿么呢？</a>
+      <a class="article-title" href="/zdblog-hexo/2010/08/04/e9-98-85-e8-af-bb-e5-88-86-e4-ba-ab-20100803/">阅读分享 - 20100803</a>
     </h1>
   
 
@@ -429,25 +183,71 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>现在的年轻人肿么呢？为什么总把自己的问题认为是别人的问题…这个想法我已经有好多次，今天终于忍不住要吐槽。</p>
-<p>这次是之前公司后来的小年轻，人挺好，挺精神。不过一有自己解决不了的问题，就来向已经离职的我吐槽，质问我为什么会有这个问题，为什么我不给他指点迷津？</p>
+        <ul>
+<li><a href="http://zproxy.wordpress.com/2010/07/12/write-webgl-in-c-with-jsc/" target="_blank" rel="external">Write WebGL in C# with JSC</a><br>原来C#也可以写WebGL</li>
+<li><a href="http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=181599" target="_blank" rel="external">Google Enabling multiple sign-in</a><br>Google开始支持<a href="https://www.google.com/accounts/MultipleSessions" target="_blank" rel="external">多用户登录</a>，默认帐户是第一次登陆的帐号，但是某些离线产品，如不支持离线Gmail和离线日历。板着手指头数数，我有4个记得的Gmail帐号。</li>
+<li><a href="http://blog.theflashblog.com/?p=2194" target="_blank" rel="external">Event Handler Style Showdown</a><br>关于事件处理写法的讨论，coding的艺术。</li>
+<li><a href="http://cjcat.blogspot.com/2010/08/using-mvc-pattern-in-rusher.html" target="_blank" rel="external">Using MVC Pattern in Rusher</a><a href="http://code.google.com/p/rusher/" target="_blank" rel="external"><br>Rusher</a>是基于AS3组件的游戏框架，这是它使用MVC的教程。</li>
+<li><a href="http://cn.aswing.org/" target="_blank" rel="external">AsWing</a><br>国人开发的Flash图形界面框架，开源的哦，顶～</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/08/04/e9-98-85-e8-af-bb-e5-88-86-e4-ba-ab-20100803/" data-id="cikr0cptd00rpz5rfiolk5wl2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-a6-82-e4-bd-95-e5-b1-8f-e8-94-bd-e4-b8-8d-e5-96-9c-e6-ac-a2-e7-9a-84adsense-e7-9a-84flash-e5-b9-bf-e5-91-8a" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/08/03/e5-a6-82-e4-bd-95-e5-b1-8f-e8-94-bd-e4-b8-8d-e5-96-9c-e6-ac-a2-e7-9a-84adsense-e7-9a-84flash-e5-b9-bf-e5-91-8a/" class="article-date">
+  <time datetime="2010-08-03T08:54:34.000Z" itemprop="datePublished">2010-08-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/08/03/e5-a6-82-e4-bd-95-e5-b1-8f-e8-94-bd-e4-b8-8d-e5-96-9c-e6-ac-a2-e7-9a-84adsense-e7-9a-84flash-e5-b9-bf-e5-91-8a/">如何屏蔽不喜欢的Adsense的Flash版广告</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>比如王通的SEO广告-Flash版每次都看见有点视觉疲劳，但是Flash广告上看不到广告网址，我又不想点击广告进去送钱给他。那我该如何屏蔽这种广告呢？</p>
+<p>我记得Google使用doubleclick之前的flash广告是可以看到广告商的网址的。但是新版已经没有了。</p>
+<p>分析Flash广告的代码：</p>
 <blockquote>
-<p>可是你的代码里面没有用到 set names</p>
-<p>却可以正常显示这些乱码</p>
-<p>当时你保存的时候，在phpmyadmin里面查看的时候，看到æˆ·å¤–å®¶å…</p>
-<p>这样的文字，不觉得有点问题吗？</p>
-<p>如果不觉得有问题，可以把思路告诉我吗？<br>顿时，我就碉堡了，大佬，我都离职2年了，犯不着这样跟我死缠乱打吧。自己的问题解决不了，到怪罪到我的头上，好不冤枉！我愿意帮你是你的福气，不愿意帮你，也是我的自由。我上辈子也不欠你，说的好像不帮你，就是我我的罪大恶极！</p>
+<p>iframe allowtransparency=”true” hspace=”0” id=”google_ads_frame3” marginheight=”0” marginwidth=”0” name=”google_ads_frame” src=”<a href="http://googleads.g.doubleclick.net" target="_blank" rel="external">http://googleads.g.doubleclick.net</a>……<br>我们可以看到当前网页的URL，但是却没有广告商的网址。<br><a href="http://www.zhaiduo.com/wp-content/uploads/2010/08/p20100803164530.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/08/p20100803164530.jpg" alt="" title="p20100803164530"></a></p>
 </blockquote>
-<p>好在我人好，心软，赶紧帮他进行简单测试，发现数据库和程序都没问题。确实是他自己的代码有问题。我那个去~鼻子都快冒烟，这算哪门子找来的晦气，只能苦笑兼叹息到“现在的年轻人肿么呢？”</p>
-<p>事件结束后我送他，也送给有同样嗜好的年轻人：“不客气，有了问题，先要冷静，要知道出现问题大部分是自己造成的，没有人有义务为你承担责任，有问题自己解决，搞不定，也没有理由怪罪别人。就算实在是没法要找人帮忙，也请拿出基本的礼貌和尊重。”</p>
+<p>我们再仔细看广告的右下角，有一个感叹号，鼠标移过去出现“Google提供的广告”。用fireFox浏览器点击鼠标右键复制目标网址可以看到：</p>
+<blockquote>
+<p><a href="http://www.google.com/url?ct=abg&amp;q=https://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://......%3Dwww.boloni.cn%26" target="_blank" rel="external">http://www.google.com/url?ct=abg&amp;q=https://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://......%3Dwww.boloni.cn%26</a>…..<br><strong>www.boloni.cn</strong>这个就是广告商的网址。登录Adsense帐号，在帐号设置里面的广告过滤加入这个网址，就可以屏蔽它的Flash广告啦。</p>
+</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/09/e7-8e-b0-e5-9c-a8-e7-9a-84-e5-b9-b4-e8-bd-bb-e4-ba-ba-e8-82-bf-e4-b9-88-e5-91-a2-ef-bc-9f/" data-id="cikqzbb6j01012drfpfzo7r2f" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/08/03/e5-a6-82-e4-bd-95-e5-b1-8f-e8-94-bd-e4-b8-8d-e5-96-9c-e6-ac-a2-e7-9a-84adsense-e7-9a-84flash-e5-b9-bf-e5-91-8a/" data-id="cikr0cq7y016lz5rf6khh1i9a" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/吐槽/">吐槽</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/adsense/">adsense</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/广告/">广告</a></li></ul>
 
     </footer>
   </div>
@@ -456,10 +256,101 @@
 
 
   
-    <article id="post-ikea-pay-no-to-delivery-damage" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-javascript-e9-94-99-e8-af-af-ef-bc-9aexpected-identifier-string-or-number" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/09/ikea-pay-no-to-delivery-damage/" class="article-date">
-  <time datetime="2012-07-09T08:46:35.000Z" itemprop="datePublished">2012-07-09</time>
+    <a href="/zdblog-hexo/2010/08/02/javascript-e9-94-99-e8-af-af-ef-bc-9aexpected-identifier-string-or-number/" class="article-date">
+  <time datetime="2010-08-02T15:04:50.000Z" itemprop="datePublished">2010-08-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/javascript/">javascript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/08/02/javascript-e9-94-99-e8-af-af-ef-bc-9aexpected-identifier-string-or-number/">Javascript错误：Expected identifier, string or number</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一段Jquery调用<br>$.get(“tag.php”,{act:’list’,class:’id’},function{});<br>在IE8下出现如下错误：<br>Error Message: Expected identifier, string or number<br>原因是class被看作是IE的保留字，修改一下即可。</p>
+<p>另外一个问题：<br>安装<a href="http://nmap.org/zenmap/" target="_blank" rel="external">Zenmap</a>扫外网时电脑突然断线无法上网，并且无法访问网关192.168.1.1，不过内网一切正常，症状很像arp病毒，但是在网关重新绑定静态mac地址后，一切正常。<br><a href="http://www.zhaiduo.com/wp-content/uploads/2010/08/p20100729183335.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/08/p20100729183335.jpg" alt="" title="p20100729183335"></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/08/02/javascript-e9-94-99-e8-af-af-ef-bc-9aexpected-identifier-string-or-number/" data-id="cikr0cpmu00jaz5rfdzgqg5pr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/出错/">出错</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/断网/">断网</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-google-chrome-e4-b8-8b-e5-ad-97-e4-bd-93-e6-a8-a1-e7-b3-8a-e7-9a-84-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/08/01/google-chrome-e4-b8-8b-e5-ad-97-e4-bd-93-e6-a8-a1-e7-b3-8a-e7-9a-84-e9-97-ae-e9-a2-98/" class="article-date">
+  <time datetime="2010-08-01T08:46:04.000Z" itemprop="datePublished">2010-08-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/CSS/">CSS</a>►<a class="article-category-link" href="/zdblog-hexo/categories/CSS/网站技术/">网站技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/08/01/google-chrome-e4-b8-8b-e5-ad-97-e4-bd-93-e6-a8-a1-e7-b3-8a-e7-9a-84-e9-97-ae-e9-a2-98/">Google Chrome下字体模糊的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天用Google Chrome5.0看了一下自己的博客，发现很是难看：<br><a href="http://www.zhaiduo.com/wp-content/uploads/2010/08/20100801010417.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/08/20100801010417.jpg" alt="" title="20100801010417"></a><br>我用FireFox，IE8，Safrari和Opera看过，只有Google Chrome的字体最难看，很是模糊。<br>起初以为是字体的问题，换成宋体、雅黑都没反应。后来分析CSS样式表文件，发现是text-shadow文字阴影效果的问题。</p>
+<blockquote>
+<p>text-shadow: 0px 1px 1px #000;<br>FILTER: Shadow(Color=#000000, strength=1, Direction=135);<br>考虑到只是针对Chrome的问题，现在还找不到满意的排除Chrome的CSS Hack，只有先放弃字体阴影的效果。<br>取消阴影效果以后，Chrome页面中文字体显示正常。<br><a href="http://www.zhaiduo.com/wp-content/uploads/2010/08/20100801164345.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/08/20100801164345.jpg" alt="" title="20100801164345"></a></p>
+</blockquote>
+<p>解决办法：<br>试过<br>text-shadow: 0px 1px 1px #000;<br>和<br>text-shadow:rgba(0,0,0,0.01) 0 0 1px;<br>都不行，<br>最后<br>text-shadow: #000 0 1px 0;<br>问题解决。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/08/01/google-chrome-e4-b8-8b-e5-ad-97-e4-bd-93-e6-a8-a1-e7-b3-8a-e7-9a-84-e9-97-ae-e9-a2-98/" data-id="cikr0cpqm00o6z5rffb4tfpqz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/CSS-hack/">CSS-hack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Chrome/">Chrome</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/text-shadow/">text-shadow</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e6-88-91-e5-af-b9lost-e8-bf-b7-e5-a4-b1-e7-bb-93-e5-b1-80-e7-9a-84-e7-90-86-e8-a7-a3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/08/01/e6-88-91-e5-af-b9lost-e8-bf-b7-e5-a4-b1-e7-bb-93-e5-b1-80-e7-9a-84-e7-90-86-e8-a7-a3/" class="article-date">
+  <time datetime="2010-08-01T06:56:51.000Z" itemprop="datePublished">2010-08-01</time>
 </a>
     
   <div class="article-category">
@@ -474,7 +365,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/09/ikea-pay-no-to-delivery-damage/">宜家托运家具损坏不用赔？</a>
+      <a class="article-title" href="/zdblog-hexo/2010/08/01/e6-88-91-e5-af-b9lost-e8-bf-b7-e5-a4-b1-e7-bb-93-e5-b1-80-e7-9a-84-e7-90-86-e8-a7-a3/">我对Lost迷失结局的理解</a>
     </h1>
   
 
@@ -482,25 +373,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>以前在广州宜家买过多次家具，托运送货都很顺利，而且是送进家门。可是没想到，同为宜家商场的成都宜家商场，却有着明显的不同，与宜家宣扬的概念和做事方式背道而驰（<a href="http://www.ikea.com/ms/zh_CN/about_ikea/the_ikea_way/swedish_heritage/index.html" target="_blank" rel="external">这种做事的方式深入宜家为保持低价格所采取的一切途径的内心。但是，质量却不会因成本的原因而受到危害。瑞典在国际上享有你可以为之信赖的安全与优质的信誉，宜家零售商以在各种情况下能够提供优质产品而自豪</a>）！</p>
-<p>前几日，我买了一张斯代弗镜子50170425 STAVE，在托运的时候工作人员就强调“易碎品不赔哦”，我就纳闷了，这是哪门子霸王条款。送回家一路高速，应该也没问题，况且还多花了50大洋加装了个木框。于是也没多想，也就签字，给发货办手续。</p>
-<p>谁知厄运降临，宜家托运送货(号称中国物流百强企业)确实按时到了(只到楼下，不送上门，我们有电梯都不行)，可是翩翩就是没见到那面镜子，托运的人员说是“镜子破损，已经回送到宜家”。之后，便再无下文。没有人通知我，是否可以重新发货，还是“活要见人、死要见尸”，把坏的镜子发到我手上。</p>
-<p>回头，越想越不对劲，买镜子花了349，打包费和托运费至少100，450大洋就这样说没，就没了？这是哪门子道理？</p>
-<p>这样的商家不是欺人太甚！怎么可能是宜家所为？赶紧电话货运公司和成都宜家，第一轮，他们相互踢足球，把我踢来踢去。第二轮，直接电话宜家客服，讲明事情经过，希望换得公正的答复。</p>
-<p>如今，答复尚未得到。心情已经平复，希望宜家能够跟进此事，给我们一个满意的答案。</p>
-<p><img src="http://distilleryimage1.instagram.com/2e23d0ccca4011e19894123138140d8c_7.jpg" alt=""></p>
-<p><img src="http://distilleryimage11.instagram.com/c90a5174ca4011e18cf91231380fd29b_7.jpg" alt=""></p>
-<p>更新：</p>
-<p>再三联系宜家客服热线4008002345后，宜家要求提供详尽产品的信息并以附件的形式发至宜家邮箱：<br>1.反映产品问题的相关照片（产品整体照，问题部位照）。<br>2.收款凭证/送货凭证近照。<br>3.您的基本信息-姓名 /地址 /联系电话 。</p>
-<p>提交后两天，货运新的镜子已收到，破损镜子被回收。</p>
+        <p>今天终于有空看完《Lost》的大结局，满头疑惑。为什么在教堂Jack的父亲会出现？难道他们都死了？可之前Jack不是刚刚做完手术吗？Jack躺在竹林里离开，飞机上的Kate，Sawyer等人又如何了呢？Miles和Richard又如何了呢？但是细细想来，主线终于有些清晰。</p>
+<p>回想过去的片段，觉得剧情的关键处在于氢弹爆炸以后，氢弹爆炸到底有没有成功？氢弹爆炸以后有两条线，一条A线似乎是爆炸起作用了，815航班继续飞行到目的地，815航班上的人们也继续着自己的生活；另一条B线是爆炸失败，直到最后Jack除掉黑烟Locke，牺牲自己保护海岛。从故事的结局我们可以得出这样的结论，A线实际上是B线的继续，只不过提前得太早，让人搭不上线。</p>
+<p>那我们顺着时间顺序从B线接着讲，氢弹爆炸并不成功，黑烟利用Locke的身体进行自己的阴谋……Jack躺在竹林，看着飞机掠过最后一眼牺牲后，Kate、Sawyer、Hurly等人的生活已被略过。直到他们经历各自的命运，回归死亡。人死不能复生，但是他们在岛上的经历，在岛上的伙伴一直令他们难以忘怀，难以释怀，也可以说是心愿未了。接着新的世界出现了，这群心愿不了的人们在这个虚幻的新世界试图让815航班的事故没有出现过，尝试在这迷失的世界中找回自己，虽然常常有些似曾相识的感觉。这就是A线，死后的人们在的一个迷失的世界里，找不到自己。但是Desmond是例外，他尽力去帮助迷失的人们解除心咒，找回前世的记忆。所以我们也不难理解结局Jack的父亲和大家在教堂的一幕。大家的心结已经解开，可以放心踏上天堂的道路，但是Ben做过一些坏事，但是被送往地域，所以自己独坐教堂之外。如此看来，这个神秘的岛屿只是介于人间和天堂地狱之间的过渡地带，属于人鬼共存的地带，人类发现了这个地方，和岛屿的保护神以及怪物发生了冲突。被命运安排的人们来到这里接受考验，最终也解开了自己心中的魔咒，不再迷失。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/09/ikea-pay-no-to-delivery-damage/" data-id="cikqzbat700k12drfskkscaof" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/08/01/e6-88-91-e5-af-b9lost-e8-bf-b7-e5-a4-b1-e7-bb-93-e5-b1-80-e7-9a-84-e7-90-86-e8-a7-a3/" data-id="cikr0cq5v014uz5rflxc3dh5i" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/宜家/">宜家</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/客服/">客服</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/家居/">家居</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/美剧/">美剧</a></li></ul>
 
     </footer>
   </div>
@@ -509,14 +392,14 @@
 
 
   
-    <article id="post-e7-a7-9f-e8-bd-a6-e4-bd-93-e9-aa-8c-ef-bc-9a-e6-a0-87-e8-87-b4207-ef-bc-8d1-6-e5-8d-87" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e5-88-86-e4-ba-ab-e9-98-85-e8-af-bb" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/07/02/e7-a7-9f-e8-bd-a6-e4-bd-93-e9-aa-8c-ef-bc-9a-e6-a0-87-e8-87-b4207-ef-bc-8d1-6-e5-8d-87/" class="article-date">
-  <time datetime="2012-07-02T15:59:14.000Z" itemprop="datePublished">2012-07-02</time>
+    <a href="/zdblog-hexo/2010/07/30/e5-88-86-e4-ba-ab-e9-98-85-e8-af-bb/" class="article-date">
+  <time datetime="2010-07-30T05:57:32.000Z" itemprop="datePublished">2010-07-30</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/自助游/">自助游</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/分享/">分享</a>
   </div>
 
   </div>
@@ -527,7 +410,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/07/02/e7-a7-9f-e8-bd-a6-e4-bd-93-e9-aa-8c-ef-bc-9a-e6-a0-87-e8-87-b4207-ef-bc-8d1-6-e5-8d-87/">租车体验：标致207－1.6升</a>
+      <a class="article-title" href="/zdblog-hexo/2010/07/30/e5-88-86-e4-ba-ab-e9-98-85-e8-af-bb/">分享阅读</a>
     </h1>
   
 
@@ -535,18 +418,1142 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>从第一次租车到现在，我已经租车超过100天，行程超过3万公里，平均每公里耗油加路费是0.81元。开过的车多数都是十万及以下的小型车，品牌我记得的包括：雪佛莱、起亚、福特、大众、马自达、标致。各车各有优缺点，但我都没记得把体验写下来，这次记住，开始写写我的行车／租车体验。</p>
-<p>这一次，我租的是标致207 1.6升的自动档车型，红色，外表看很适合女孩子，不过开起来，方向盘转向比较费力，又不太适合手臂没力的女士。120公里耗油四分之一，马力还可以，后劲很足，车窗关闭车内隔音较好，前后座椅有点紧，我的驾驶位喜欢比较宽松，后面的座位坐的就比较拥挤。车窗和观后镜按钮都在右手边，有点不太习惯，虽然这也不是第一次用标致的车。时速120的时候，如果方向盘轻微晃动，车辆有明显震动和颠簸。总的来说，除了有点美中不足，这款车是我愿意买的车型。</p>
-<p>总结之前的租车经验，我的感觉好坏，目前有下列的排序（纯属个人喜好，只供参考）：</p>
-<p>车内饰：标致 》福特 》马自达 》 大众 》 雪弗莱 》起亚<br>车动力：马自达 》标致 》雪弗莱 》 大众 》起亚 》福特<br>车油耗：马自达 》福特 》起亚 》大众 》标致 》雪弗莱<br>车内噪音：大众 》标致 》福特 》马自达 》起亚 》 雪弗莱</p>
+        <ul>
+<li><a href="http://www.seobook.com/portrait-seo" target="_blank" rel="external">Portrait of an SEO</a><br>这篇文章从工作重点的不同来剖析了SEO从业人员的类别构成，很有意思。我自认为自己是个标准的White Hat SEO，白帽子SEO从业者。</li>
+<li><a href="http://www.google.com.hk/ggblog/googlewebmaster-cn/2010/07/50.html" target="_blank" rel="external">使用错误的追踪代码一年可能花费您50万美元</a><br>Google Analytics虽然好用，但是网站调试和用户体验更加重要。否则损失是不可避免的。</li>
+<li>Google Doc: <a href="http://spreadsheets.google.com/ccc?key=pJEIRoZ3AmaQAHRgzKw7NJg#gid=0" target="_blank" rel="external">全国各地程序员工资待遇调查</a><br>了解行情很重要</li>
+<li><a href="http://www.effectgames.com/demos/canvascycle/?sound=0" target="_blank" rel="external">Canvas Color Cycling Effect</a><br>很酷的Canvas动画效果，看到这些你也有自己用Javascript和Canvas做动画的冲动吧，想开发Javascript游戏去首页看看。</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/07/02/e7-a7-9f-e8-bd-a6-e4-bd-93-e9-aa-8c-ef-bc-9a-e6-a0-87-e8-87-b4207-ef-bc-8d1-6-e5-8d-87/" data-id="cikqzbb4200xa2drfkfc01dnq" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/30/e5-88-86-e4-ba-ab-e9-98-85-e8-af-bb/" data-id="cikr0cqch01ahz5rf6pbiif5m" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/租车/">租车</a></li></ul>
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e6-94-b6-e5-88-b0-e9-99-8c-e7-94-9f-e4-ba-ba-e5-a5-97-e8-bf-91-e4-b9-8e-e7-9a-84-e7-94-b5-e8-af-9d" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/29/e6-94-b6-e5-88-b0-e9-99-8c-e7-94-9f-e4-ba-ba-e5-a5-97-e8-bf-91-e4-b9-8e-e7-9a-84-e7-94-b5-e8-af-9d/" class="article-date">
+  <time datetime="2010-07-29T08:50:09.000Z" itemprop="datePublished">2010-07-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/29/e6-94-b6-e5-88-b0-e9-99-8c-e7-94-9f-e4-ba-ba-e5-a5-97-e8-bf-91-e4-b9-8e-e7-9a-84-e7-94-b5-e8-af-9d/">收到陌生人套近乎的电话</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天接了一个陌生男人套近乎的电话，年纪大约30到40岁，操一口蹩脚的普通话，自称是我的好友，让我猜猜他是谁。我TMD就想不出我的那个朋友的普通话那么操蛋，恨不得踹他两脚。<a href="http://www.zhaiduo.com/2010/07/%e7%a5%9e%e5%b7%9e%e8%a1%8c%e6%89%8b%e6%9c%ba%e4%b8%a2%e4%ba%86%e6%80%8e%e4%b9%88%e5%8a%9e%ef%bc%9f/" target="_blank" rel="external">老婆手机刚掉</a>没几天，骗子马上沉不住气了，急着要和我”套近乎”，这是什么世道啊。恨不得立刻把他挖出来看够通透，在这个骗子横行的时代，应该找点什么可以治治它。号码（<strong>13828472929</strong> ）我查过了，是广州本地的。去官方是没法查询这些骗子的底细的，那么有没有别的办法可以查询，或者搞一个民间的手机黑名单来方便大家查询，把大家在网上发布的与手机骗子的遭遇收集起来，这也算做是一个Idea吧。不知道国内现在有没有这样的一个民间的手机黑名单网站？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/29/e6-94-b6-e5-88-b0-e9-99-8c-e7-94-9f-e4-ba-ba-e5-a5-97-e8-bf-91-e4-b9-8e-e7-9a-84-e7-94-b5-e8-af-9d/" data-id="cikr0cq3d012bz5rfgd5uf8i9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Ideas/">Ideas</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-bd-b1-e5-93-8d-e7-bd-91-e7-ab-99-e6-8e-92-e5-90-8d-e7-9a-84-e5-9b-a0-e7-b4-a0" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/28/e5-bd-b1-e5-93-8d-e7-bd-91-e7-ab-99-e6-8e-92-e5-90-8d-e7-9a-84-e5-9b-a0-e7-b4-a0/" class="article-date">
+  <time datetime="2010-07-28T14:48:44.000Z" itemprop="datePublished">2010-07-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/搜索引擎优化/">搜索引擎优化</a>►<a class="article-category-link" href="/zdblog-hexo/categories/搜索引擎优化/搜索时代/">搜索时代</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/28/e5-bd-b1-e5-93-8d-e7-bd-91-e7-ab-99-e6-8e-92-e5-90-8d-e7-9a-84-e5-9b-a0-e7-b4-a0/">影响网站排名的因素</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天在<a href="http://blog.8gdns.com/index.php/2010/04/cdn%e5%af%b9seo%e7%9a%84%e5%bd%b1%e5%93%8d/" target="_blank" rel="external">8gdns的博客</a>上看到CDN（一种分布式网络缓存结构，提高用户访问网站的速度）让网站百度排名降低甚至被百度清除的原因很是惊讶。原来百度爬虫只是固定的缓存DNS记录1天，没有根据DNS的时间来更新缓存，导致网站IP发生变化后，DNS记录没有更新，从而爬虫会找不到新IP的网站。</p>
+<p>没想到Baidu爬虫这么不专业，但是话又说回来，确实自己忽略了网络因素对网站排名的影响，要在Baidu做好排名，还是得了解百度爬虫的脾性，谁叫人家是国内搜索的老大呢。总结一下自己对网站排名因素的看法，我想主要包括以下几个方面：</p>
+<ul>
+<li>关键字、网页、网站的相关性</li>
+<li>网站、域名的权重</li>
+<li>网站内容的更新频率</li>
+<li>外部链接的数量、质量</li>
+<li>网站的访问速度及稳定性</li>
+<li>网页主题的地域性、时效性和语言因素</li>
+<li>搜索引擎对网站的内部评分<br>以前很少认真关注过百度，仅仅因为个人喜好而排斥了一些东西，最近也越来越发现自己错过了一些东西。学会去接纳、去了解才是正道。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/28/e5-bd-b1-e5-93-8d-e7-bd-91-e7-ab-99-e6-8e-92-e5-90-8d-e7-9a-84-e5-9b-a0-e7-b4-a0/" data-id="cikr0cq70015nz5rfldmh41p6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/SEO/">SEO</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-wordpress3-e5-8d-87-e7-ba-a7-e5-af-bc-e8-87-b4-e5-8d-9a-e5-ae-a2scheduled-maintenance" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/27/wordpress3-e5-8d-87-e7-ba-a7-e5-af-bc-e8-87-b4-e5-8d-9a-e5-ae-a2scheduled-maintenance/" class="article-date">
+  <time datetime="2010-07-27T15:47:46.000Z" itemprop="datePublished">2010-07-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/网站维护/">网站维护</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/27/wordpress3-e5-8d-87-e7-ba-a7-e5-af-bc-e8-87-b4-e5-8d-9a-e5-ae-a2scheduled-maintenance/">WordPress3升级导致博客scheduled maintenance</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天升级WordPress3的一个插件，其间升级到一半网页就没有响应，刷新一下，网页变成了下面的提示：</p>
+<p>Briefly unavailable for scheduled maintenance. Check back in a minute.</p>
+<p>根据<a href="http://wordpress.org/support/topic/349036" target="_blank" rel="external">WP的解决办法</a>，问题出在插件更新没有完成，程序自动在根目录下生成.maintenance而没被删除，所以导致wp-settings.php里面的</p>
+<p>// Check if we’re in maintenance mode.<br>wp_maintenance();</p>
+<p>生效，整个博客都无法打开，出现维护中的字样。</p>
+<p>解决办法是直接删除.maintenance文件或者注释掉wp-settings.php里面的wp_maintenance();</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/27/wordpress3-e5-8d-87-e7-ba-a7-e5-af-bc-e8-87-b4-e5-8d-9a-e5-ae-a2scheduled-maintenance/" data-id="cikr0cp9r002lz5rfaw9dz57m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Wordpress/">Wordpress</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-a5-9e-e5-b7-9e-e8-a1-8c-e6-89-8b-e6-9c-ba-e4-b8-a2-e4-ba-86-e6-80-8e-e4-b9-88-e5-8a-9e-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/27/e7-a5-9e-e5-b7-9e-e8-a1-8c-e6-89-8b-e6-9c-ba-e4-b8-a2-e4-ba-86-e6-80-8e-e4-b9-88-e5-8a-9e-ef-bc-9f/" class="article-date">
+  <time datetime="2010-07-27T02:23:29.000Z" itemprop="datePublished">2010-07-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/杂项/">杂项</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/27/e7-a5-9e-e5-b7-9e-e8-a1-8c-e6-89-8b-e6-9c-ba-e4-b8-a2-e4-ba-86-e6-80-8e-e4-b9-88-e5-8a-9e-ef-bc-9f/">神州行手机丢了怎么办？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>昨天老婆的神州行手机不留神地掉了，一两个小时后赶紧打回老婆的电话，发现手机已关机。应该是被哪个SB捡到了，现在的社会风气啊……拾金不昧的年代里我们越来越远，可惜了手机里积累的儿子半年来的照片。</p>
+<p>由于服务密码也忘记，只有去移动营业厅问了问，说只要填一张表，填写至少三个找回条件，加上身份证原件就可以找回原来的神州行手机号码。<br>我看了看表，发现里面大部分条件是需要原件实物证明的，只需要记忆的只有这几项：</p>
+<ul>
+<li>提供三个五天前三个月内手机主叫号码，包括短信、彩信等。</li>
+<li>神州行手机号码第一次激活的时间以及充值数。</li>
+<li>五天前两个月内手机充值的时间和充值数。<br>其他就是什么SIM卡卡号等证明，看来如果是用的神州行手机号码，保留那张手机卡是很有必要的。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/27/e7-a5-9e-e5-b7-9e-e8-a1-8c-e6-89-8b-e6-9c-ba-e4-b8-a2-e4-ba-86-e6-80-8e-e4-b9-88-e5-8a-9e-ef-bc-9f/" data-id="cikr0cpyo00xmz5rffgk5z2hy" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/丢手机/">丢手机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/找回/">找回</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-94-a8oauth-e5-8d-8f-e8-ae-ae-e6-b5-8b-e8-af-95twitter-api" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/25/e7-94-a8oauth-e5-8d-8f-e8-ae-ae-e6-b5-8b-e8-af-95twitter-api/" class="article-date">
+  <time datetime="2010-07-25T15:46:21.000Z" itemprop="datePublished">2010-07-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/25/e7-94-a8oauth-e5-8d-8f-e8-ae-ae-e6-b5-8b-e8-af-95twitter-api/">用OAuth协议测试Twitter API</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>去年用Basic Auth做的Twitter API测试已经无法使用，早就看到Twitter推荐OAuth的提示，今天有空用OAuth<a href="http://lab.zhaiduo.com/test/" target="_blank" rel="external">重写了一下</a>。</p>
+<p>OAuth的主要目的是尽量减少用户密码在第三方授权过程中的暴露，增强第三方授权的安全性。我使用的是Twitter推荐的<a href="http://github.com/abraham/twitteroauth" target="_blank" rel="external">twitteroauth</a>，也看了看<a href="http://code.google.com/p/oauth-php/" target="_blank" rel="external">oauth-php</a>，觉得太复杂。twitteroauth内容少一些，代码看得不会太晕。由于之前写过Blogger的OAuth，所以改起来不是太难；但是不太理解的是user_timeline调用起来太过复杂，本来简单一个网址的调用，现在还要KEY和SECRET，加上用户名和密码才能获取。我的测试只是简单获取Tweets列表以及获取相关的followers，来来去去的token验证显得多此一举。</p>
+<p>于是我又索性把connect, redirect和callback集成到了一起，方便我进行简单调用。有意思的是旧的Basic Auth还可以用来更新Twitter，虽然返回的是403。不过，话又说回来，OAuth的应用在越来越多的地方可以看到，掌握它还是很有必要的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/25/e7-94-a8oauth-e5-8d-8f-e8-ae-ae-e6-b5-8b-e8-af-95twitter-api/" data-id="cikr0cq0f00zjz5rfe1t3qvih" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/OAuth/">OAuth</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Twitter/">Twitter</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bb-88-e4-ba-8e-e6-8a-8ablogger-e7-9a-84-e6-97-a5-e5-bf-97-e5-af-bc-e5-85-a5wordpress" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/23/e7-bb-88-e4-ba-8e-e6-8a-8ablogger-e7-9a-84-e6-97-a5-e5-bf-97-e5-af-bc-e5-85-a5wordpress/" class="article-date">
+  <time datetime="2010-07-23T15:08:02.000Z" itemprop="datePublished">2010-07-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/23/e7-bb-88-e4-ba-8e-e6-8a-8ablogger-e7-9a-84-e6-97-a5-e5-bf-97-e5-af-bc-e5-85-a5wordpress/">终于把Blogger的日志导入Wordpress</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>从08年12月到09年八月，由于zhaiduo.com所在的空间问题，我使用了一段时间的Google blogger提供的blogspot博客空间，利用它可以FTP发布到zhaiduo.com的功能，我依然保持了zhaiduo.com的更新。后来空间恢复正常，考虑到FTP速度太慢的问题，我还是用回了Wordpress作为我的博客程序。因此，网站上保留了两种不同风格的日志，一段是blogger风格，一段是WP的风格。虽然从内容上讲没有什么问题，但是从整个网站的内容的连贯性来讲，还是有些不连贯，不太符合网站整体风格的一致性。从SEO的角度看，也是不太合理的。这也导致了旧的blogger页面里面访问不是太多的问题，和Wordpress的页面显得有些脱节。</p>
+<p>随着2010年Google blogger宣布停止FTP发布博客的服务，同时我也决定好好优化一下我的博客，于是备份下载了blogspot里面的日志内容，利用Wordpress自带的blogger导入功能，终于把blogspot的内容恢复到了wordpress里面。</p>
+<p>现在博客看起来更加像一个完整的博客了，剩下的工作就是清理模板里面以前指向blogger页面的链接，以防止spider以为我有重复内容。接下来一段时间，我也会留意blogger旧日志访问统计的变化，希望可以从中看到一些搜索引擎的喜好。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/23/e7-bb-88-e4-ba-8e-e6-8a-8ablogger-e7-9a-84-e6-97-a5-e5-bf-97-e5-af-bc-e5-85-a5wordpress/" data-id="cikr0cpxk00wgz5rfakue9gir" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Wordpress/">Wordpress</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/blogger/">blogger</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/备份/">备份</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/网站优化/">网站优化</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-win7-ban-ads-from-chinatelecom" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/23/win7-ban-ads-from-chinatelecom/" class="article-date">
+  <time datetime="2010-07-22T17:14:39.000Z" itemprop="datePublished">2010-07-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/23/win7-ban-ads-from-chinatelecom/">如何用Windows7防火墙屏蔽中国电信广告</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用中国电信的ADSL上网，我们常常能看到网页里莫名其妙的出现中国电信的广告。<br>这种下三滥插入广告的手段让人鄙视、唾弃，对于只会上网的朋友，要想解除这个烦恼还是挺头痛的。<br><a href="../wp-content/uploads/2010/07/20100722233009.jpg"><img src="../wp-content/uploads/2010/07/20100722233009.jpg" alt="" title="20100722233009"></a><a href="../wp-content/uploads/2010/07/20100722233120.jpg"><img src="../wp-content/uploads/2010/07/20100722233120.jpg" alt="" title="20100722233120"></a></p>
+<p>下面介绍一下在Windows 7中如何通过防火墙的设置屏蔽中国电信广告。</p>
+<p>首先选择控制面板-&gt;系统和安全-&gt;Windows防火墙</p>
+<p><a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234440.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234440.jpg" alt="" title="20100722234440"></a></p>
+<p>然后点击高级设置-&gt;入站规则-&gt;新建规则-&gt;自定义</p>
+<p><a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234531.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234531.jpg" alt="" title="20100722234531"></a></p>
+<p>然后选择 作用域，本地选择任何IP，远程选择你想要屏蔽的IP，IP可以查看有电信广告的网页源代码获得。例如上面的图片中的源代码：<br><a href="http://121.32.136.21" target="_blank" rel="external">http://121.32.136.21</a><br>var base_url=”<a href="http://218.16.103.69:1010/" target="_blank" rel="external">http://218.16.103.69:1010/</a>“;<br>var stat_path=”<a href="http://121.32.136.11:81" target="_blank" rel="external">http://121.32.136.11:81</a><br>121.32.136.21，218.16.103.69和121.32.136.11就是我们要屏蔽的IP。或者屏蔽121.32.136.*这个IP段。</p>
+<p><a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234636.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234636.jpg" alt="" title="20100722234636"></a></p>
+<p>接着选择的操作是阻止连接。</p>
+<p><a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234655.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234655.jpg" alt="" title="20100722234655"></a></p>
+<p>配置文件全选。</p>
+<p><a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234708.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234708.jpg" alt="" title="20100722234708"></a></p>
+<p>然后给规则加个名字。</p>
+<p><a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234750.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234750.jpg" alt="" title="20100722234750"></a></p>
+<p>一切OK，可以和垃圾广告说拜拜啦~</p>
+<p><a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234816.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/07/20100722234816.jpg" alt="" title="20100722234816"></a></p>
+<p>最后，总结一下屏蔽中国电信垃圾广告的办法：</p>
+<p>方法一、通过带有防火墙功能的ADSL Modem设置防火墙IP、域名过滤。<br><a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/p20100729182833.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2010/07/p20100729182833.jpg" alt="" title="p20100729182833"></a><br>方法二、使用防火墙软件过滤，如天网防火墙个人版、Norton个人防火墙。</p>
+<p>方法三、Windows自带防火墙过滤，如Window 7下通过防火墙屏蔽中国电信广告。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/23/win7-ban-ads-from-chinatelecom/" data-id="cikr0cpcd0057z5rf5d6ysmkk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Window-7/">Window 7</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/垃圾广告/">垃圾广告</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/屏蔽/">屏蔽</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/防火墙/">防火墙</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-preg-replace-error-regular-expression-is-too-large" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/22/preg-replace-error-regular-expression-is-too-large/" class="article-date">
+  <time datetime="2010-07-22T07:33:55.000Z" itemprop="datePublished">2010-07-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/22/preg-replace-error-regular-expression-is-too-large/">preg-replace error: regular expression is too large</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>进行模板替换的时候出现如下错误：</p>
+<blockquote>
+<p>Error msg: preg_replace() [function.preg-replace]: Compilation failed: regular expression is too large at offset 62894<br>根据<a href="http://www.php.net/manual/en/pcre.configuration.php#ini.pcre.backtrack-limit" target="_blank" rel="external">PHP.net</a>的解释：<br>这个错误是由PCRE的倒带(backtracking)和递归(recursion)限制造成，可以通过修改ini解决。<br>print_r(ini_get_all(“pcre”));<br>[pcre.backtrack_limit] =&gt; Array<br>(<br>[global_value] =&gt; 100000<br>[local_value] =&gt; 100000<br>[access] =&gt; 7<br>)<br>[pcre.recursion_limit] =&gt; Array<br>(<br>[global_value] =&gt; 100000<br>[local_value] =&gt; 100000<br>[access] =&gt; 7<br>)<br>ini_set(‘pcre.backtrack_limit’, ‘300000’);<br>如果使用的虚拟主机，也只有重新修改程序，换一种替换方式了。</p>
+</blockquote>
+<p>究其原因在于我用的模板里面把loop嵌套在if里面，导致if语块的字符串太长造成的，所以应该尽量避免把loop嵌套在if里面。</p>
+<p>另外一种常见的错误是：fopen() [function.fopen]: URL file-access is disabled in the server configuration<br>虚拟主机禁止了fopen非本地文件的访问，解决办法可以用：<a href="http://www.php.net/manual/en/function.fsockopen.php" target="_blank" rel="external">fsockopen</a>。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/22/preg-replace-error-regular-expression-is-too-large/" data-id="cikr0cphj00d2z5rf8mbauhnd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/出错/">出错</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bb-99discuz7-e5-a2-9e-e5-8a-a0-e4-bf-ae-e6-94-b9-e7-94-a8-e6-88-b7-e5-90-8d-e7-9a-84-e5-8a-9f-e8-83-bd" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/21/e7-bb-99discuz7-e5-a2-9e-e5-8a-a0-e4-bf-ae-e6-94-b9-e7-94-a8-e6-88-b7-e5-90-8d-e7-9a-84-e5-8a-9f-e8-83-bd/" class="article-date">
+  <time datetime="2010-07-20T16:34:50.000Z" itemprop="datePublished">2010-07-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/21/e7-bb-99discuz7-e5-a2-9e-e5-8a-a0-e4-bf-ae-e6-94-b9-e7-94-a8-e6-88-b7-e5-90-8d-e7-9a-84-e5-8a-9f-e8-83-bd/">给Discuz7增加修改用户名的功能</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>有朋友的discuz论坛升级到7后，发现修改用户名的功能没有了，很是头痛。我写了一个php脚本可以来解决这个问题。主要原理是查询所有数据表是否包含username和author字段，然后将其匹配的用户名修改成新用户名，这个脚本经测试对discuz论坛和UCenter有效。</p>
+<p>主要包含上述字段的数据表有：<br>bbs_activityapplies -&gt; username<br>bbs_announcements -&gt; author<br>bbs_forumrecommend -&gt; author<br>bbs_magicmarket -&gt; username<br>bbs_members -&gt; username<br>bbs_mytasks -&gt; username<br>bbs_posts -&gt; author<br>bbs_promotions -&gt; username<br>bbs_ratelog -&gt; username<br>bbs_reportlog -&gt; username<br>bbs_rsscaches -&gt; author<br>bbs_sessions -&gt; username<br>bbs_threads -&gt; author<br>bbs_threadsmod -&gt; username<br>bbs_uc_admins -&gt; username<br>bbs_uc_feeds -&gt; username<br>bbs_uc_members -&gt; username<br>bbs_uc_mergemembers -&gt; username<br>bbs_uc_protectedmembers -&gt; username<br>bbs_warnings -&gt; author</p>
+<p>需要的朋友也可以在这里下载<a href="http://www.zhaiduo.com/wp-content/uploads/2010/07/discuz7utf8_update_username.php_.txt" target="_blank" rel="external">discuz7_utf8_update_username.php</a>，需要注意的是：</p>
+<p>本脚本用于UTF8版discuz7论坛用户名的修改，运行需要管理员登录，用户自己承担使用后果，作者不承担任何责任，请使用者慎重。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/21/e7-bb-99discuz7-e5-a2-9e-e5-8a-a0-e4-bf-ae-e6-94-b9-e7-94-a8-e6-88-b7-e5-90-8d-e7-9a-84-e5-8a-9f-e8-83-bd/" data-id="cikr0cpx700w3z5rfzmjintyg" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/discuz/">discuz</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-html5-canvas-links" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/20/html5-canvas-links/" class="article-date">
+  <time datetime="2010-07-20T15:11:58.000Z" itemprop="datePublished">2010-07-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/互联网/">互联网</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/20/html5-canvas-links/">分享几个HTML5、canvas相关链接</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><a href="http://jsdo.it/" target="_blank" rel="external">http://jsdo.it/
+</a><a href="http://wonderfl.net/" target="_blank" rel="external">WonderFL.net</a>的姐妹站，一个HTML5的在线测试和分享平台，一个学习HTML5的好地方。WonderFL则是在线测试分享Flash的网站。</li>
+<li><a href="http://www.paulbrunt.co.uk/jiglib/tests/" target="_blank" rel="external">GLGE with jigLib Demo</a><br>碰撞物理引擎JigLib的WebGL版本，基于GLGE开发。Javascript版本的看<a href="http://github.com/supereggbert/JibLibJS" target="_blank" rel="external">这里</a>，Flash PV3D版本看<a href="http://blog.zupko.info/?p=273" target="_blank" rel="external">这里</a>。</li>
+<li><a href="http://meshlab.sourceforge.net/" target="_blank" rel="external">MeshLab</a><br>开源三维文件格式的转换工具（3DS, OBJ, 3DS, COLLADA等），WebGL和Flash 3D的好帮手。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/20/html5-canvas-links/" data-id="cikr0cpo600kwz5rfes6bgap7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Canvas/">Canvas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/HTML5/">HTML5</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/分享/">分享</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-digital-point-e7-9a-84adsense-e5-b8-90-e6-88-b7-e8-a2-ab-e5-81-9c-e7-94-a8" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/20/digital-point-e7-9a-84adsense-e5-b8-90-e6-88-b7-e8-a2-ab-e5-81-9c-e7-94-a8/" class="article-date">
+  <time datetime="2010-07-20T05:30:39.000Z" itemprop="datePublished">2010-07-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/20/digital-point-e7-9a-84adsense-e5-b8-90-e6-88-b7-e8-a2-ab-e5-81-9c-e7-94-a8/">Digital Point的Adsense帐户被停用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很喜欢去<a href="http://forums.digitalpoint.com/" target="_blank" rel="external">Digital Point论坛</a>了解Google和Adsense的信息，而且用户发帖可以分享上面摆放的Adsense广告提成。虽然我从DP没有得到过多少提成，但是我从DP得到的知识绝对是超值的。</p>
+<p>那么为什么DP(Digital Point论坛)的Adsense帐号为什么被停用呢？我们可以从中了解到一些Adsense被封的原因。根据DP blog的解释，这么多年来DP的Adense展示量已经超过十亿次，可以说是非常活跃和大型的Adsense论坛社区，很多Adword广告商也愿意在DP上投放指定网站的Adsense广告，但是上个月他们受到Google的警告，被指自己帐号的广告被展示在Google禁止的赌博网站上，DP予以否认，并强调自己和赌博网站无关，并已经使用了White List功能防止别人随便调用自己的Adsense代码。Google Adsense小组也回复了DP，确认网站不在列表中，不用采取任何措施。然而几天前DP却收到Adsense帐号被停用的通知。原因是Adsense广告不能展示在赌博或赌场相关内容的网站上。</p>
+<p>DP在此事情上一再强调自己和赌博网站无关，但是面对帐号被封，也只有一声叹息。看来要陷害别人的Adsense帐号，还是有可能的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/20/digital-point-e7-9a-84adsense-e5-b8-90-e6-88-b7-e8-a2-ab-e5-81-9c-e7-94-a8/" data-id="cikr0cqme01i7z5rfbjezajgh" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/adsense/">adsense</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-google-e5-8a-a0-e5-a4-a7-e5-af-b9-e5-85-b3-e9-94-ae-e5-ad-97-e7-9a-84-e7-9b-b8-e5-85-b3-e6-80-a7-e7-a0-94-e7-a9-b6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/19/google-e5-8a-a0-e5-a4-a7-e5-af-b9-e5-85-b3-e9-94-ae-e5-ad-97-e7-9a-84-e7-9b-b8-e5-85-b3-e6-80-a7-e7-a0-94-e7-a9-b6/" class="article-date">
+  <time datetime="2010-07-18T16:38:24.000Z" itemprop="datePublished">2010-07-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/搜索时代/">搜索时代</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/19/google-e5-8a-a0-e5-a4-a7-e5-af-b9-e5-85-b3-e9-94-ae-e5-ad-97-e7-9a-84-e7-9b-b8-e5-85-b3-e6-80-a7-e7-a0-94-e7-a9-b6/">Google加大对关键字的相关性研究</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>随着<a href="http://googleblog.blogspot.com/2010/07/deeper-understanding-with-metaweb.html" target="_blank" rel="external">Metaweb加入Google</a>的消息放出，我们可以意识到Google更加重视关键字的相关性研究。根据<a href="http://www.metaweb.com/" target="_blank" rel="external">Metaweb</a>官方的自我介绍和FAQ，我们可以大概了解Metaweb拥有非语义上的关键字相关性筛选技术，简单的说就是不同人物，地点和事物背后所隐藏的一些共性，例如：我们搜索“斯瓦辛格”，这个对搜索引擎来说很好理解，但是如果我们搜索“加利福尼亚州州长，终结者，宇宙先生”，搜索引擎未必能很准确的判断我们的意图。</p>
+<p>可以说，如果这种非语义的相关性搜索技术一旦成熟，这无疑又是搜索引擎的一大进步。另外，根据美国专利商标局的记录，Metaweb还拥有多项和搜索有关的专利技术，也许对我们猜测Google的新的发展方向有所帮助。（消息来源：<a href="http://www.seobythesea.com/?p=4032" target="_blank" rel="external">SEO by the sea</a>，中文翻译纯属个人理解，小心误导）</p>
+<p>Automated online purchasing system 网上购物自动化系统<br>发明人： W. Daniel Hillis, Bran Ferren<br>专利号： 20030195834<br>通过时间： October 16, 2003</p>
+<p>Meta-Web 介员网络？<br>Invented by W. Daniel Hillis, Bran Ferren<br>US Patent Application 20040210602<br>Published October 21, 2004</p>
+<p>Personalized profile for evaluating content 用于内容评估的个人档案<br>Invented by W. Daniel Hillis and Bran Ferren<br>US Patent Application 20050131918<br>Published June 16, 2005</p>
+<p>Delegated authority evaluation system 可以委派权力的评估系统<br>Invented by W. Daniel Hillis and Bran Ferren<br>US Patent Application 20050131722<br>Published June 16, 2005</p>
+<p>System and method to facilitate importation of user profile data over a network 方便在网上录入个人档案的系统和方法<br>Invented by W. Daniel Hillis and Bran Ferren<br>US Patent Application 20060095780<br>Published May 4, 2006</p>
+<p>User Contributed Knowledge Database 用户贡献知识库<br>Invented by Timothy Sturge, Kurt Bollacker, Robert Cook, John Giannandrea, Nicholas Thompson, Edwin Taylor<br>US Patent Application 20090024590<br>Published January 22, 2009</p>
+<p>Graph Store 图形商店？<br>Invented by Scott Meyer, Jutta Degener, Barak Michener, John Giannandrea<br>US Patent Application 20100174692<br>Published July 8, 2010</p>
+<p>Database Replication 数据库复制？<br>Invented by Scott Meyer, Jutta Degener, Barak Michener, John Giannandrea<br>US Patent Application 20100121817<br>Published May 13, 2010</p>
+<p>Query Optimization 查询优化<br>Invented by Scott Meyer, Jutta Degener, Barak Michener, John Giannandrea<br>US Patent Application 20100121839<br>Published May 13, 2010</p>
+<p>Knowledge Web 知识网络？<br>Invented by W. Daniel Hillis and Bran Ferren<br>Assigned to Metaweb Technologies, Inc.<br>US Patent 7,502,770<br>Granted March 10, 2009</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/19/google-e5-8a-a0-e5-a4-a7-e5-af-b9-e5-85-b3-e9-94-ae-e5-ad-97-e7-9a-84-e7-9b-b8-e5-85-b3-e6-80-a7-e7-a0-94-e7-a9-b6/" data-id="cikr0cpqd00nuz5rfdzo70brx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-find-good-link" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/17/find-good-link/" class="article-date">
+  <time datetime="2010-07-17T15:50:24.000Z" itemprop="datePublished">2010-07-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/搜索引擎优化/">搜索引擎优化</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/搜索引擎优化/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/17/find-good-link/">我看网站的优质链接</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Google中文站长博客向大家翻译了一篇名为“<a href="http://www.google.com.hk/ggblog/googlewebmaster-cn/2010/07/blog-post_15.html" target="_blank" rel="external">网站如何获得优质链接</a>”文章，感觉很有启发，总结了一下，可以分为以下几点来获得优质的链接：</p>
+<ul>
+<li>在主题相关的社区积极与相关论坛和博客互动，并发表自己的观点</li>
+<li>发表了简明教程或某种解决方法的视频，抑或是实用工具</li>
+<li>娱乐性内容的病毒营销</li>
+<li>提交网站到优质目录</li>
+<li>给网站添加书签、收藏这样的链接分享工具</li>
+<li>参考相似网站的成功和独特之处<br>最不提倡的是：购买网页链接或随机交换链接。</li>
+</ul>
+<p>另外，我觉得做免费开源的资源也是一个很好的路子。不明白的是，优质的链接的灰色地带。Google如何看待灰链，政府的链接可谓是优质链接了吧，但是被别有用心的人利用就成了灰链。不知道Google有何机制来审查灰链，目前看来，这种链接正大行其道，效果也是有目共睹的。难道这是链接排名机制的致命弱点？也许是我太不淡定了，我观察的案例才几个月，也许对眼光长远的business，这几个月只是昙花一现，不用太过计较。但是，我们又不得不承认，获得优质链接已经变得近乎变态，从link farmer到content farmer，Google面临着一场持久战，而对于我们这些网站的站长来说，更多面临的是黑与白之间的内心较量。面对利益的诱惑，有多少站长可以坚持原则，保持自己内心的一片净土？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/17/find-good-link/" data-id="cikr0cpsx00r3z5rfcqy0u19j" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/灰链/">灰链</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e8-8b-b1-e6-96-87google-e6-97-a0-e6-b3-95-e6-90-9c-e7-b4-a2-e6-80-8e-e4-b9-88-e5-8a-9e-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/15/e8-8b-b1-e6-96-87google-e6-97-a0-e6-b3-95-e6-90-9c-e7-b4-a2-e6-80-8e-e4-b9-88-e5-8a-9e-ef-bc-9f/" class="article-date">
+  <time datetime="2010-07-15T10:19:22.000Z" itemprop="datePublished">2010-07-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/互联网/">互联网</a>►<a class="article-category-link" href="/zdblog-hexo/categories/互联网/搜索时代/">搜索时代</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/15/e8-8b-b1-e6-96-87google-e6-97-a0-e6-b3-95-e6-90-9c-e7-b4-a2-e6-80-8e-e4-b9-88-e5-8a-9e-ef-bc-9f/">英文Google无法搜索怎么办？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>随着Google退出中国，很多朋友感觉到访问英文的Google变得很不稳定，同事也常常向我抱怨无法打开google.com。这里有一些办法，可以一个个去试试，但是不保证都有效，因为情况复杂，变数太多，大家还是要习惯随机应变啊。</p>
+<ul>
+<li>通过 google.com/ncr 打开</li>
+<li>更改DNS<br>网上邻居-》右键属性-》本地连接-》TCP/IP属性里面修改DNS<br>Google的DNS：8点8点8点8 或者 8点8点4点4<br>OpenDNS的DNS：208点67点222点222 或者 208点67点220点220</li>
+<li>通过SSL访问 <a href="https://google.com" target="_blank" rel="external">https://google.com</a></li>
+<li>通过IP访问 <a href="http://72.14.204.103" target="_blank" rel="external">http://72.14.204.103</a>, 74.125.159.104, 66.102.13.147<br>或者修改C:WINDOWSsystem32driversetc hosts文件，添加：72.14.204.103 google.com</li>
+<li>通过代理访问 <a href="http://anonymouse.org/anonwww.html" target="_blank" rel="external">http://anonymouse.org/anonwww.html</a><br>还有其他更复杂甚至收费的办法，例如使用翻墙工具访问，或者购买VPN专用通道访问。这里就不再详述，有兴趣可以搜索一下。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/15/e8-8b-b1-e6-96-87google-e6-97-a0-e6-b3-95-e6-90-9c-e7-b4-a2-e6-80-8e-e4-b9-88-e5-8a-9e-ef-bc-9f/" data-id="cikr0cpvc00u2z5rfv3g3s8m4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/google/">google</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/翻墙/">翻墙</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-8e-8b-e7-bc-a9-e7-bd-91-e9-a1-b5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/15/e5-8e-8b-e7-bc-a9-e7-bd-91-e9-a1-b5/" class="article-date">
+  <time datetime="2010-07-15T05:05:09.000Z" itemprop="datePublished">2010-07-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/网站技术/">网站技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/15/e5-8e-8b-e7-bc-a9-e7-bd-91-e9-a1-b5/">压缩网页</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前面<a href="/2010/07/google%e7%bb%9f%e8%ae%a1%e4%bf%a1%e6%81%af%e5%af%b9%e7%bd%91%e9%a1%b5%e4%bc%98%e5%8c%96%e7%9a%84%e5%bb%ba%e8%ae%ae/" title="Permanent link to Google统计信息对网页优化的建议">Google统计信息对 网页优化的建议</a>提到网页压缩技术，有朋友<a href="http://zuoge.520zone.com/" target="_blank" rel="external">mimicangel</a>不是很明白，下面我就对网页压缩技术进行一下详细的介绍。</p>
+<p>网页压缩指的是网页以及网页包含的所有文本文件及二进制文件的压缩，文本文件主要包括网页本身、CSS、Javascript、XML等文件，而二进制文件主要包括图片文件、图标文件、Flash等视频文件。根据压缩方法不同，我们可以把网页压缩分为三类：</p>
+<ol>
+<li>图片等二进制文件的压缩<br>图片的压缩一般可以通过Photoshop等图片处理工具进行压缩，视频的压缩可以可以根据不同的视频格式搜索视频压缩工具，例如大部分视频网站使用的FLV格式可以用Adobe Flash Media Encoder 来进行压缩生成，这些都是属于软件的使用问题，就不再详述。</li>
+<li>HTML、XML、CSS、JS文件的<a href="http://www.gnu.org/software/gzip/manual/gzip.html" target="_blank" rel="external">Gzip压缩</a><br>我们浏览器看到的网页等其它文本文件都是通过服务器生成的，有些服务器是直接保存的服务器上面的，服务器只需要读给我们，我们就可以称之为静态页面；相反文件在服务器上不存在，而是经过程序生成的网页，我们称之为动态网页。不管是静态还是动态，这些文本的网页文件都可以用Gzip这种技术来压缩，如果我们的浏览器同时支持Gzip压缩的格式，那么我的访问网页的速度将得到较大提升。可以放心的是目前的主流浏览器均支持这种压缩技术，为了更加保险，我们可以用程序检测浏览器是否支持Gzip压缩，然后根据结果判断是否压缩网页、CSS以及JS等文件。</li>
+<li>CSS和Javascript等语法的压缩<br>熟悉CSS和Javascript的朋友应该知道，在语法上，我们是有很大余地去简化语法和删除多余的空格和换行符的。例如：<br>font-size:12px; line-height:17px; font-family: Arial, Helvetica, sans-serif;<br>我们可以简化为：<br>font:12px/17px Arial, Helvetica, sans-serif;<br>这样我们可以通过精简文字达到压缩文本文件的目的。所以说Web2.0推崇的DIV+CSS的网页设计模式也可以理解为一种压缩网页的方法。<br>方法说完了，下面我推荐一些CSS和Javascript文件压缩工具给不熟悉HTML和程序的朋友，需要说明的是：压缩工具主要适用于CSS和Javascript文件，HTML网页的简化和压缩还是需要专业人士的参与。</li>
+</ol>
+<p><strong>CSS</strong></p>
+<ul>
+<li><a href="http://compressor.ebiene.de/" target="_blank" rel="external">http://compressor.ebiene.de/</a> CSS和Js都可以压缩</li>
+<li><a href="http://www.cssdrive.com/index.php/main/csscompressor/" target="_blank" rel="external">CSS Drive  CSS Compressor</a></li>
+<li><a href="http://www.cssoptimiser.com/" target="_blank" rel="external">http://www.cssoptimiser.com/</a></li>
+<li><a href="http://flumpcakes.co.uk/css/optimiser/" target="_blank" rel="external">http://flumpcakes.co.uk/css/optimiser/</a></li>
+<li><p><a href="http://www.cleancss.com/" target="_blank" rel="external">CSS Formatter and Optimiser</a><br><strong>Javscript</strong></p>
+</li>
+<li><p><a href="http://compressorrater.thruhere.net/" target="_blank" rel="external">http://compressorrater.thruhere.net/</a></p>
+</li>
+<li><a href="http://dean.edwards.name/packer/" target="_blank" rel="external">http://dean.edwards.name/packer/</a></li>
+<li><a href="http://jscompress.com/" target="_blank" rel="external">http://jscompress.com/</a></li>
+<li><a href="http://javascriptcompressor.com/" target="_blank" rel="external">http://javascriptcompressor.com/</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/15/e5-8e-8b-e7-bc-a9-e7-bd-91-e9-a1-b5/" data-id="cikr0cqah018pz5rfwr1fwkds" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/网页压缩/">网页压缩</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-webgl-resources" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/15/webgl-resources/" class="article-date">
+  <time datetime="2010-07-14T16:57:31.000Z" itemprop="datePublished">2010-07-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/三维时代/">三维时代</a>►<a class="article-category-link" href="/zdblog-hexo/categories/三维时代/互联网/">互联网</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/15/webgl-resources/">WebGL Resources</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I’m not a C++ programmer, but I am very interested in <a href="https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/WebGL-spec.html" target="_blank" rel="external">WebGL technology</a>. It’s a long way to go, first I plan to learn some basics about <a href="http://www.opengl.org/" target="_blank" rel="external">OpenGL 3.0</a> and <a href="http://www.khronos.org/opengles/" target="_blank" rel="external">OpenGL ES</a>, because my video card only supports version 3.0 mostly, then start to learn and test WebGL with MineField.</p>
+<p>Here’s my favorite WebGL learning resources during the past half of the year, except the famous <a href="http://learningwebgl.com/blog/?p=11" target="_blank" rel="external">LearningWebGL.com</a>, there’re many WebGL frameworks and resourses we can choose.</p>
+<ul>
+<li><a href="http://www.glge.org/" target="_blank" rel="external">GLGE</a> is a javascript library intended to ease the use of WebGL</li>
+<li><a href="http://www.scenejs.org/" target="_blank" rel="external">SceneJS</a> is a JavaScript framework by Lindsay Kay that provides a terse yet expressive API through which you can easily create interactive 3D scenes on the WebGL canvas element.</li>
+<li><a href="http://code.google.com/p/o3d/" target="_blank" rel="external">WebGL implementation of O3D</a> - an open-source JavaScript API for creating rich, interactive 3D applications in the browser.</li>
+<li><a href="http://cubicvr.org/" target="_blank" rel="external">CubicVR 3D Engine</a> has been partially ported to the web using the new HTML5 standard WebGL (OpenGL ES 2.0) API.</li>
+<li><a href="http://www.x3dom.org" target="_blank" rel="external">X3DOM</a> (pronounced X-Freedom) is an experimental open source framework and runtime to support the ongoing discussion in the Web3D and W3C communities how an integration of HTML5 and declarative 3D content could look like.</li>
+<li><a href="http://www.c3dl.org/" target="_blank" rel="external">The Canvas 3D JS Libary</a> (C3DL) is a JavaScript library that will make it easier to write 3D applications using WebGL.</li>
+<li><a href="http://www.ambiera.com/copperlicht/index.html" target="_blank" rel="external">CopperLicht</a> - fast WebGL JavaScript 3D Engine</li>
+<li><a href="http://energize.cc/" target="_blank" rel="external">EnergizeGL</a> (WebGL)</li>
+<li><a href="http://spidergl.org/" target="_blank" rel="external">SpiderGL</a> is a JavaScript 3D Graphics library which relies on WebGL for realtime rendering.<br>**   <a href="http://playwebgl.com" target="_blank" rel="external">PlayWebGL.com</a> is dedicated to WebGL technology.</li>
+<li><a href="http://planet-webgl.org/" target="_blank" rel="external">Planet WebGL</a><br>**   HTML5 Canvas</li>
+<li><a href="http://www.nihilogic.dk/labs/" target="_blank" rel="external">The Nihilogic Labs</a> feature experiments in the world of JavaScript games, HTML5 Canvas, Ajax and exotic web development in general.</li>
+<li><a href="http://www.nihilogic.dk/labs/webgl_cheat_sheet/WebGL_Cheat_Sheet.htm" target="_blank" rel="external">WebGL Cheat Sheet</a></li>
+<li><a href="http://29a.ch/" target="_blank" rel="external">Jonas Wagner’s blog</a> - Software Engineer Zürich, Switzerland</li>
+<li><a href="http://www.biomotionlab.ca/" target="_blank" rel="external">The Biomotion Lab</a></li>
+<li><a href="http://asalga.wordpress.com/" target="_blank" rel="external">Andor Salga</a> is working on C3DL as well as Processing.js.</li>
+<li><a href="http://hipstersinc.com/p5sunflow/" target="_blank" rel="external">P5Sunflow</a> is an easy way to make your Processing  sketches look sexy as hell.<br>**   <a href="http://www.teslacore.it/index.php?n=Main.WebGL" target="_blank" rel="external">emanuele ruffaldi website</a> (v3)</li>
+<li><a href="http://blog.intubo.com/?cat=19" target="_blank" rel="external">blog.intubo.com WebGL</a></li>
+<li><a href="http://www.paulbrunt.co.uk/" target="_blank" rel="external">Paul Brunt</a> - Web, Technical, all thing 3D</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/15/webgl-resources/" data-id="cikr0cpcm005kz5rfhbg9cp9a" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Canvas/">Canvas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/HTML5/">HTML5</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/WebGL/">WebGL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e6-8e-a8-e8-8d-90-e5-87-a0-e4-b8-aa-e6-88-91-e5-b8-b8-e7-94-a8-e7-9a-84-e7-bd-91-e7-ab-99-e5-b7-a5-e5-85-b7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/14/e6-8e-a8-e8-8d-90-e5-87-a0-e4-b8-aa-e6-88-91-e5-b8-b8-e7-94-a8-e7-9a-84-e7-bd-91-e7-ab-99-e5-b7-a5-e5-85-b7/" class="article-date">
+  <time datetime="2010-07-13T16:47:10.000Z" itemprop="datePublished">2010-07-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/搜索引擎优化/">搜索引擎优化</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/14/e6-8e-a8-e8-8d-90-e5-87-a0-e4-b8-aa-e6-88-91-e5-b8-b8-e7-94-a8-e7-9a-84-e7-bd-91-e7-ab-99-e5-b7-a5-e5-85-b7/">推荐几个我常用的网站工具</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>好的网站工具有助于帮助站长了解自己的网站，了解自己的竞争对手，有助于站长对自己网站的策划和进行更新，当然对SEO网站优化也是很有帮助的。在这里我向大家分享我常用的几个网站工具，希望对大家建设网站、规划网站和优化网站内容有所帮助。</p>
+<ol>
+<li><a href="http://www.keyrow.com/data/?s=zhaiduo.com;" target="_blank" rel="external">keyrow.com</a> - 很不错的Google的网站热门关键字查询工具（前一百位），不管是你自己网站的还是别人的，也不管是英文关键字还是中文关键字。</li>
+<li><a href="http://www.r-domain.net/domain/zhaiduo.com" target="_blank" rel="external">r-domain.net</a> - 很全面的网站分析工具，帮助你从内容、关键字、外链以及SEO评分的角度来分析你的网站。</li>
+<li><a href="http://www.domaintools.com/reverse-ip/" target="_blank" rel="external">domaintools.com/reverse-ip</a> - 可以免费查询同一个IP下最多两千个网站的域名。与助于我们选择合适的虚拟主机和了解网站来源。当然domaintools的强大功能远不止这些，大家可以免费注册个帐号慢慢了解。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/14/e6-8e-a8-e8-8d-90-e5-87-a0-e4-b8-aa-e6-88-91-e5-b8-b8-e7-94-a8-e7-9a-84-e7-bd-91-e7-ab-99-e5-b7-a5-e5-85-b7/" data-id="cikr0cq3y012tz5rf1in86bcu" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/SEO工具/">SEO工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/分享/">分享</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/站长工具/">站长工具</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-google-e7-bb-9f-e8-ae-a1-e4-bf-a1-e6-81-af-e5-af-b9-e7-bd-91-e9-a1-b5-e4-bc-98-e5-8c-96-e7-9a-84-e5-bb-ba-e8-ae-ae" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/12/google-e7-bb-9f-e8-ae-a1-e4-bf-a1-e6-81-af-e5-af-b9-e7-bd-91-e9-a1-b5-e4-bc-98-e5-8c-96-e7-9a-84-e5-bb-ba-e8-ae-ae/" class="article-date">
+  <time datetime="2010-07-12T15:22:07.000Z" itemprop="datePublished">2010-07-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/搜索引擎优化/">搜索引擎优化</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/12/google-e7-bb-9f-e8-ae-a1-e4-bf-a1-e6-81-af-e5-af-b9-e7-bd-91-e9-a1-b5-e4-bc-98-e5-8c-96-e7-9a-84-e5-bb-ba-e8-ae-ae/">Google统计信息对网页优化的建议</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Google Spider每天都在读取不计其数的网页，互联网上的网页有什么特点，有什么问题，当然是Google最清楚了。这里Google公布了一些对Spider抓取的<a href="http://code.google.com/speed/articles/web-metrics.html" target="_blank" rel="external">网页各项数据的统计结果</a>，其中比较有意思的是：</p>
+<ul>
+<li>平均网页大小是320KB</li>
+<li>三分之一的网页没有使用压缩技术</li>
+<li>80%的网页包含10种以上的来自同一个主机的资源，例如：image, css, javascript,video等等。</li>
+<li>访问人气高的网站，每打开一个网页，平均会消耗8次HTTP请求，前提是网页脚本和样式表都放在同一个主机。</li>
+<li>网页的内容都是通过Googlebot抓取，有的网站使用robots.txt阻止了Googlebot抓取CSS和Javascript文件。所以建议不要这样做。</li>
+<li>Google建议网页内增加专门给Googlebot提供的内容，例如Google自己的服务器就是提供给Googlebot未经压缩过的CSS和Javascript文件的内容，方便他们读取，而提供给访客浏览器的则是压缩过的，以提高访问速度。</li>
+<li>网页内容的兼容性要强，如果这是针对IE或者FIreFox浏览器的内容，或者说是和WebKit(WebKit是一种开源的浏览器内核引擎)不兼容的网页内容，Google只会把它当作看不见。</li>
+<li>网页取样并不是随机的，而是有侧重点的，例如PageRank高的网页拥有更多的机会获得取样。<br>结果后面还列举了排名高的网站和所有网站的平均数据间的对比，这有助于我们了解什么样的特性帮助网站获得高的排名。</li>
+</ul>
+<p>从SEO，网页优化的角度来看，上面这些结果和建议对于我们设计搜索引擎喜欢的网页来说是很有启发的，对我们设计网页、了解搜索引擎、了解Googlebot很有帮助。可以总结为以下几点：</p>
+<ol>
+<li>网页文件大小最好不要超过320KB</li>
+<li>尽量压缩让除了二进制格式以外的所有网页元素</li>
+<li>不要随便阻止Googlebot对网站的抓取</li>
+<li>提高网站的多浏览器兼容性，标准可以向WebKit内核看齐</li>
+<li>尽量提高网站的Pagerank，以增加网站内容被抓取的机会</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/12/google-e7-bb-9f-e8-ae-a1-e4-bf-a1-e6-81-af-e5-af-b9-e7-bd-91-e9-a1-b5-e4-bc-98-e5-8c-96-e7-9a-84-e5-bb-ba-e8-ae-ae/" data-id="cikr0cppe00moz5rf5hlgyn6h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/网页优化/">网页优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/网页设计/">网页设计</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-twitter-e6-9c-88-e6-90-9c-e7-b4-a2-e9-87-8f-e8-be-be240-e4-ba-bf-ef-bc-8c-e5-a0-aa-e7-a7-b0google-e7-ac-ac-e4-ba-8c" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/09/twitter-e6-9c-88-e6-90-9c-e7-b4-a2-e9-87-8f-e8-be-be240-e4-ba-bf-ef-bc-8c-e5-a0-aa-e7-a7-b0google-e7-ac-ac-e4-ba-8c/" class="article-date">
+  <time datetime="2010-07-09T06:33:58.000Z" itemprop="datePublished">2010-07-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/搜索时代/">搜索时代</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/09/twitter-e6-9c-88-e6-90-9c-e7-b4-a2-e9-87-8f-e8-be-be240-e4-ba-bf-ef-bc-8c-e5-a0-aa-e7-a7-b0google-e7-ac-ac-e4-ba-8c/">Twitter月搜索量达240亿，堪称Google第二</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>据<a href="http://social.venturebeat.com/2010/07/06/twitter-search-800-million-queries/" target="_blank" rel="external">Twitter创始人Biz Stone称</a>：Twitter每天的搜索量达到8亿之多，远超去年12月bing(41亿/月)和yahoo的流量(94亿/月)。可以说Twitter是Google第二。</p>
+<p>换句话，我们可以这样认为，Twitter正是未来的搜索引擎雏形，最终Twitter将成为Google的强大竞争对手。为什么这么说？首先，用户为什么用Google?当然是为了搜索相关资讯，但是Google给我们的搜索结果已经很完美了吗？明显不是，Google搜索结果的准确性、时效性离我们的要求还有很大距离。再来看看Twitter，时效性肯定是没有问题的，准确性呢？用户提交Twitter有140个字符的限制，所以这140个字符的精确性是不庸置疑的，根据我自己使用经验也证实了，Twitter搜索更加有效，结果更加有针对性。</p>
+<p>当然Twitter搜索和Google比还是显得很单一的，没有Google的多样性和富媒体性。不过有一点可以肯定，twitter已经给搜索带来了一次全新的革命，我已经看到未来。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/09/twitter-e6-9c-88-e6-90-9c-e7-b4-a2-e9-87-8f-e8-be-be240-e4-ba-bf-ef-bc-8c-e5-a0-aa-e7-a7-b0google-e7-ac-ac-e4-ba-8c/" data-id="cikr0cpee008lz5rf7120e3by" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Twitter/">Twitter</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-corrupt-jpeg-error-extraneous-bytes-before-marker-0xd9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/08/corrupt-jpeg-error-extraneous-bytes-before-marker-0xd9/" class="article-date">
+  <time datetime="2010-07-08T06:12:03.000Z" itemprop="datePublished">2010-07-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/08/corrupt-jpeg-error-extraneous-bytes-before-marker-0xd9/">Corrupt JPEG Error: extraneous bytes before marker 0xd9</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一个Flash项目，一直以来被一个PHP GD模块的问题所困扰，遭到很多用户投诉，无法通过Flash上传图片。我研究过，发现有些图片在Windows下，Photoshop下都可以看见，但是一通过PHP的GD模块来处理，就出现如下错误(例如<a href="http://bugs.libgd.org/?getfile=262" target="_blank" rel="external">这张图片</a>)：</p>
+<blockquote>
+<p>imagecreatefromjpeg() [function.imagecreatefromjpeg]: gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: 91 extraneous bytes before marker 0xd9<br>其中91和0xd9会因为图片的不同而不同，例如Corrupt JPEG data: 4 extraneous bytes before marker 0xd9。</p>
+</blockquote>
+<p><strong>寻找解决方法：</strong></p>
+<ol>
+<li>究其原因应该是gd-jpeg, libjpeg有问题，最快的解决办法就是重新编译libjpeg，但是这对使用虚拟主机的网站来说不太靠谱。</li>
+<li>通过PHP分析有问题的图片头，标记0xd9的错误，但是每张图片的错误标记不同，所以不成立。<br>具体原因是由于<a href="http://www.media.mit.edu/pia/Research/deepview/exif.html" target="_blank" rel="external">JPG图片头</a>中EOI marker (0xFF 0xD9) 前的自定义数据部分，PHP GD2无法识别.</li>
+<li>由于虚拟主机的限制，这个也不靠谱<br>ini_set(‘gd.jpeg_ignore_warning’, 1);<br>imagecreatefromjpeg($file);</li>
+<li>替代工具：<a href="http://us3.php.net/manual/en/book.imagick.php" target="_blank" rel="external">ImageMagick</a>,但是空间限制，也只有放弃。<br>目前暂时没有针对PHP自身的解决方案，另外建议不要使用ImageCreateFromString，也会有这个问题，可以用getimagesize。</li>
+</ol>
+<p>困扰的是：老板不管这个是否是BUG，他只要完美，而我却没有答案。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/08/corrupt-jpeg-error-extraneous-bytes-before-marker-0xd9/" data-id="cikr0cqno01jaz5rfmqcnxabm" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Corrupt-JPEG/">Corrupt JPEG</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/GD/">GD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/出错/">出错</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e6-89-8b-e5-86-99-e7-bd-91-e9-a1-b5-e5-b8-b8-e7-94-a8-e8-a7-84-e5-88-99" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/08/e6-89-8b-e5-86-99-e7-bd-91-e9-a1-b5-e5-b8-b8-e7-94-a8-e8-a7-84-e5-88-99/" class="article-date">
+  <time datetime="2010-07-07T16:43:45.000Z" itemprop="datePublished">2010-07-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/互联网/">互联网</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/08/e6-89-8b-e5-86-99-e7-bd-91-e9-a1-b5-e5-b8-b8-e7-94-a8-e8-a7-84-e5-88-99/">网页设计常用规则</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>什么是网页设计？根据我的经验来看，网页设计就是把设计好的网页图片转化成网页HTML格式的过程，这个过程分为两大部分，一个是网页的图形设计部分，另一个是HTML化的部分。对于很多网页设计的初学者，他们太过于依赖Dreamweaver、FrontPage这样的网页设计软件，从而忽略网页HTML化的重要性，忽略了手写HTML的重要性。一个干净、简洁的网页，对于提倡Web2.0和SEO的互联网来说，这无疑是给网站打下了一个先天的优良基础。</p>
+<p>所以在把设计好的网页转成CMS可以用的模板之前，我们需要准备一个静态的干净的HTML网页。在Web2.0和SEO的共同原则下，我们应该遵循以下几点来coding网页：</p>
+<ul>
+<li>内部包含图片的DIV尽量包含说明文字，然后在CSS文件中利用CSS技巧定义DIV内部图片，例如定义图片为背景，并且偏移隐藏说明文字。</li>
+<li>尽量减少页面内的Javascript脚本和CSS样式，把它们外包到各自的文件中。网页引用的Javascript脚本和CSS样式表文件不宜太多太杂。</li>
+<li>网页结构的设计应该充分考虑到网页内容的变化和可扩展性，比如固定背景的DIV不太适合长度不固定的文字。</li>
+<li>重要的网页部分尽量放在HTML代码的前部。</li>
+<li>一个网页有且只有一个H1标签。</li>
+<li>网页编码Meta标签最好放在Title标签之前。</li>
+<li>网页内部链接、图片地址最好使用斜线开头的绝对路径。</li>
+<li>为了减少不同浏览下网页CSS的差异性，推荐使用<a href="http://developer.yahoo.com/yui/reset/" target="_blank" rel="external">RESET CSS</a>。</li>
+<li>尽量使用em和百分比定义文字的相对大小，而不是px固定文字大小。</li>
+<li>检测网页兼容性的浏览器包括：IE, Firefox, Opera, Google Chrome, safari。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/08/e6-89-8b-e5-86-99-e7-bd-91-e9-a1-b5-e5-b8-b8-e7-94-a8-e8-a7-84-e5-88-99/" data-id="cikr0cq54013zz5rf3nxkixd6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/网页设计/">网页设计</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-ucenter-e7-9a-84-e5-a4-96-e9-93-be-e6-bc-8f-e6-b4-9e-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2010/07/05/ucenter-e7-9a-84-e5-a4-96-e9-93-be-e6-bc-8f-e6-b4-9e-ef-bc-9f/" class="article-date">
+  <time datetime="2010-07-05T06:14:47.000Z" itemprop="datePublished">2010-07-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/杂项/">杂项</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2010/07/05/ucenter-e7-9a-84-e5-a4-96-e9-93-be-e6-bc-8f-e6-b4-9e-ef-bc-9f/">Ucenter的外链漏洞？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近常在<a href="http://www.zaccode.com/space-3603.html" target="_blank" rel="external">zaccode</a>晃悠，zaccode用的是Discuz开发的Ucenter社区程序，在Ucenter里面发布日志话题的时候，在里面的链接，如果是链向外部网站的，通常都会加上转向功能：</p>
+<blockquote>
+<p><a href="http://www.zhaiduo.com" target="_blank" rel="external">http://www.zhaiduo.com</a> =&gt; /link.php?url=<a href="http://www.zhaiduo.com" target="_blank" rel="external">http://www.zhaiduo.com</a><br>但是在无意间，我注意到某些日志的外部链接并没有被转向，而是直链的。经过自己的测试证实Ucenter确实有这个问题，可以通过某些手段绕过URL转向。<br>这是我在zaccode的测试页面：<a href="http://www.zaccode.com/space-3603-do-blog-id-3998.html" target="_blank" rel="external">Ucenter外链测试</a>。</p>
+</blockquote>
+<p>根据测试结果，在Ucenter里面添加链接的时候，只要使用类似这种格式(注意href前面的title):<br>&lt;a title=”” href=”<a href="http://www.zhaiduo.com/" target="_blank" rel="external">http://www.zhaiduo.com/</a>“ target=”_blank”&gt; zhaiduo.com &lt;/a&gt;<br>都可以添加成直链。估计是Ucenter在preg_replace的时候，匹配规则的漏洞所至。</p>
+<p>至于有URL转向的链接和直链有什么区别，我就不用废话了。嘿嘿～</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2010/07/05/ucenter-e7-9a-84-e5-a4-96-e9-93-be-e6-bc-8f-e6-b4-9e-ef-bc-9f/" data-id="cikr0cpdw007qz5rft0qkgubs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Ucenter/">Ucenter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/discuz/">discuz</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/漏洞/">漏洞</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/链接/">链接</a></li></ul>
 
     </footer>
   </div>
@@ -558,7 +1565,7 @@
 
 
   <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/zdblog-hexo/page/6/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/5/">5</a><a class="page-number" href="/zdblog-hexo/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/zdblog-hexo/page/8/">8</a><a class="page-number" href="/zdblog-hexo/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/47/">47</a><a class="extend next" rel="next" href="/zdblog-hexo/page/8/">__('next') &raquo;</a>
+    <a class="extend prev" rel="prev" href="/zdblog-hexo/page/6/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/5/">5</a><a class="page-number" href="/zdblog-hexo/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/zdblog-hexo/page/8/">8</a><a class="page-number" href="/zdblog-hexo/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/16/">16</a><a class="extend next" rel="next" href="/zdblog-hexo/page/8/">__('next') &raquo;</a>
   </nav>
 </section>
         

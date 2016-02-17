@@ -68,10 +68,192 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-e5-88-ab-e4-ba-86-ef-bc-8c-e5-b9-bf-e5-b7-9e" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-jquery1-3-2-e5-9c-a8ie8-e4-b8-8b-e5-87-ba-e7-8e-b0invalid-argument-e9-94-99-e8-af-af-e7-9a-84-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/03/19/e5-88-ab-e4-ba-86-ef-bc-8c-e5-b9-bf-e5-b7-9e/" class="article-date">
-  <time datetime="2012-03-18T18:23:26.000Z" itemprop="datePublished">2012-03-19</time>
+    <a href="/zdblog-hexo/2009/05/08/jquery1-3-2-e5-9c-a8ie8-e4-b8-8b-e5-87-ba-e7-8e-b0invalid-argument-e9-94-99-e8-af-af-e7-9a-84-e9-97-ae-e9-a2-98/" class="article-date">
+  <time datetime="2009-05-08T07:47:00.000Z" itemprop="datePublished">2009-05-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/javascript/">javascript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/05/08/jquery1-3-2-e5-9c-a8ie8-e4-b8-8b-e5-87-ba-e7-8e-b0invalid-argument-e9-94-99-e8-af-af-e7-9a-84-e9-97-ae-e9-a2-98/">jQuery1.3.2在IE8下出现“Invalid Argument”错误的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天给博客页头加了一个动画效果（鼠标点击会更换页头背景），用的是jQuery1.3.2，FireFox下一切正常，但是IE8出现”line: 4166 Invalid Argument”的错误：<br><img src="http://zhaiduo.googlepages.com/MWSnap288.jpg" alt=""></p>
+<p>原因不详，临时解决办法如下：</p>
+<blockquote>
+<p>fx.elem.style[ fx.prop ] = fx.now + fx.unit;<br>改为:<br>if(fx.prop &amp;&amp; fx.unit &amp;&amp; fx.elem &amp;&amp; fx.now){<br>fx.elem.style[ fx.prop ] = fx.now + fx.unit;<br>}</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/05/08/jquery1-3-2-e5-9c-a8ie8-e4-b8-8b-e5-87-ba-e7-8e-b0invalid-argument-e9-94-99-e8-af-af-e7-9a-84-e9-97-ae-e9-a2-98/" data-id="cikr0cplw00ipz5rf38wlfcpl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Jquery/">Jquery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/出错/">出错</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/办法/">办法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-9f-ba-e4-ba-8eflash-e7-9a-84-e5-85-8d-e8-b4-b9-e4-b8-89-e7-bb-b4-e5-ad-97-e4-bd-93-e7-94-9f-e6-88-90-e5-b7-a5-e5-85-b7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/05/08/e5-9f-ba-e4-ba-8eflash-e7-9a-84-e5-85-8d-e8-b4-b9-e4-b8-89-e7-bb-b4-e5-ad-97-e4-bd-93-e7-94-9f-e6-88-90-e5-b7-a5-e5-85-b7/" class="article-date">
+  <time datetime="2009-05-08T03:13:00.000Z" itemprop="datePublished">2009-05-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/3D/">3D</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/AS3/">AS3</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/05/08/e5-9f-ba-e4-ba-8eflash-e7-9a-84-e5-85-8d-e8-b4-b9-e4-b8-89-e7-bb-b4-e5-ad-97-e4-bd-93-e7-94-9f-e6-88-90-e5-b7-a5-e5-85-b7/">基于FLASH的免费三维字体生成工具</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.3dtext.in/" target="_blank" rel="external">3dtext.in</a>是一款基于FLASH的免费三维字体生成工具，你可以轻松生成三维的字体标题，有多种字体材质，背景和动画特效的选择。</p>
+<p>另外，利用它提供的API可以在自己的AS3里面调用，生成自己的三维字体特效。<a href="http://wonderfl.kayac.com/" target="_blank" rel="external">Wonder<span style="font-weight: bold;">fl</span></a> ( wonderfl是一个提供在线实时测试Flash代码的网站，支持PV3D,Alternativa3D，Sandy3D等AS3三维框架，有大量AS3源码供大家学习和交流 )有个很好的基于PV3D的例子：<a href="http://wonderfl.kayac.com/code/d7a041abee736516063616e3b2910b42fbcf912f" target="_blank" rel="external"> 3Dメガネを使った立体視　3dtext.in API</a>，具体调用方法<a href="http://wonderfl.kayac.com/code/d7a041abee736516063616e3b2910b42fbcf912f/download" target="_blank" rel="external">源代码</a>里面都有。</p>
+<div style="text-align: center; width: 465px;"><iframe title="3Dメガネを使った立体視　3dtext.in API - wonderfl build flash online" src="http://wonderfl.kayac.com/blogparts/d7a041abee736516063616e3b2910b42fbcf912f" style="border: 1px solid black;" height="490" width="465"></iframe><a href="http://wonderfl.kayac.com/code/d7a041abee736516063616e3b2910b42fbcf912f" title="3Dメガネを使った立体視　3dtext.in API - wonderfl build flash online" target="_blank" rel="external">3Dメガネを使った立体視　3dtext.in API - wonderfl build flash online</a></div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/05/08/e5-9f-ba-e4-ba-8eflash-e7-9a-84-e5-85-8d-e8-b4-b9-e4-b8-89-e7-bb-b4-e5-ad-97-e4-bd-93-e7-94-9f-e6-88-90-e5-b7-a5-e5-85-b7/" data-id="cikr0cq8z017iz5rfwqmc2hbt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/papervision3d/">papervision3d</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-away3d-e6-b5-8b-e8-af-95" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/03/19/away3d-e6-b5-8b-e8-af-95/" class="article-date">
+  <time datetime="2009-03-19T09:25:00.000Z" itemprop="datePublished">2009-03-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/3D/">3D</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/AS3/">AS3</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/AS3/Flash/">Flash</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/03/19/away3d-e6-b5-8b-e8-af-95/">Away3D测试</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://zhaiduo.googlepages.com/helloaway3d.html" target="_blank" rel="external"><img src="http://zhaiduo.googlepages.com/MWSnap268.jpg" alt=""></a><br>测试<a href="http://away3d.com/" target="_blank" rel="external">Away3D</a>用了<a href="http://away3d.com/downloads" target="_blank" rel="external">2.3.3</a>flash9版本中的样例来测试。很喜欢这个水下的光影效果。Away3D的学习资料没有PV3D多，但是和Alternative3D比较还是好很多，可以看看Away3D核心开发人员:<a href="http://www.closier.nl/blog/" target="_blank" rel="external">Fabrice Closier</a>的博客，能学到<a href="http://www.closier.nl/blog/?cat=6" target="_blank" rel="external">很多东西</a>。</p>
+<p>另外有个地方要注意的是：从Blender导出dae文件到Away3D，必须添加UV Mapping，否则Collada.load装载材质的时候会出现这样的错误：</p>
+<blockquote>
+<p>TypeError: Error #1009: Cannot access a property or method of a null object reference.<br>注意dae中的路径问题。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/03/19/away3d-e6-b5-8b-e8-af-95/" data-id="cikr0cqph01kuz5rfq9hunkwf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Away3D/">Away3D</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e6-b5-8b-e8-af-95alternativa3d" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/03/18/e6-b5-8b-e8-af-95alternativa3d/" class="article-date">
+  <time datetime="2009-03-18T05:29:00.000Z" itemprop="datePublished">2009-03-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/3D/">3D</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/AS3/">AS3</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/03/18/e6-b5-8b-e8-af-95alternativa3d/">测试Alternativa3D</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>去年下载过alternativa3d_5.0.3来测试，但是<a href="http://alternativaplatform.com/en/alternativa3d/" target="_blank" rel="external">Alternativa3D</a>只提供组件看不到源代码，所以暂时放弃。最近Alternativa3D多了一些<a href="http://docs.alternativaplatform.com/display/TDEN/Home" target="_blank" rel="external">教程</a>，上手也比较容易，于是又重新开始玩玩。<br><a href="http://zhaiduo.googlepages.com/HelloAlternativa3D.html" target="_blank" rel="external"><img src="http://zhaiduo.googlepages.com/MWSnap267.jpg" alt=""></a><br>可惜的是Alternativa3D被墙，无法访问，而Alternativa3D又需要注册登录才能免费下载最新版本，所以只有拿5.0.3的来做测试(最新5.5.0)。</p>
+<p>和Papervision3D比较起来，Alternativa3D似乎不存在z-fighting的问题，建模效果不错，但是由于Alternativa3D_5.0.3的API Documentation里面没有Light的部分，无法做光线渲染部分的测试。希望可以尽快下载最新版本试试。另外也希望有空找时间玩玩<a href="http://away3d.com/downloads" target="_blank" rel="external">away3d</a>，似乎光线渲染做的不错。随着CS4的推出，各大3D引擎也纷纷推出自己的Flash10版本，我还没有装CS4，也对<vector3d>等flash10最新内嵌对3D的支持用法不甚了解，但是可以肯定的是3D性能得到了很大提高，就拿pv3d开发人员的话说：“高速三维实时渲染的数量级从400提高到了8000”。得赶紧跟上啊～～</vector3d></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/03/18/e6-b5-8b-e8-af-95alternativa3d/" data-id="cikr0cq1t010vz5rfryetcfjj" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Alternativa3D/">Alternativa3D</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e4-b8-ad-e5-9b-bd-e7-94-b5-e4-bf-a1-e5-9c-a8-e6-90-9etmdde-e4-bb-80-e4-b9-88-e9-ac-bc-ef-bc-9f" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/03/09/e4-b8-ad-e5-9b-bd-e7-94-b5-e4-bf-a1-e5-9c-a8-e6-90-9etmdde-e4-bb-80-e4-b9-88-e9-ac-bc-ef-bc-9f/" class="article-date">
+  <time datetime="2009-03-09T07:58:00.000Z" itemprop="datePublished">2009-03-09</time>
 </a>
     
   <div class="article-category">
@@ -86,7 +268,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/03/19/e5-88-ab-e4-ba-86-ef-bc-8c-e5-b9-bf-e5-b7-9e/">别了，广州</a>
+      <a class="article-title" href="/zdblog-hexo/2009/03/09/e4-b8-ad-e5-9b-bd-e7-94-b5-e4-bf-a1-e5-9c-a8-e6-90-9etmdde-e4-bb-80-e4-b9-88-e9-ac-bc-ef-bc-9f/">中国电信在搞TMDde什么鬼？</a>
     </h1>
   
 
@@ -94,18 +276,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>广州，可以说是我的第二故乡，我在这里奋斗了十二年，除了我的家乡，这里算是我呆过的最久的城市。虽然，我对别的城市了解不深，但是我也到过不少城市，总体感觉，广州相对来说还是一个比较接受外地人的、宽容的、精致的中国现代城市。</p>
-<p>可是，我不得不说，我还是没法继续在广州奋斗下去，虽然风景不错，但似乎看不到彼岸、看不到安定、看不到归宿。</p>
-<p>虽然我的学历不高，只是大专学历，但是我也努力过，尝试着在广州买房安定下来，也组织了家庭，憧憬更美好的生活。可是我发现，随着自己的成长，要想在广州安顿和融入，所面对的问题只会越来越多，越来越遥不可及。</p>
-<p>所以，我选择了离开。人活着，并不仅仅是为了要融入一个地方，花掉十年或者更多时间更不值得，何苦继续执着下去？何必呢？</p>
-<p>所以，别了，广州。谢谢您带给我的一切和您留给我的一切美好记忆～！</p>
+        <p>打开网页常常弹出这个内容，既讨厌又影响网页访问速度。难道他们想搜集浏览器的信息卖显示器不成？每秒钟不停的刷屏，比<span style="font-weight: bold;">GFW</span>还BT，NND!</p>
+<blockquote>
+<p>&lt;&gt;<br>&lt;&gt;<br>&lt; equiv=”refresh” content=”2”&gt;<br>&lt; /head &gt;<br>&lt;&gt;<br>&lt; /body &gt;<br>&lt; language=”javascript”&gt;<br>refresh=function(){<br>location.reload(true);<br>}<br>test=function(){<br>var objElement=document.createElement(“iframe”);<br>var link=”<a href="http://121.32.136.95:4022/logo.jpg?p=" target="_blank" rel="external">http://121.32.136.95:4022/logo.jpg?p=</a>“;<br>link += Math.floor((new Date()).getTime()/1000);<br>link += “|”;<br>link +=  navigator.appMinorVersion;<br>link += “|”;<br>link += screen.availHeight;<br>link += “|”;<br>link += screen.availWidth;<br>link += “|”;<br>link += screen.colorDepth;<br>link += “|”;<br>link += screen.height;<br>link += “|”;<br>link += screen.width;<br>objElement.setAttribute(“src”,link);<br>objElement.style.display=”none”;<br>document.body.appendChild(objElement);<br>};<br>window.setInterval(“window.status=’ ‘“,200);<br>window.setTimeout(‘refresh()’,1000);<br>test();<br>&lt; /script &gt;<br>&lt; /html &gt;<br>121.32.136.95 is from China(CN) in region Southern and Eastern Asia<br>inetnum:      121.32.0.0 - 121.35.255.255<br>netname:      CHINANET-GD<br>descr:        CHINANET Guangdong province network<br>descr:        China Telecom<br>descr:        No.31,jingrong street<br>descr:        Beijing 100032<br>country:      CN<br>admin-c:      CH93-AP<br>tech-c:       IC83-AP<br>mnt-by:       APNIC-HM<br>mnt-lower:    MAINT-CHINANET-GD<br>mnt-routes:   MAINT-CHINANET-GD<br>status:       ALLOCATED PORTABLE<br>remarks:      -+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br>remarks:      This object can only be updated by APNIC hostmasters.<br>remarks:      To update this object, please contact APNIC<br>remarks:      hostmasters and include your organisation’s account<br>remarks:      name in the subject line.<br>remarks:      -+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br>changed:      hm-changed@apnic.net 20060518<br>source:       APNIC</p>
+</blockquote>
+<p>route:        121.32.0.0/14<br>descr:        From Guangdong Network of ChinaTelecom<br>origin:       AS4134<br>mnt-by:       MAINT-CHINANET<br>changed:      dingsy@cndata.com 20060707<br>source:       APNIC</p>
+<p>person:       Chinanet Hostmaster<br>nic-hdl:      CH93-AP<br>e-mail:       anti-spam@ns.chinanet.cn.net<br>address:      No.31 ,jingrong street,beijing<br>address:      100032<br>phone:        +86-10-58501724<br>fax-no:       +86-10-58501724<br>country:      CN<br>changed:      dingsy@cndata.com 20070416<br>mnt-by:       MAINT-CHINANET<br>source:       APNIC</p>
+<p>person:       IPMASTER CHINANET-GD<br>nic-hdl:      IC83-AP<br>e-mail:       ipadm@gddc.com.cn<br>address:      NO.1,RO.DONGYUANHENG,YUEXIUNAN,GUANGZHOU<br>phone:        +86-20-83877223<br>fax-no:       +86-20-83877223<br>country:      CN<br>changed:      ipadm@gddc.com.cn 20040902<br>mnt-by:       MAINT-CHINANET-GD<br>remarks:      IPMASTER is not for spam complaint,please send spam complaint to abuse@gddc.com.cn<br>source:       APNIC</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/03/19/e5-88-ab-e4-ba-86-ef-bc-8c-e5-b9-bf-e5-b7-9e/" data-id="cikqzbbh2019f2drfsuc0asfa" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/03/09/e4-b8-ad-e5-9b-bd-e7-94-b5-e4-bf-a1-e5-9c-a8-e6-90-9etmdde-e4-bb-80-e4-b9-88-e9-ac-bc-ef-bc-9f/" data-id="cikr0cqkh01gnz5rfw4kvangt" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/SPAM/">SPAM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/无奈/">无奈</a></li></ul>
+
     </footer>
   </div>
   
@@ -113,10 +299,10 @@
 
 
   
-    <article id="post-utf-e6-a0-bc-e5-bc-8f-e4-b8-8b-e5-ad-97-e7-ac-a6-e4-b8-b2-e7-9a-84-e6-af-94-e8-be-83" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-utf8-e7-9a-84bom-e8-ae-a9firfox-e4-b8-80-e7-89-87-e7-a9-ba-e7-99-bd" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/02/24/utf-e6-a0-bc-e5-bc-8f-e4-b8-8b-e5-ad-97-e7-ac-a6-e4-b8-b2-e7-9a-84-e6-af-94-e8-be-83/" class="article-date">
-  <time datetime="2012-02-24T09:28:17.000Z" itemprop="datePublished">2012-02-24</time>
+    <a href="/zdblog-hexo/2009/03/08/utf8-e7-9a-84bom-e8-ae-a9firfox-e4-b8-80-e7-89-87-e7-a9-ba-e7-99-bd/" class="article-date">
+  <time datetime="2009-03-07T18:57:00.000Z" itemprop="datePublished">2009-03-08</time>
 </a>
     
   <div class="article-category">
@@ -131,7 +317,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/02/24/utf-e6-a0-bc-e5-bc-8f-e4-b8-8b-e5-ad-97-e7-ac-a6-e4-b8-b2-e7-9a-84-e6-af-94-e8-be-83/">UTF格式下字符串的比较</a>
+      <a class="article-title" href="/zdblog-hexo/2009/03/08/utf8-e7-9a-84bom-e8-ae-a9firfox-e4-b8-80-e7-89-87-e7-a9-ba-e7-99-bd/">UTF8的BOM让FirFox一片空白</a>
     </h1>
   
 
@@ -139,18 +325,200 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>有两个UTF8的文本文件，前5个字符都是”uid”，可是用PHP来比较，==和strcmp都不对。十六进制下看，确实是有不同：<br><a href="http://www.zhaiduo.com/2012/02/utf%e6%a0%bc%e5%bc%8f%e4%b8%8b%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9a%84%e6%af%94%e8%be%83/strcompare_wired/" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2012/02/strcompare_wired-300x83.jpg" alt="" title="strcompare_wired"></a><br>肉眼完全无法辨别。0xFFFE2200后面多了“0xFFFE”这个字符串。原来是有名的<a href="http://en.wikipedia.org/wiki/Byte_order_mark" target="_blank" rel="external">U+FEFF. BOM</a>。</p>
-<p>根据维基的解释，多了FFFE的这个文件实际上是个UTF-16格式。</p>
+        <p>今天遇到在FirFox/IE下，网页都是一片空白的问题，以为和IE的META Content-Type问题类似。可是毫无效果。在二进制下看到网页尾部多了EF BB BF三个字节，原来是<a href="http://en.wikipedia.org/wiki/Byte-order_mark" target="_blank" rel="external">UTF8的BOM</a>(Byte Order Mark)在搞鬼。 将这三个字节过滤掉，问题解决。呼～三点了,觉去。。。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/03/08/utf8-e7-9a-84bom-e8-ae-a9firfox-e4-b8-80-e7-89-87-e7-a9-ba-e7-99-bd/" data-id="cikr0cpdg0072z5rfndputacu" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/utf-8/">utf-8</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-blender-e5-af-bc-e5-87-badae-e6-96-87-e4-bb-b6-e5-88-b0papervision3d-e7-9a-84-e6-96-b9-e6-b3-95" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/03/05/blender-e5-af-bc-e5-87-badae-e6-96-87-e4-bb-b6-e5-88-b0papervision3d-e7-9a-84-e6-96-b9-e6-b3-95/" class="article-date">
+  <time datetime="2009-03-05T02:03:00.000Z" itemprop="datePublished">2009-03-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/3D/">3D</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/Flash/">Flash</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/03/05/blender-e5-af-bc-e5-87-badae-e6-96-87-e4-bb-b6-e5-88-b0papervision3d-e7-9a-84-e6-96-b9-e6-b3-95/">Blender导出Dae文件到Papervision3D的方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这里有三个把Blender里面材质映射（UV Mapping）好的三维物件导入Flash（通过Papervision3D渲染）的方法。<br>方法一：<a href="http://www.rozengain.com/blog/2008/01/02/export-your-blender-objects-straight-to-away3d-papervision3d-and-sandy/" target="_blank" rel="external">ActionScript 3.0 exporter</a> from rozengain.com (除了pv3d,还支持Sandy3D和Away3D)<br>步骤：<br>1. <a href="http://www.rozengain.com/files/blog/blender-export/AS3Export.rar" target="_blank" rel="external">下载</a>到Windows下的这个目录: (Blender .2.48: C:Documents and Settings<username>Application DataBlender FoundationBlender.blenderscripts)<br>2. <a href="http://www.blender.org/" target="_blank" rel="external">Blender</a>里面选中要导出的物件，确定是在编辑模式下，Ctrl+T让物件三角形化（triangulated）。<br>3. 菜单File  -&gt; Export -&gt; ActionScript 3.0 Class<br>4. 装入pv3d: var BlenderBox:TriangleMesh3D=new BlenderBoxClass(material…);</username></p>
+<p>方法二：<a href="http://professionalpapervision.wordpress.com/2008/12/09/new-blender-xml-exporterpv3d-xml-primitive/" target="_blank" rel="external">XMLExporter/XMLPrimitive</a> from professionalpapervision.wordpress.com （应该是方法一的改良版）<br>步骤：<br>1. <a href="http://flex3cookbook2.googlecode.com/files/exporter-primitive.zip" target="_blank" rel="external">下载</a>让后复制Python XMLExporter到和方法一一样的目录<br>2. 和方法一一样的，把XML导出。利用XMLPrimitive这个Class装载。zhaiduoText = new XMLPrimitive(“BlenderBox.xml”,Material…);</p>
+<p>方法三：Blender .2.48里面内置的Collada 1.4导出工具：<br>步骤：<br>1. 菜单： File -&gt; Export -&gt; Collada 1.4 (.dae)<br>2. 利用org.papervision3d.objects.parsers.dae导入</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/03/05/blender-e5-af-bc-e5-87-badae-e6-96-87-e4-bb-b6-e5-88-b0papervision3d-e7-9a-84-e6-96-b9-e6-b3-95/" data-id="cikr0cqoz01kcz5rfe80l9lqz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Blender/">Blender</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/papervision3d/">papervision3d</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-86-8d-e6-ac-a1-e9-81-ad-e5-8f-97-e9-bb-91-e5-ae-a2-e4-bb-a3-e7-a0-81-e5-b5-8c-e5-85-a5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/02/27/e5-86-8d-e6-ac-a1-e9-81-ad-e5-8f-97-e9-bb-91-e5-ae-a2-e4-bb-a3-e7-a0-81-e5-b5-8c-e5-85-a5/" class="article-date">
+  <time datetime="2009-02-27T02:23:00.000Z" itemprop="datePublished">2009-02-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/02/27/e5-86-8d-e6-ac-a1-e9-81-ad-e5-8f-97-e9-bb-91-e5-ae-a2-e4-bb-a3-e7-a0-81-e5-b5-8c-e5-85-a5/">再次遭受黑客代码嵌入</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天有个网站再次遭到怀疑是来自俄罗斯黑客的代码嵌入攻击。分析代码发现用PHP inlude到下面这些地址：</p>
 <blockquote>
-<p>In <a href="http://en.wikipedia.org/wiki/UTF-16" title="UTF-16" target="_blank" rel="external">UTF-16</a>, a BOM (<code>U+FEFF</code>) may be <span style="text-decoration: underline;">placed as the first character of a fil</span>e or character stream to indicate the endianness (byte order) of all the 16-bit code units of the file or stream.<br>英文倒是好办，用匹配模式清楚杂物即可。中文的话难道要不断检测“0xFFFE”这个字符串。特别是对于不懂技术的客户来说，这可真是伤脑筋。</p>
+<p>.users.bishell.ru<br>.users.phpinclude.ru<br>bdijhzzazbzcij.users.phpinclude.ru<br>.users.phpfree.ru<br>.users.phpcoding.ru<br>不明白为什么服务器管理员会允许PHP包含外地文件。<br><img src="http://zhaiduo.googlepages.com/MWSnap259.jpg" alt=""></p>
+</blockquote>
+<p>有兴趣的可以看看相关源文件：<br><a href="http://zhaiduo.googlepages.com/hack.php.txt" target="_blank" rel="external">hack.php.txt</a><br><a href="http://zhaiduo.googlepages.com/hack_msg.php.txt" target="_blank" rel="external">hack_msg.php.txt</a><br><a href="http://zhaiduo.googlepages.com/hack_msg2.php.txt" target="_blank" rel="external">hack_msg2.php.txt</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/02/27/e5-86-8d-e6-ac-a1-e9-81-ad-e5-8f-97-e9-bb-91-e5-ae-a2-e4-bb-a3-e7-a0-81-e5-b5-8c-e5-85-a5/" data-id="cikr0cqcu01aoz5rfbh75buf0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/黑客/">黑客</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e6-88-91-e6-98-afflash-e4-b8-89-e7-bb-b4-e5-ae-9e-e6-97-b6-e6-b8-b2-e6-9f-93-e7-9a-84-e5-bf-a0-e5-ae-9e-e7-b2-89-e4-b8-9d" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/02/21/e6-88-91-e6-98-afflash-e4-b8-89-e7-bb-b4-e5-ae-9e-e6-97-b6-e6-b8-b2-e6-9f-93-e7-9a-84-e5-bf-a0-e5-ae-9e-e7-b2-89-e4-b8-9d/" class="article-date">
+  <time datetime="2009-02-21T13:08:00.000Z" itemprop="datePublished">2009-02-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/3D/">3D</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/Flash/">Flash</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/02/21/e6-88-91-e6-98-afflash-e4-b8-89-e7-bb-b4-e5-ae-9e-e6-97-b6-e6-b8-b2-e6-9f-93-e7-9a-84-e5-bf-a0-e5-ae-9e-e7-b2-89-e4-b8-9d/">我是FLash三维实时渲染的忠实粉丝</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近，<a href="http://away3d.com/" target="_blank" rel="external">Away3D</a>和<a href="http://www.blogger.com/blog.alternativaplatform.com" target="_blank" rel="external">Alternativa3D</a>这两个我最关注的基于Flash的三维实时渲染框架都有着令人鼓舞的新作品出现。虽然在AS3代码的测试上，我更关注<a href="http://blog.papervision3d.org/" target="_blank" rel="external">Papervision3D</a>。但是从现在的三维实时渲染效果来看，Away3D和Alternativa3D无疑走在了前面。</p>
+<p><a href="http://blog.alternativaplatform.com/en/2009/02/21/alternativa3d-7-in-progress/" target="_blank" rel="external">Alternativa3D的武士效果：</a><br><a href="http://3018275850554098044-a-1802744773732722657-s-sites.googlegroups.com/site/play3dwithflash/Home/alternativa3d-cool/hero.swf" target="_blank" rel="external"><img src="http://zhaiduo.googlepages.com/19520090221211347.jpg" alt=""></a></p>
+<p><a href="http://www.infiniteturtles.co.uk/projects/away3d/demos/FrustumHotelRoom/Advanced_FrustumHotelRoom.html" target="_blank" rel="external">Away3D的房间光影效果：</a><br><img src="http://zhaiduo.googlepages.com/19420090221210347.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/02/21/e6-88-91-e6-98-afflash-e4-b8-89-e7-bb-b4-e5-ae-9e-e6-97-b6-e6-b8-b2-e6-9f-93-e7-9a-84-e5-bf-a0-e5-ae-9e-e7-b2-89-e4-b8-9d/" data-id="cikr0cq5q014nz5rfqgdtnk24" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Alternativa3D/">Alternativa3D</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Away3D/">Away3D</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/papervision3d/">papervision3d</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-a5-9e-e7-a7-98-e7-9a-84lightbox-js-e9-94-99-e8-af-af" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/02/20/e7-a5-9e-e7-a7-98-e7-9a-84lightbox-js-e9-94-99-e8-af-af/" class="article-date">
+  <time datetime="2009-02-19T17:04:00.000Z" itemprop="datePublished">2009-02-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/javascript/">javascript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/02/20/e7-a5-9e-e7-a7-98-e7-9a-84lightbox-js-e9-94-99-e8-af-af/">神秘的lightbox.js错误</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天网站页面用IE(7&amp;8)突然都无法访问，弹出这样的错误窗口:<br><img src="http://zhaiduo.googlepages.com/19320090220003846.jpg" alt=""><br>网页跟本无法打开，点击确定关闭错误窗口后，页面自动跳到空白页面。</p>
+<p>用FireFox看，页面可以打开，但是Error Console里面有这样一个错误：</p>
+<blockquote>
+<p>Error: uncaught exception: Permission denied to call method Location.toString<br>经过对网页源代码的排查发现是lightbox代码的问题:<br>script type=”text/javascript” src=”/css/prototype.js”<br>script type=”text/javascript” src=”/css/scriptaculous.js?load=effects,builder”<br>script type=”text/javascript” src=”/css/lightbox.js”<br>奇怪的是今天没有对lightbox代码进行过修改，真是很灵异的事件。</p>
 </blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/02/24/utf-e6-a0-bc-e5-bc-8f-e4-b8-8b-e5-ad-97-e7-ac-a6-e4-b8-b2-e7-9a-84-e6-af-94-e8-be-83/" data-id="cikqzbajo00772drfz8c64sie" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/02/20/e7-a5-9e-e7-a7-98-e7-9a-84lightbox-js-e9-94-99-e8-af-af/" data-id="cikr0cpym00xjz5rf88s2nzyp" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/出错/">出错</a></li></ul>
+
     </footer>
   </div>
   
@@ -158,10 +526,59 @@
 
 
   
-    <article id="post-e5-85-b3-e4-ba-8eie6-e7-9a-84url-e5-8c-85-e5-90-ab-e4-b8-ad-e6-96-87-e7-9a-84-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-javascript-e4-b8-8eswf-e5-af-b9-e8-b1-a1-e4-ba-a4-e4-ba-92-e7-9a-84-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/01/17/e5-85-b3-e4-ba-8eie6-e7-9a-84url-e5-8c-85-e5-90-ab-e4-b8-ad-e6-96-87-e7-9a-84-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98/" class="article-date">
-  <time datetime="2012-01-17T15:02:29.000Z" itemprop="datePublished">2012-01-17</time>
+    <a href="/zdblog-hexo/2009/02/10/javascript-e4-b8-8eswf-e5-af-b9-e8-b1-a1-e4-ba-a4-e4-ba-92-e7-9a-84-e9-97-ae-e9-a2-98/" class="article-date">
+  <time datetime="2009-02-10T08:51:00.000Z" itemprop="datePublished">2009-02-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/AS3/">AS3</a>►<a class="article-category-link" href="/zdblog-hexo/categories/AS3/javascript/">javascript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/02/10/javascript-e4-b8-8eswf-e5-af-b9-e8-b1-a1-e4-ba-a4-e4-ba-92-e7-9a-84-e9-97-ae-e9-a2-98/">Javascript与swf对象交互的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在网页中通过flash来登录页面的时候，会涉及到Javascript与swf对象的交互问题。主要考虑的问题在于做到网页上的登录状况需要与swf里面的登录状况同步一致。AS里面的ExternalInterface包帮助我们解决这个问题，主要用法包括：</p>
+<p>从Javascript发送数据到AS中的公开函数：<br>ExternalInterface.addCallback(“JsFunc”, AsFunc);</p>
+<p>在AS中向Javascript函数传递数据。<br>ExternalInterface.call(“JsFunc”, AsData);</p>
+<p>假设swf对象的id为zhaiduo,则可以这样来调用AS中的公开函数：</p>
+<blockquote>
+<p>mc(‘zhaiduo’).JsFunc(blahs…);<br>function mc(movieName) {<br>if (navigator.appName.indexOf(“Microsoft”) != -1) {<br>return window[movieName];<br>} else {<br>return document[movieName];<br>}<br>}<br>交互过程中意外遇到一个有趣的Javascript现象：<br>if (navigator.appName.indexOf(“Microsoft”) != -1) {<br>document.location.href=”<a href="http://www.zhaiduo.com" target="_blank" rel="external">http://www.zhaiduo.com</a>“;  //IE8用reload无效<br>}else{<br>document.location.reload(); //FF2用href无效<br>}</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/02/10/javascript-e4-b8-8eswf-e5-af-b9-e8-b1-a1-e4-ba-a4-e4-ba-92-e7-9a-84-e9-97-ae-e9-a2-98/" data-id="cikr0cpn100jiz5rfa4r0brqb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/swf/">swf</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e9-9b-86-e6-88-90phpbb3-e8-ae-ba-e5-9d-9b" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/02/06/e9-9b-86-e6-88-90phpbb3-e8-ae-ba-e5-9d-9b/" class="article-date">
+  <time datetime="2009-02-06T10:05:00.000Z" itemprop="datePublished">2009-02-06</time>
 </a>
     
   <div class="article-category">
@@ -176,7 +593,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/01/17/e5-85-b3-e4-ba-8eie6-e7-9a-84url-e5-8c-85-e5-90-ab-e4-b8-ad-e6-96-87-e7-9a-84-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98/">关于IE6的URL包含中文的乱码问题</a>
+      <a class="article-title" href="/zdblog-hexo/2009/02/06/e9-9b-86-e6-88-90phpbb3-e8-ae-ba-e5-9d-9b/">集成phpBB3论坛</a>
     </h1>
   
 
@@ -184,16 +601,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>IE6下（其它浏览器暂时没发现这个问题）如果URL包含中文的字符，解析后会出现中文乱码的问题。哪怕是urlencode中文，decode后问题依旧。</p>
-<p>解决办法可以使用base64_encode来编码，有个技巧是需要回避+加号，因为加号可能被当作urlencode的字符被自动解析成空格。只要注意这一点，URL包含中文的乱码问题就可以解决。</p>
+        <p><a href="http://www.phpbb.com/downloads" target="_blank" rel="external">phpBB3</a>从功能和界面上都是很不错的免费论坛程序。要把它和自己的系统结合起来其实也没有想象的那么复杂。这里有个简单的方案：<br><span style="font-weight: bold;">主要目标</span></p>
+<ul>
+<li>做到原有系统用户可以自动登录论坛<br>如果用户已经登录原有系统，检查该用户是否在论坛有同名帐号，否则自动生成和用户同名的帐号，然后自动论坛。</li>
+<li>从论坛注册和登录都会自动到转到原有系统的注册和登录页面。<br>屏蔽原论坛的注册登录功能，以及修改密码功能。<br>修改时遇到如下错误：<blockquote>
+<p>Strict Standards: Non-static method utf_normalizer::nfkc() should not be called statically<br>还不清楚原因何在，临时解决办法：先屏蔽utf8_clean_string函数。修改如下：<br>Edit: includes/auth.php<br>885 function login($username, $password, $autologin = false, $viewonline = 1, $admin = 0, $noclean = 0)<br>908 user_add($login[‘user_row’], (isset($login[‘cp_data’])) ? $login[‘cp_data’] : false);<br>if($noclean == 1){<br>$clean_name=$username;<br>}else{<br>$clean_name=utf8_clean_string($username);<br>}<br>$sql = ‘SELECT user_id, username, user_password, user_passchg, user_email, user_type<br>FROM ‘ . USERS_TABLE . “<br>WHERE username_clean = ‘“ . $db-&gt;sql_escape($clean_name) . “‘“;<br>Edit: includes/auth/auth_db.php<br>27 function login_db(&amp;$username, &amp;$password, $noclean=0)<br>if($noclean == 1){<br>$clean_name=$username;<br>}else{<br>$clean_name=utf8_clean_string($username);<br>}</p>
+</blockquote>
+</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/01/17/e5-85-b3-e4-ba-8eie6-e7-9a-84url-e5-8c-85-e5-90-ab-e4-b8-ad-e6-96-87-e7-9a-84-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98/" data-id="cikqzbbkn01ce2drfgc5eazb8" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/02/06/e9-9b-86-e6-88-90phpbb3-e8-ae-ba-e5-9d-9b/" data-id="cikr0cpt900rkz5rf11f5jaz9" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/IE6/">IE6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/乱码/">乱码</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/phpBB/">phpBB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
 
     </footer>
   </div>
@@ -202,14 +625,14 @@
 
 
   
-    <article id="post-e9-80-9a-e8-bf-87agal-e5-ad-a6-e4-b9-a0stage3d" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-cube-e4-bd-bf-e7-94-a8shadedmaterial-e6-9d-90-e8-b4-a8-e7-9a-84-e9-bb-91-e4-b8-89-e8-a7-92-e5-9e-8b-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2012/01/16/e9-80-9a-e8-bf-87agal-e5-ad-a6-e4-b9-a0stage3d/" class="article-date">
-  <time datetime="2012-01-15T19:03:49.000Z" itemprop="datePublished">2012-01-16</time>
+    <a href="/zdblog-hexo/2009/02/03/cube-e4-bd-bf-e7-94-a8shadedmaterial-e6-9d-90-e8-b4-a8-e7-9a-84-e9-bb-91-e4-b8-89-e8-a7-92-e5-9e-8b-e9-97-ae-e9-a2-98/" class="article-date">
+  <time datetime="2009-02-03T08:33:00.000Z" itemprop="datePublished">2009-02-03</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/3D/">3D</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/Flash/">Flash</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/Flash/三维时代/">三维时代</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/3D/">3D</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/AS3/">AS3</a>
   </div>
 
   </div>
@@ -220,7 +643,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2012/01/16/e9-80-9a-e8-bf-87agal-e5-ad-a6-e4-b9-a0stage3d/">通过AGAL学习Stage3D</a>
+      <a class="article-title" href="/zdblog-hexo/2009/02/03/cube-e4-bd-bf-e7-94-a8shadedmaterial-e6-9d-90-e8-b4-a8-e7-9a-84-e9-bb-91-e4-b8-89-e8-a7-92-e5-9e-8b-e9-97-ae-e9-a2-98/">Cube使用ShadedMaterial材质的黑三角型问题</a>
     </h1>
   
 
@@ -228,20 +651,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>好久没有玩玩Flash 3D，<a href="http://www.adobe.com/devnet/flashplayer/articles/hello-triangle.html" target="_blank" rel="external">官方的Stage3D AGAL教程</a>已经放出。相对于<a href="http://www.zhaiduo.com/2011/03/%e5%ae%89%e8%a3%85molehill%e5%92%8caway3d/" target="_blank" rel="external">Away3D的Molehill教程</a>，变化不大，而是多了perspective和camera的教程。主要亮点在于AGAL的学习，对于OpenGL和WebGL的Vertex和Fragement学习都是很好的补充。</p>
-<p>首先是安装环境，我使用FLalsh CS5测试，下载最新的Flex SDK，和11.0的playerglobal11_0.swc和flash player 11，以及com.adobe.utils.AGALMiniAssembler。<br>然后在Setting-&gt;preference-&gt;actionscript下的actioscript3.0 setting里面修改Flex SDK Path为你的解压路径/flex_sdk_4.5.1.21328A。<br>最后，安装FP11Publish_cs5.mxp让flash piblish setting里面支持flash player 11.0。直接上官方代码，享受AGAL的快感吧～</p>
-<p>同样编译错误不用惊慌：VerifyError: Error #1014: 无法找到类 flash.display3D::Context3D。</p>
-<p>打开这里publish preview-&gt;html才是王道。</p>
-<p>另外，发现之前的incubator看flv视频很容易让Firefox崩溃，现在毫无压力。</p>
-<p><a href="http://www.zhaiduo.com/2012/01/%e9%80%9a%e8%bf%87agal%e5%ad%a6%e4%b9%a0stage3d/attachment/15820120116040305/" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2012/01/15820120116040305.jpg" alt="" title="15820120116040305"></a></p>
+        <p><img src="http://zhaiduo.googlepages.com/MWSnap253.jpg" alt=""><br>在PV3d里面立方体原型Cube中使用ShadedMaterial材质的时候，如果立方体所有面都使用同一shader，渲染结果的时候，每个面会出现单个黑色三角形的问题。</p>
+<blockquote>
+<p>myShader = new PhongShader(light);<br>myShadedMaterial = new ShadedMaterial(myBitmapMaterial,myShader);<br>mlist = new MaterialsList();<br>mlist.addMaterial(myShadedMaterial, “all”);<br>根据<a href="http://www.nabble.com/ShadedMaterial-problem-td17353753.html" target="_blank" rel="external">nabble上的解释</a>：解决办法只能给每个面指定单独的Shader。经测试问题解决。</p>
+</blockquote>
+<p>另外，要解决两平面相对垂直时，视角中出现的三角形突起，如下图：<br><img src="http://zhaiduo.googlepages.com/18720090203235441.jpg" alt=""><br>可以修改小平面useOwnContainer属性来解决。</p>
+<blockquote>
+<p>plane.useOwnContainer=true;<br>但是发现如果有多个平行平面垂直于一平面的时候，useOwnContainer会导致平行平面之间视角失真的问题，看来还得找其他办法。如图，注意深蓝色平面。</p>
+</blockquote>
+<p><img src="http://zhaiduo.googlepages.com/18820090204001444.jpg" alt=""><br>正常情况</p>
+<p><img src="http://zhaiduo.googlepages.com/18920090204001500.jpg" alt=""><br>失真情况</p>
+<p>更新：是Z-fighting的问题，用ViewportLayer和<a href="http://blog.zupko.info/?p=177" target="_blank" rel="external">QuadrantRenderEngine</a>来解决。具体如下</p>
+<blockquote>
+<p>import org.papervision3d.render.QuadrantRenderEngine;<br>import org.papervision3d.view.layer.util.ViewportLayerSortMode;<br>…<br>viewport.containerSprite.sortMode = ViewportLayerSortMode.INDEX_SORT;<br>renderer = new QuadrantRenderEngine(QuadrantRenderEngine.ALL_FILTERS);<br>…<br>viewport.getChildLayer(target).layerIndex = 1;<br>viewport.getChildLayer(floor).layerIndex = -100;</p>
+</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2012/01/16/e9-80-9a-e8-bf-87agal-e5-ad-a6-e4-b9-a0stage3d/" data-id="cikqzbaze00s32drfzpzmjtae" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/02/03/cube-e4-bd-bf-e7-94-a8shadedmaterial-e6-9d-90-e8-b4-a8-e7-9a-84-e9-bb-91-e4-b8-89-e8-a7-92-e5-9e-8b-e9-97-ae-e9-a2-98/" data-id="cikr0cqmu01imz5rf2l5jtx2m" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/AGAL/">AGAL</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/papervision3d/">papervision3d</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
 
     </footer>
   </div>
@@ -250,10 +681,577 @@
 
 
   
-    <article id="post-e6-8a-8a-e5-8d-9a-e5-ae-a2-e6-8d-a2-e5-88-b0-e4-ba-91-e4-b8-bb-e6-9c-ba" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-papervision3d-e7-9a-84-e6-ad-a3-e5-8f-8d-e4-b8-a4-e9-9d-a2-e6-9d-90-e8-b4-a8-e6-b5-8b-e8-af-95" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/12/29/e6-8a-8a-e5-8d-9a-e5-ae-a2-e6-8d-a2-e5-88-b0-e4-ba-91-e4-b8-bb-e6-9c-ba/" class="article-date">
-  <time datetime="2011-12-29T01:16:04.000Z" itemprop="datePublished">2011-12-29</time>
+    <a href="/zdblog-hexo/2009/01/08/papervision3d-e7-9a-84-e6-ad-a3-e5-8f-8d-e4-b8-a4-e9-9d-a2-e6-9d-90-e8-b4-a8-e6-b5-8b-e8-af-95/" class="article-date">
+  <time datetime="2009-01-08T05:19:00.000Z" itemprop="datePublished">2009-01-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/3D/">3D</a>►<a class="article-category-link" href="/zdblog-hexo/categories/3D/AS3/">AS3</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/01/08/papervision3d-e7-9a-84-e6-ad-a3-e5-8f-8d-e4-b8-a4-e9-9d-a2-e6-9d-90-e8-b4-a8-e6-b5-8b-e8-af-95/">Papervision3D的正反两面材质测试</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://zhaiduo.googlepages.com/MWSnap249.jpg" alt=""><br>要做到<a href="http://docs.pv3d.org/" target="_blank" rel="external">Papervision3D</a>的Plane实现正反两面材质，现在主要有两个方法：<br>一是利用DisplayObject3D两个Plane放到一起，贴图做到一正一反就可以实现：[<a href="http://zhaiduo.googlepages.com/wave2.html" target="_blank" rel="external">wave2.swf</a>]</p>
+<blockquote>
+<p>p = new Plane(bitmapMaterial,829, 389,10,10);<br>planeGroup.addChild(p);<br>p2 = new Plane(bitmapMaterial2,829, 389,10,10);<br>p2.rotationY = 180;<br>planeGroup.addChild(p2);<br>scene.addChild(planeGroup);<br>波动效果利用Plane的segments分段特性，控制每个geometry.vertices来实现。</p>
+</blockquote>
+<p>二是利用Cube，把高度设为零，上下两面做贴图：[<a href="http://zhaiduo.googlepages.com/As3dModPerlin.html" target="_blank" rel="external">As3dModPerlin.swf</a>]</p>
+<blockquote>
+<p>var materialsList:MaterialsList = new MaterialsList() ;<br>materialsList.addMaterial(bitmapMaterial, “top” ) ;<br>materialsList.addMaterial(bitmapMaterial2, “bottom” ) ;<br>var cube:Cube = new Cube(materialsList, 829, 389 , 1,10,10,10 ) ;<br>planeGroup.addChild(cube) ;<br>scene.addChild(planeGroup);<br>波动效果采用<a href="http://www.everydayflash.com/" target="_blank" rel="external">everydayflash</a>的<a href="http://code.google.com/p/as3dmod/wiki/AS3Dmod_Tutorial" target="_blank" rel="external">AS3Dmod库</a>来实现。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/01/08/papervision3d-e7-9a-84-e6-ad-a3-e5-8f-8d-e4-b8-a4-e9-9d-a2-e6-9d-90-e8-b4-a8-e6-b5-8b-e8-af-95/" data-id="cikr0cpjb00evz5rfhga1n5ue" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/papervision3d/">papervision3d</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-url-rewrite-e7-9a-84vbscript-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/01/07/url-rewrite-e7-9a-84vbscript-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/" class="article-date">
+  <time datetime="2009-01-07T14:29:00.000Z" itemprop="datePublished">2009-01-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Uncategorized/">Uncategorized</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/01/07/url-rewrite-e7-9a-84vbscript-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/">URL Rewrite的VBscript解决办法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>比如要实现这样的URL转向：</p>
+<blockquote>
+<p><a href="http://www.zhaiduo.com/page/3/" target="_blank" rel="external">http://www.zhaiduo.com/page/3/</a><br>=&gt;<br><a href="http://zhaiduo.googlepages.com/search3.htm" target="_blank" rel="external">http://zhaiduo.googlepages.com/search3.htm</a><br>如果服务器没有URLRewrite功能可用这个代码在Windows下生成目录和文件。然后用FTP上传即可。保存下面内容为：create.vbs<br>Option Explicit<br>Dim objFSO, objFolder, strDirectory, strDirectory2<br>strDirectory = “D:zhaiduo.compage”<br>Set objFSO = CreateObject(“Scripting.FileSystemObject”)</p>
+<p>Dim I<br>For I = 1 To 55<br>   strDirectory2=strDirectory &amp; “” &amp; I<br>   Set objFolder = objFSO.CreateFolder(strDirectory2)<br>   WScript.Echo “Just created “ &amp; strDirectory2<br>   CreateIndexFile strDirectory2, I<br>   WScript.Echo “Just created “ &amp; strDirectory2 &amp; “index.php”<br>Next</p>
+<p>WScript.Quit<br>‘end</p>
+<p>Sub CreateIndexFile(Folder,I)<br>  Dim TextStream<br>  Set TextStream = objFSO.CreateTextFile(Folder &amp; “index.php”)<br>  TextStream.WriteLine(“”)<br>  TextStream.Close<br>End Sub<br>双击运行即可。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/01/07/url-rewrite-e7-9a-84vbscript-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/" data-id="cikr0cpdo007fz5rf9kza5c10" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/办法/">办法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-94-a8google-app-e6-b5-8b-e8-af-95-e6-9b-b4-e6-96-b0twitter-e9-81-87-e5-88-b0-e7-9a-84-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2009/01/06/e7-94-a8google-app-e6-b5-8b-e8-af-95-e6-9b-b4-e6-96-b0twitter-e9-81-87-e5-88-b0-e7-9a-84-e9-97-ae-e9-a2-98/" class="article-date">
+  <time datetime="2009-01-06T06:08:00.000Z" itemprop="datePublished">2009-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Uncategorized/">Uncategorized</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2009/01/06/e7-94-a8google-app-e6-b5-8b-e8-af-95-e6-9b-b4-e6-96-b0twitter-e9-81-87-e5-88-b0-e7-9a-84-e9-97-ae-e9-a2-98/">用Google App测试更新twitter遇到的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本来打算用PHP写一个Twitter的更新程序。主要问题在于通过Basic Authentication来通过授权。最简单的办法就是用Curl。这里有个很好的<a href="http://twitter.slawcup.com/twitter.class.phps" target="_blank" rel="external">CLASS</a>可以借鉴，但是无奈服务器对curl的限制，只好放弃。最近接触Google App，用的是Python。于是打算用<a href="http://docs.python.org/dev/index.html" target="_blank" rel="external">Python</a>试试。</p>
+<p>Python中关于Http的<a href="http://www.voidspace.org.uk/python/articles/authentication.shtml" target="_blank" rel="external">Basic Authentication的教程</a>已经很详细，大概的方法包括使用urllib、urllib2和httplib。无奈这些方法在google_app下都出现这样的错误：</p>
+<blockquote>
+<p>AttributeError: ‘module’ object has no attribute ‘error’<br>解决办法只有使用<a href="http://code.google.com/appengine/docs/urlfetch/" target="_blank" rel="external">URL Fetch API</a>，通过给header增加Authorization字段，达到通过Twitter API授权的问题。</p>
+</blockquote>
+<p>代码如下：</p>
+<blockquote>
+<p>base64string = base64.encodestring(‘%s:%s’ % (username, password))[:-1]<br>  result = urlfetch.fetch(url=update_url,<br>                          payload=form_data,<br>                          method=urlfetch.POST,<br>                          headers={<br>                            ‘Content-Type’: ‘application/x-www-form-urlencoded’,<br>                            ‘Authorization’: ‘Basic ‘+ base64string<br>                          })</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2009/01/06/e7-94-a8google-app-e6-b5-8b-e8-af-95-e6-9b-b4-e6-96-b0twitter-e9-81-87-e5-88-b0-e7-9a-84-e9-97-ae-e9-a2-98/" data-id="cikr0cq0u00ztz5rfbxatgmk9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/无奈/">无奈</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-yp-com-e5-8d-96-e4-ba-86385-e4-b8-87-e7-be-8e-e5-85-83-e7-8e-b0-e9-87-91" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/31/yp-com-e5-8d-96-e4-ba-86385-e4-b8-87-e7-be-8e-e5-85-83-e7-8e-b0-e9-87-91/" class="article-date">
+  <time datetime="2008-12-31T04:58:00.000Z" itemprop="datePublished">2008-12-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/互联网/">互联网</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/31/yp-com-e5-8d-96-e4-ba-86385-e4-b8-87-e7-be-8e-e5-85-83-e7-8e-b0-e9-87-91/">YP.com卖了385万美元现金</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><span style="font-weight: bold;">YP.com卖了385万美元现金</span><br><a href="http://biz.yahoo.com/e/081229/live10-k.html" target="_blank" rel="external">详细</a></p>
+<p><span style="font-weight: bold;">200台PS3游戏主机帮助黑客破解基于MD5加密的网页</span><span style="font-weight: bold;">数字证书</span><span style="font-weight: bold;">（SSL-CA）</span><br><span>一群来自欧美的黑客利用200台PS3游戏主机加700美元的数字证书</span>，利用MD5加密算法中的漏洞成功找到破解<span>基于MD5的网页</span><span>数字证书的方法。</span><a href="http://blogs.zdnet.com/security/?p=2339" target="_blank" rel="external">详细</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/31/yp-com-e5-8d-96-e4-ba-86385-e4-b8-87-e7-be-8e-e5-85-83-e7-8e-b0-e9-87-91/" data-id="cikr0cp8l000vz5rff1ioodrc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/域名/">域名</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/黑客/">黑客</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e9-bb-91-e5-ae-a2-e7-9a-84-e5-b5-8c-e5-85-a5-e4-bb-a3-e7-a0-81" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/29/e9-bb-91-e5-ae-a2-e7-9a-84-e5-b5-8c-e5-85-a5-e4-bb-a3-e7-a0-81/" class="article-date">
+  <time datetime="2008-12-29T06:50:00.000Z" itemprop="datePublished">2008-12-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/29/e9-bb-91-e5-ae-a2-e7-9a-84-e5-b5-8c-e5-85-a5-e4-bb-a3-e7-a0-81/">黑客的嵌入代码</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一朋友的网站上所有文件都被黑客加上这样的代码：<br>HTML中嵌入的javascript内容：</p>
+<blockquote>
+<p>if(typeof(yahoo_counter)!=typeof(1))<br>//伪装成yahoo counter?<br>eval(unescape(‘…(省略)’).replace(/||&amp;|`|@|~|$|#|!/g,””));<br>//把要执行的脚本隐藏以来，通过replace替换冗长模糊字符和unescape解码还原。<br>var yahoo_counter=1;</p>
+</blockquote>
+<p>PHP中嵌入的内容：<br><a href="http://www.zhaiduo.com/uploaded_images/MWSnap242-740762.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/uploaded_images/MWSnap242-740758.jpg" alt=""></a><br>通过ob_start嵌入代码<br><a href="http://www.zhaiduo.com/uploaded_images/MWSnap243-740806.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/uploaded_images/MWSnap243-740779.jpg" alt=""></a></p>
+<p>解析出来的脚本内容:<br><a href="http://www.zhaiduo.com/uploaded_images/MWSnap239-781777.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/uploaded_images/MWSnap239-781774.jpg" alt=""></a></p>
+<p>目标地址形如<a href="http://78.110.175.21/cp/?n" target="_blank" rel="external">http://78.110.175.21/cp/?n</a><br>不知他们这样做的目的是为何，可以获取什么样的信息。</p>
+<blockquote>
+<p>$ whois 78.110.175.21<br>OrgName:    RIPE Network Coordination Centre<br>OrgID:      RIPE<br>Address:    P.O. Box 10096<br>City:       Amsterdam<br>StateProv:<br>PostalCode: 1001EB<br>Country:    NL</p>
+<p>$ whois 195.24.76.251<br>role:           root eSolutions<br>address:        35, rue John F. Kennedy<br>address:        L-7327 Steinsel<br>address:        Luxembourg<br>phone:          +352 20.500<br>fax-no:         +352 20.500.500<br>e-mail:         info@root.lu<br>remarks:        +————————————+<br>remarks:        | Operational Issues:  noc@root.lu   |<br>remarks:        | Abuse and Spam:      abuse@root.lu |<br>remarks:        +————————————+</p>
+<p>person:         Andy BIERLAIR<br>address:        root eSolutions<br>address:        35, rue John F. Kennedy<br>address:        L-7327 Steinsel<br>phone:          +352 20.500<br>fax-no:         +352 20.500.500<br>nic-hdl:        AB99-RIPE<br>mnt-by:         ROOT-MNT</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/29/e9-bb-91-e5-ae-a2-e7-9a-84-e5-b5-8c-e5-85-a5-e4-bb-a3-e7-a0-81/" data-id="cikr0cpt300rcz5rfbzq53iai" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/黑客/">黑客</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-bd-91-e7-ab-99-e8-a2-ab-e5-a2-99-e5-9c-a8-e5-9b-bd-e5-a4-96-e7-9a-84mysql-e6-95-b0-e6-8d-ae-e5-ba-93-e5-a4-87-e4-bb-bd-e6-96-b9-e6-a1-88" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/27/e7-bd-91-e7-ab-99-e8-a2-ab-e5-a2-99-e5-9c-a8-e5-9b-bd-e5-a4-96-e7-9a-84mysql-e6-95-b0-e6-8d-ae-e5-ba-93-e5-a4-87-e4-bb-bd-e6-96-b9-e6-a1-88/" class="article-date">
+  <time datetime="2008-12-26T17:20:00.000Z" itemprop="datePublished">2008-12-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Mysql/">Mysql</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/27/e7-bd-91-e7-ab-99-e8-a2-ab-e5-a2-99-e5-9c-a8-e5-9b-bd-e5-a4-96-e7-9a-84mysql-e6-95-b0-e6-8d-ae-e5-ba-93-e5-a4-87-e4-bb-bd-e6-96-b9-e6-a1-88/">网站被墙在国外的Mysql数据库备份方案</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>不知道大家有没有这样的经历：刚买的国外虚拟主机，网站做好还没有来得及备份就被GFW”墙”了起来。但是没有备份数据的网站是很不稳妥的。辛苦做好的网站如何花最少的钱、或者不用装软件就可以轻松备份呢？</p>
+<p>这里有一个有个办法，步骤如下：<br>1、找一个可以通过FTP访问被墙网站W的服务器A<br>2、在服务器A上编写PHP的FTP脚本B，任务是把Mysql备份脚本C上传到被墙网站W，<br>3、在服务器A上编写PHP的FTP脚本C，任务是执行Mysql备份脚本C</p>
+<blockquote>
+<p>$backup=exec(“/usr/bin/mysqldump –opt –host=localhost –user=dbuser –password=dbpasswd dbname &gt; backup.sql”);4、在服务器A上编写PHP的FTP脚本D，任务是把备份文件(backup.sql)下载到服务器A。</p>
+</blockquote>
+<p>当然这些都可以全部用PHP来实现。简单运行脚本就可以轻松完成备份操作。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/27/e7-bd-91-e7-ab-99-e8-a2-ab-e5-a2-99-e5-9c-a8-e5-9b-bd-e5-a4-96-e7-9a-84mysql-e6-95-b0-e6-8d-ae-e5-ba-93-e5-a4-87-e4-bb-bd-e6-96-b9-e6-a1-88/" data-id="cikr0cpwh00vcz5rfrfwck1c3" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/备份/">备份</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/打不开/">打不开</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e4-b8-a4-e4-b8-aaflash-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/24/e4-b8-a4-e4-b8-aaflash-e9-97-ae-e9-a2-98/" class="article-date">
+  <time datetime="2008-12-24T08:15:00.000Z" itemprop="datePublished">2008-12-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/AS3/">AS3</a>►<a class="article-category-link" href="/zdblog-hexo/categories/AS3/Flash/">Flash</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/24/e4-b8-a4-e4-b8-aaflash-e9-97-ae-e9-a2-98/">两个FLash问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1. Flash CS3里面无法向FLex一样调用文件的问题<br>下面这种方式在CS3里面无效,</p>
+<blockquote>
+<p>[Embed(source=”zhaiduo.jpg”)] private var zhaiduo:Class;<br>我们可以把文件导入库library, 通过linkage ID调用。如:linkage ID为”Zhaiduo”。<br>var zd:Zhaiduo=new Zhaiduo(100,100);<br>var myBitmap:Bitmap = new Bitmap(zd);<br>2. NetStream无法播放非本地FLV视频文件的问题<br>NetStream只允许本地bitmapData.draw。所以只有声音看不见影像。例子可以<a href="http://zhaiduo.googlepages.com/first2.html" target="_blank" rel="external">看里</a>。<br><a href="http://www.nabble.com/run-flv-from-video-Website-in-papervision3d--td15306962.html" target="_blank" rel="external">Nabble</a>上有这样一段解释：<br>The only way around this is to deliver your video via a custom<br>configured flashCom server.  (Open source solutions include red5 and<br>haXeVideo).  These flashCom servers have to send a flag with the<br>NetStream that allows bitmapData.draw for your domain.  Regardless,<br>you aren’t going to get this from a remote server.</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/24/e4-b8-a4-e4-b8-aaflash-e9-97-ae-e9-a2-98/" data-id="cikr0cqkt01gxz5rf5w9gxp7n" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/flv/">flv</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e8-af-95-e7-94-a8google-app-engine" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/18/e8-af-95-e7-94-a8google-app-engine/" class="article-date">
+  <time datetime="2008-12-18T03:39:00.000Z" itemprop="datePublished">2008-12-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/18/e8-af-95-e7-94-a8google-app-engine/">试用Google App Engine</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很高兴今天收到Google通知，</p>
+<blockquote>
+<p>Thanks for signing up to try Google App Engine!  Your account has been activated, so you can begin building applications!<br>可以试用<a href="http://appengine.google.com/start" target="_blank" rel="external">Google App Engine</a>,好好学习一下,顺便练一练<a href="http://docs.python.org/contents.html" target="_blank" rel="external">Python</a>，看看能不能用App Engine开发出一个项目。^_^</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/18/e8-af-95-e7-94-a8google-app-engine/" data-id="cikr0cpun00taz5rf8z7kr4py" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/App-Engine/">App Engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/google/">google</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/python/">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e4-bb-8a-e5-a4-a9-e5-8f-91-e7-8e-b0-e5-8d-9a-e5-ae-a2-e6-89-93-e4-b8-8d-e5-bc-80" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/16/e4-bb-8a-e5-a4-a9-e5-8f-91-e7-8e-b0-e5-8d-9a-e5-ae-a2-e6-89-93-e4-b8-8d-e5-bc-80/" class="article-date">
+  <time datetime="2008-12-16T14:52:00.000Z" itemprop="datePublished">2008-12-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/16/e4-bb-8a-e5-a4-a9-e5-8f-91-e7-8e-b0-e5-8d-9a-e5-ae-a2-e6-89-93-e4-b8-8d-e5-bc-80/">今天发现博客打不开</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>晚上发现博客无法访问，但是其它blogspot网站没问题。也许被墙在国外了，可以通过<a href="http://72.14.235.104/translate_c?hl=en&amp;sl=es&amp;tl=en&amp;u=http://www.zhaiduo.com/" target="_blank" rel="external">这里Google Translate访问</a>。</p>
+<p>为什么不买国内虚拟主机？因为国内虚拟空间费用又贵，功能又差，文字还受限制。我的博客一没政治话题，二没颜色，干嘛要受这种限制。<br><img src="http://i34.tinypic.com/166xlat.jpg" alt=""><br>也许有一天我完全无法访问这个博客，那我也不会再写下去。</p>
+<p>为什么不买国外虚拟主机？2008年12月以前看过我的博客的人也许知道，我的博客曾经用过国外空间，但是因为疏忽，整个博客完全丢失。有阴影，暂时没打算花银子买。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/16/e4-bb-8a-e5-a4-a9-e5-8f-91-e7-8e-b0-e5-8d-9a-e5-ae-a2-e6-89-93-e4-b8-8d-e5-bc-80/" data-id="cikr0cqip01fdz5rfgsir2o3p" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/国外空间/">国外空间</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/打不开/">打不开</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/虚拟主机/">虚拟主机</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-85-b3-e4-ba-8e-e4-b8-ad-e6-96-87-e5-88-86-e8-af-8d-e5-92-8cmysql-e7-9a-84-e4-b8-ad-e6-96-87-e5-85-a8-e6-96-87-e6-90-9c-e7-b4-a2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/13/e5-85-b3-e4-ba-8e-e4-b8-ad-e6-96-87-e5-88-86-e8-af-8d-e5-92-8cmysql-e7-9a-84-e4-b8-ad-e6-96-87-e5-85-a8-e6-96-87-e6-90-9c-e7-b4-a2/" class="article-date">
+  <time datetime="2008-12-13T13:27:00.000Z" itemprop="datePublished">2008-12-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/Mysql/">Mysql</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Mysql/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/13/e5-85-b3-e4-ba-8e-e4-b8-ad-e6-96-87-e5-88-86-e8-af-8d-e5-92-8cmysql-e7-9a-84-e4-b8-ad-e6-96-87-e5-85-a8-e6-96-87-e6-90-9c-e7-b4-a2/">关于中文分词和Mysql的中文全文搜索</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近对Mysql的中文全文搜索做了一下了解，熟悉Mysql的都知道Match Againt进行全文(FullText)搜索的巨大优势，但是Mysql对中文这些多字节字符的支持还远远不够。也就是说现在MYsql还不支持中文的全文搜索，中文全文搜索的主要问题在于如何把中文进行快速有效的拆分，所以需要我们自己开发一些辅助工具，才能帮助我们用中文享受全文搜索的福利。</p>
+<p>目前国内主要搜索引擎，专业从事中文分词的公司都有自己的中文分词技术，但是不为大众所接触。个人对中文分词有见地和成果的，目前只发现这些：</p>
+<p>1、<a href="http://www.hightman.cn/index.php?weblog" target="_blank" rel="external">hightman</a>的<a href="http://www.ftphp.cn/" target="_blank" rel="external">FTPHP</a>全文检索应用解决方案<br>2、<a href="http://blog.s135.com/" target="_blank" rel="external">张宴(Zhang Yan)</a>的MySQL中文全文索引插件<a href="http://code.google.com/p/mysqlcft/" target="_blank" rel="external">mysqlcft</a></p>
+<p>其它分词的解决思想主要是把中文转换成MYsql可以接受的英文字母形式。如把中文用base64转码或unicode的形式保存。</p>
+<p>不知谁还知道其它一些分词技术，予以分享。真希望国内多一点关注中文分词的技术和个人，一起推动中文全文搜索时代的真正到来。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/13/e5-85-b3-e4-ba-8e-e4-b8-ad-e6-96-87-e5-88-86-e8-af-8d-e5-92-8cmysql-e7-9a-84-e4-b8-ad-e6-96-87-e5-85-a8-e6-96-87-e6-90-9c-e7-b4-a2/" data-id="cikr0cqh401e5z5rfzam70g5v" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/中文分词/">中文分词</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/全文搜索/">全文搜索</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e6-8e-a8-e8-8d-90-e7-bb-99-e6-b2-a1-e6-9c-89-e7-bb-93-e5-a9-9a-e7-9a-84-e4-ba-ba-e7-9a-84-e5-a8-b1-e4-b9-90-e8-8a-82-e7-9b-ae-ef-bc-9a-e3-80-8a-e6-88-91-e4-bb-ac-e7-bb-93-e5-a9-9a-e4-ba-86-e3-80-8b" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/13/e6-8e-a8-e8-8d-90-e7-bb-99-e6-b2-a1-e6-9c-89-e7-bb-93-e5-a9-9a-e7-9a-84-e4-ba-ba-e7-9a-84-e5-a8-b1-e4-b9-90-e8-8a-82-e7-9b-ae-ef-bc-9a-e3-80-8a-e6-88-91-e4-bb-ac-e7-bb-93-e5-a9-9a-e4-ba-86-e3-80-8b/" class="article-date">
+  <time datetime="2008-12-13T12:55:00.000Z" itemprop="datePublished">2008-12-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/杂项/">杂项</a>►<a class="article-category-link" href="/zdblog-hexo/categories/杂项/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/13/e6-8e-a8-e8-8d-90-e7-bb-99-e6-b2-a1-e6-9c-89-e7-bb-93-e5-a9-9a-e7-9a-84-e4-ba-ba-e7-9a-84-e5-a8-b1-e4-b9-90-e8-8a-82-e7-9b-ae-ef-bc-9a-e3-80-8a-e6-88-91-e4-bb-ac-e7-bb-93-e5-a9-9a-e4-ba-86-e3-80-8b/">推荐给没有结婚的人的娱乐节目：《我们结婚了》</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://1.bp.blogspot.com/_qn1iksfCdto/SUO0FZpmuHI/AAAAAAAAGjk/xxmmPHR7O1M/s1600-h/17620081213210758.jpg" target="_blank" rel="external"><img src="http://1.bp.blogspot.com/_qn1iksfCdto/SUO0FZpmuHI/AAAAAAAAGjk/xxmmPHR7O1M/s400/17620081213210758.jpg" alt=""></a><br>《<a href="http://www.blogger.com/post-create.g?blogID=8446367956866011875" target="_blank" rel="external">我们结婚了</a>》是韩国MBC电视台推出的明星假扮新婚夫妇的“新婚秀”节目。从没有结过婚的，甚至相互不太了解的一对男女，到“假扮”成新婚夫妇，最后甚至有几对假戏真做，终成眷属。这些里面的点点滴滴虽然娱乐成分居多，但是也可以帮助我们预习一下，在将来的婚姻生活如何和自己的爱人相处，如何处理一些常见的问题和矛盾。:)</p>
+<p>节目里面Alex和申爱是大多数人比较羡慕的完美组合，我却比较欣赏蚂蚁夫妇，以及Andy与Solbi那一对。虽然时有争吵，但是他她们用自己的智慧和风度，总是能化解问题，使双方的感情更加深入。确实学到很多东西。^-^</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/13/e6-8e-a8-e8-8d-90-e7-bb-99-e6-b2-a1-e6-9c-89-e7-bb-93-e5-a9-9a-e7-9a-84-e4-ba-ba-e7-9a-84-e5-a8-b1-e4-b9-90-e8-8a-82-e7-9b-ae-ef-bc-9a-e3-80-8a-e6-88-91-e4-bb-ac-e7-bb-93-e5-a9-9a-e4-ba-86-e3-80-8b/" data-id="cikr0cq3o012hz5rfntgdx8nj" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/娱乐/">娱乐</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-9b-ae-e7-9d-b9-e5-ae-89-e4-b9-90-e6-ad-bb" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/11/e7-9b-ae-e7-9d-b9-e5-ae-89-e4-b9-90-e6-ad-bb/" class="article-date">
+  <time datetime="2008-12-11T14:42:00.000Z" itemprop="datePublished">2008-12-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zdblog-hexo/2008/12/11/e7-9b-ae-e7-9d-b9-e5-ae-89-e4-b9-90-e6-ad-bb/">目睹安乐死</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><object height="295" width="480"><param name="movie" value="http://www.youtube.com/v/bPS3pZGthw0&amp;hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/bPS3pZGthw0&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" height="295" width="480"></object><br>今天看了<a href="http://entertainment.timesonline.co.uk/tol/arts_and_entertainment/tv_and_radio/article5313317.ece" target="_blank" rel="external">英国媒体报道</a>一位59岁病重退休教授选择用安乐死来结束自己生命的视频。以前从报上读这类新闻，没有太深的感触，觉得这种事情离我们很远。但是今天，就在眼前。明显感觉不同。人这一辈子，除了病痛的折磨和死亡的威胁，可以让人难受的还有丢不下的亲情和依念。看着夫妻两冷静的亲吻互相告别的时候，似乎我的心情比他们更加难受。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/11/e7-9b-ae-e7-9d-b9-e5-ae-89-e4-b9-90-e6-ad-bb/" data-id="cikr0cpyy00xwz5rfx9fz2hgz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/感人/">感人</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-windows-e4-b8-8b-e8-bf-98-e5-8e-9fplesk-e7-b3-bb-e7-bb-9f-e5-a4-87-e4-bb-bd-e6-96-87-e4-bb-b6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zdblog-hexo/2008/12/10/windows-e4-b8-8b-e8-bf-98-e5-8e-9fplesk-e7-b3-bb-e7-bb-9f-e5-a4-87-e4-bb-bd-e6-96-87-e4-bb-b6/" class="article-date">
+  <time datetime="2008-12-10T15:51:00.000Z" itemprop="datePublished">2008-12-10</time>
 </a>
     
   <div class="article-category">
@@ -268,7 +1266,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/12/29/e6-8a-8a-e5-8d-9a-e5-ae-a2-e6-8d-a2-e5-88-b0-e4-ba-91-e4-b8-bb-e6-9c-ba/">把博客换到云主机</a>
+      <a class="article-title" href="/zdblog-hexo/2008/12/10/windows-e4-b8-8b-e8-bf-98-e5-8e-9fplesk-e7-b3-bb-e7-bb-9f-e5-a4-87-e4-bb-bd-e6-96-87-e4-bb-b6/">Windows下还原Plesk系统备份文件</a>
     </h1>
   
 
@@ -276,17 +1274,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近博客慢得要死，正愁没办法。惊喜地发现<a href="http://affiliate.godaddy.com/redirect/EA4455117A5CB5FB5E33DA3674C9E989EDD6872BAB9614FF663843297F08EDD6EE680DBB8BFB7F20CBEEAA91E9764C84" title="Cloud hosting" target="_blank" rel="external">Godaddy推出云主机服务</a>，因为最近有看到一个博客也用的最新的<a href="http://affiliate.godaddy.com/redirect/EA4455117A5CB5FB5E33DA3674C9E989EDD6872BAB9614FF663843297F08EDD6EE680DBB8BFB7F20CBEEAA91E9764C84" title="Cloud hosting" target="_blank" rel="external">Godaddy云主机</a>做博客，速度很快，所以毫不犹豫的下了单，一个月最便宜只要$3.74/mo，服务器是AP，亚洲太平洋地区。</p>
-<p>但是云主机配置好后，使用FTP却让我有些失望，家里ADSL的4M，FTP上传只有可怜的2K/s左右，还好云主机支持SSH，本来打算用scp或者sftp来转移博客，不过都被connection refused。最后只有tar打包，使用wget下载。终于看到满意的1.2M/s。</p>
-<p>博客转移完毕发现速度并没有想象的快，不过比原来好很多，期待云主机给我更多的惊喜～</p>
+        <p><a href="http://www.parallels.com/products/plesk/" target="_blank" rel="external">Plesk</a>是国外虚拟主机最常见的几种虚拟主机控制台(Hosting Control Panel)之一，前面提到我的博客丢失前曾经在9月份有这中备份，但是由于备份文件下载下来没有后缀名，不知道如何解压。今天终于解决问题。根据<a href="http://forum.swsoft.com/showthread.php?t=53402" target="_blank" rel="external">Plesk官方论坛的解释</a>，我是这样做的（文件名为zhaiduo.com_2008.09.18_10.56）：</p>
+<p>1、首先将zhaiduo.com_2008.09.18_10.56改名为zhaiduo.com_2008.09.18_10.56.zip。用Rar解压后发现，61M的文件变成了124M的zhaiduo.com_2008.09.18_10.56。</p>
+<p>2、将文件zhaiduo.com_2008.09.18_10.56改名为zhaiduo，打开Windows自带的Outlook Express，然后直接将zhaiduo用鼠标拖拽到Outlook的收件箱，如果文件导入成功（可以多试几次），<br><a href="http://3.bp.blogspot.com/_qn1iksfCdto/ST_qrqJbzAI/AAAAAAAAGjA/iuqqjQBaBDc/s1600-h/17220081210231231.jpg" target="_blank" rel="external"><img src="http://3.bp.blogspot.com/_qn1iksfCdto/ST_qrqJbzAI/AAAAAAAAGjA/iuqqjQBaBDc/s400/17220081210231231.jpg" alt=""></a><br>会弹出下面的对话框（这封邮件进行解码时出错，邮件标头中含有无效数据），不用理会按确定。你会发现收件箱里多了一封新邮件。</p>
+<p>3.新邮件里面可以看见附件的标志，点击就出现了所有附件的下拉菜单。<br><a href="http://2.bp.blogspot.com/_qn1iksfCdto/ST_qr6Q5FoI/AAAAAAAAGjI/EmHMB9sXGms/s1600-h/17320081210231722.jpg" target="_blank" rel="external"><img src="http://2.bp.blogspot.com/_qn1iksfCdto/ST_qr6Q5FoI/AAAAAAAAGjI/EmHMB9sXGms/s400/17320081210231722.jpg" alt=""></a><br>直接全部保存就可以了。</p>
+<p>4.最后，附件里面可以看到类似zhaiduo.com.httpdocs的文件，不用惊慌，<br><a href="http://2.bp.blogspot.com/_qn1iksfCdto/ST_qsI_4sTI/AAAAAAAAGjQ/W8f5uhvxds8/s1600-h/17520081210234254.jpg" target="_blank" rel="external"><img src="http://2.bp.blogspot.com/_qn1iksfCdto/ST_qsI_4sTI/AAAAAAAAGjQ/W8f5uhvxds8/s400/17520081210234254.jpg" alt=""></a><br>把这些文件名加一个.tar的后缀，用RAR解压，所有文件就都看见了。^_^</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/12/29/e6-8a-8a-e5-8d-9a-e5-ae-a2-e6-8d-a2-e5-88-b0-e4-ba-91-e4-b8-bb-e6-9c-ba/" data-id="cikqzbb9z013h2drf8l9xs0vo" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/10/windows-e4-b8-8b-e8-bf-98-e5-8e-9fplesk-e7-b3-bb-e7-bb-9f-e5-a4-87-e4-bb-bd-e6-96-87-e4-bb-b6/" data-id="cikr0cpb7003tz5rfzj6v1c4b" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/云主机/">云主机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/网站搬家/">网站搬家</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/Plesk/">Plesk</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/备份/">备份</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/控制台/">控制台</a></li></ul>
 
     </footer>
   </div>
@@ -295,14 +1295,14 @@
 
 
   
-    <article id="post-e7-a7-9f-e8-bd-a6-e4-b8-8d-e8-ae-a1-e5-85-8d-e8-b5-94-e8-bf-98-e6-98-af-e5-ba-94-e8-af-a5-e4-b9-b0" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e4-ba-8c-e4-b8-aamysql-e9-94-99-e8-af-af" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/12/17/e7-a7-9f-e8-bd-a6-e4-b8-8d-e8-ae-a1-e5-85-8d-e8-b5-94-e8-bf-98-e6-98-af-e5-ba-94-e8-af-a5-e4-b9-b0/" class="article-date">
-  <time datetime="2011-12-16T16:42:02.000Z" itemprop="datePublished">2011-12-17</time>
+    <a href="/zdblog-hexo/2008/12/10/e4-ba-8c-e4-b8-aamysql-e9-94-99-e8-af-af/" class="article-date">
+  <time datetime="2008-12-10T05:48:00.000Z" itemprop="datePublished">2008-12-10</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/自助游/">自助游</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/Mysql/">Mysql</a>
   </div>
 
   </div>
@@ -313,7 +1313,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/12/17/e7-a7-9f-e8-bd-a6-e4-b8-8d-e8-ae-a1-e5-85-8d-e8-b5-94-e8-bf-98-e6-98-af-e5-ba-94-e8-af-a5-e4-b9-b0/">租车不计免赔还是应该买</a>
+      <a class="article-title" href="/zdblog-hexo/2008/12/10/e4-ba-8c-e4-b8-aamysql-e9-94-99-e8-af-af/">二个Mysql错误</a>
     </h1>
   
 
@@ -321,16 +1321,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这次在神舟租车算是又栽了一回，租车时想着现在开车已经足够小心，每天40元的不计免赔就可以省了，于是租车没有要不计免赔。谁知天意弄人，偏偏在长洲岛的小集市和小贩的推车有了刮擦，右后车门刮出一手掌长，两指宽的刮痕。还车时，神舟以喷涂刮擦需要全喷整个车门为由，开价我560元的维修费，还有75元的一天误工费。天杀的，这种要价真他妈的黑！我印象中在同一个位置凹陷的修补也才260元，苦于自己没有时间，只能任人宰割…。</p>
-<p>这635元足以支付16天的不计免赔。贵过<a href="/2011/06/关于轮胎的租车陷阱/">上一次赔付轮胎</a>的价钱。神舟租车你好野！算算今年我租车已经花费接近一万元，租车这摊混水，我是不再想随便涉足。如果神舟租车整天只想着如何从客户的身上刮下更多的油水，而不是提高服务水平，我想你是神宇租车都没用！</p>
+        <p>第一个错误：</p>
+<blockquote>
+<p>Database Error!<br>You have an error in your SQL syntax near ‘; ‘ at line 1,<br>MySQL server version: 3.23.58 | PHP version: 4.3.2<br>原因：SQL语句最后”;”分号后面多了一个空格：<br>where id=’$id’; “;<br>第二个错误：<br>Error msg: mysql_connect() [function.mysql-connect]: Lost connection to MySQL server at ‘reading initial communication packet’, system error: 104<br>Mysql Errors:<br>Lost connection to MySQL server at ‘reading initial communication packet’, system error: 104<br>系统自动恢复，原因不明。</p>
+</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/12/17/e7-a7-9f-e8-bd-a6-e4-b8-8d-e8-ae-a1-e5-85-8d-e8-b5-94-e8-bf-98-e6-98-af-e5-ba-94-e8-af-a5-e4-b9-b0/" data-id="cikqzbb4600xd2drfq7b9exno" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/10/e4-ba-8c-e4-b8-aamysql-e9-94-99-e8-af-af/" data-id="cikr0cqjd01fqz5rfxydkxe64" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/租车/">租车</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/出错/">出错</a></li></ul>
 
     </footer>
   </div>
@@ -339,14 +1341,14 @@
 
 
   
-    <article id="post-e5-86-8d-e6-ac-a1-e9-81-87-e5-88-b0mysql-set-names-e7-bc-96-e7-a0-81-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e5-8d-9a-e5-ae-a2-e9-87-8d-e7-94-9f" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/12/11/e5-86-8d-e6-ac-a1-e9-81-87-e5-88-b0mysql-set-names-e7-bc-96-e7-a0-81-e9-97-ae-e9-a2-98/" class="article-date">
-  <time datetime="2011-12-10T19:52:50.000Z" itemprop="datePublished">2011-12-11</time>
+    <a href="/zdblog-hexo/2008/12/10/e5-8d-9a-e5-ae-a2-e9-87-8d-e7-94-9f/" class="article-date">
+  <time datetime="2008-12-10T02:35:00.000Z" itemprop="datePublished">2008-12-10</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/Mysql/">Mysql</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Mysql/PHP/">PHP</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/窄多废话/">窄多废话</a>
   </div>
 
   </div>
@@ -357,7 +1359,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/12/11/e5-86-8d-e6-ac-a1-e9-81-87-e5-88-b0mysql-set-names-e7-bc-96-e7-a0-81-e9-97-ae-e9-a2-98/">再次遇到Mysql set names编码问题</a>
+      <a class="article-title" href="/zdblog-hexo/2008/12/10/e5-8d-9a-e5-ae-a2-e9-87-8d-e7-94-9f/">博客重生</a>
     </h1>
   
 
@@ -365,17 +1367,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近和编码挺有缘的，升级Mysql数据库又遇到set names编码问题。老的数据库是latin1，数据是GB2312，新的数据库是utf8，数据表也是utf8。通过PHPMYADMIN导入新数据库后，set names utf8后，数据仍为乱码。</p>
-<p>后来发现因为老的数据库是latin1，所以应该是set names latin1，而数据表是utf8，但是数据仍为GB2312，所以网页应该是GBK编码。问题解决。</p>
-<p><a href="http://www.zhaiduo.com/wp-content/uploads/2011/12/luanma.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2011/12/luanma.jpg" alt="" title="luanma"></a></p>
+        <p><a href="http://1.bp.blogspot.com/_qn1iksfCdto/ST84lxmwrHI/AAAAAAAAGh0/-yGPqPPvMXc/s1600-h/me.jpg" target="_blank" rel="external"><img src="http://1.bp.blogspot.com/_qn1iksfCdto/ST84lxmwrHI/AAAAAAAAGh0/-yGPqPPvMXc/s400/me.jpg" alt=""></a></p>
+<p>经历了<a href="http://zdviewpoint.blogspot.com/2008/11/help-serversea-eat-my-blog.html" target="_blank" rel="external">11月底博客丢失的不幸灾难</a>,<a href="http://www.zhaiduo.com/" target="_blank" rel="external">窄多之Blog</a>开始继续它的旅程。这次窄多之Blog选择了Google blogger的免费博客服务。丢失的所有文件，将陆续找回中。</p>
+<p>找回丢失博客的主要问题：<br>1、如何恢复旧的备份文件？<br>由于以前hosting使用的是Plesk Control Panel，它的备份文件无法用普通解压软件解压。<br>2、丢失的图片如何找回？<br>3、以前博客上自制的php脚本在blogger无法运行，是否需要再买空间？<br>4、如果blogspot再次被“墙”，博客无法访问，有什么对策？</p>
+<p>经验总结：<br>1、应该有完善的博客备份恢复机制。保持博客的最新备份。<br>2、充分利用RSS Reader等其他渠道共享备份，尽量让搜索引擎cache你的所有博客页面。<br>3、图片等多媒体文件最好存放在flickr, picasa等专业图片存储共享网站，而且是免费的。<br>4、注意博客空间的使用期限，多留意空间提供商的消息和通知。</p>
+<p>通过Google Cache找回的2008年12月以前旧文章列表(2006-8 to 2008-11)：<br><a href="http://zhaiduo.googlepages.com/about.htm" target="_blank" rel="external">关于窄多</a> <a href="http://zhaiduo.googlepages.com/lvxing.htm" target="_blank" rel="external">我好旅行</a> <a href="http://zhaiduo.googlepages.com/search.htm" target="_blank" rel="external">Page 1</a> <a href="http://zhaiduo.googlepages.com/search2.htm" target="_blank" rel="external">Page 2</a> <a href="http://zhaiduo.googlepages.com/search3.htm" target="_blank" rel="external">Page 3</a> <a href="http://zhaiduo.googlepages.com/search4.htm" target="_blank" rel="external">Page 4</a> <a href="http://zhaiduo.googlepages.com/search5.htm" target="_blank" rel="external">Page 5</a> <a href="http://zhaiduo.googlepages.com/search6.htm" target="_blank" rel="external">Page 6</a> <a href="http://zhaiduo.googlepages.com/search7.htm" target="_blank" rel="external">Page 7</a> <a href="http://zhaiduo.googlepages.com/search8.htm" target="_blank" rel="external">Page 8</a> <a href="http://zhaiduo.googlepages.com/search9.htm" target="_blank" rel="external">Page 9</a> <a href="http://zhaiduo.googlepages.com/search10.htm" target="_blank" rel="external">Page 10</a> <a href="http://zhaiduo.googlepages.com/search11.htm" target="_blank" rel="external">Page 11</a> <a href="http://zhaiduo.googlepages.com/search12.htm" target="_blank" rel="external">Page 12</a> <a href="http://zhaiduo.googlepages.com/search13.htm" target="_blank" rel="external">Page 13</a> <a href="http://zhaiduo.googlepages.com/search14.htm" target="_blank" rel="external">Page 14</a> <a href="http://zhaiduo.googlepages.com/search15.htm" target="_blank" rel="external">Page 15</a> <a href="http://zhaiduo.googlepages.com/search16.htm" target="_blank" rel="external">Page 16</a> <a href="http://zhaiduo.googlepages.com/search17.htm" target="_blank" rel="external">Page 17</a> <a href="http://zhaiduo.googlepages.com/search18.htm" target="_blank" rel="external">Page 18</a> <a href="http://zhaiduo.googlepages.com/search19.htm" target="_blank" rel="external">Page 19</a> <a href="http://zhaiduo.googlepages.com/search20.htm" target="_blank" rel="external">Page 20</a> <a href="http://zhaiduo.googlepages.com/search21.htm" target="_blank" rel="external">Page 21</a> <a href="http://zhaiduo.googlepages.com/search22.htm" target="_blank" rel="external">Page 22</a> <a href="http://zhaiduo.googlepages.com/search23.htm" target="_blank" rel="external">Page 23</a> <a href="http://zhaiduo.googlepages.com/search24.htm" target="_blank" rel="external">Page 24</a> <a href="http://zhaiduo.googlepages.com/search25.htm" target="_blank" rel="external">Page 25</a> <a href="http://zhaiduo.googlepages.com/search26.htm" target="_blank" rel="external">Page 26</a> <a href="http://zhaiduo.googlepages.com/search27.htm" target="_blank" rel="external">Page 27</a> <a href="http://zhaiduo.googlepages.com/search28.htm" target="_blank" rel="external">Page 28</a> <a href="http://zhaiduo.googlepages.com/search29.htm" target="_blank" rel="external">Page 29</a> <a href="http://zhaiduo.googlepages.com/search30.htm" target="_blank" rel="external">Page 30</a> <a href="http://zhaiduo.googlepages.com/search31.htm" target="_blank" rel="external">Page 31</a> <a href="http://zhaiduo.googlepages.com/search32.htm" target="_blank" rel="external">Page 32</a> <a href="http://zhaiduo.googlepages.com/search33.htm" target="_blank" rel="external">Page 33</a> <a href="http://zhaiduo.googlepages.com/search34.htm" target="_blank" rel="external">Page 34</a> <a href="http://zhaiduo.googlepages.com/search35.htm" target="_blank" rel="external">Page 35</a> <a href="http://zhaiduo.googlepages.com/search36.htm" target="_blank" rel="external">Page 36</a> <a href="http://zhaiduo.googlepages.com/search37.htm" target="_blank" rel="external">Page 37</a> <a href="http://zhaiduo.googlepages.com/search38.htm" target="_blank" rel="external">Page 38</a> <a href="http://zhaiduo.googlepages.com/search39.htm" target="_blank" rel="external">Page 39</a> <a href="http://zhaiduo.googlepages.com/search40.htm" target="_blank" rel="external">Page 40</a> <a href="http://zhaiduo.googlepages.com/search41.htm" target="_blank" rel="external">Page 41</a> <a href="http://zhaiduo.googlepages.com/search42.htm" target="_blank" rel="external">Page 42</a> <a href="http://zhaiduo.googlepages.com/search43.htm" target="_blank" rel="external">Page 43</a> <a href="http://zhaiduo.googlepages.com/search44.htm" target="_blank" rel="external">Page 44</a> <a href="http://zhaiduo.googlepages.com/search45.htm" target="_blank" rel="external">Page 45</a> <a href="http://zhaiduo.googlepages.com/search46.htm" target="_blank" rel="external">Page 46</a> <a href="http://zhaiduo.googlepages.com/search47.htm" target="_blank" rel="external">Page 47</a> <a href="http://zhaiduo.googlepages.com/search48.htm" target="_blank" rel="external">Page 48</a> <a href="http://zhaiduo.googlepages.com/search49.htm" target="_blank" rel="external">Page 49</a> <a href="http://zhaiduo.googlepages.com/search50.htm" target="_blank" rel="external">Page 50</a> <a href="http://zhaiduo.googlepages.com/search51.htm" target="_blank" rel="external">Page 51</a> <a href="http://zhaiduo.googlepages.com/search52.htm" target="_blank" rel="external">Page 52</a> <a href="http://zhaiduo.googlepages.com/search53.htm" target="_blank" rel="external">Page 53</a> <a href="http://zhaiduo.googlepages.com/search54.htm" target="_blank" rel="external">Page 54</a> <a href="http://zhaiduo.googlepages.com/search55.htm" target="_blank" rel="external">Page 55</a></p>
+<p>Tag列表<br>人生 财富 example English Hack 英语练习 算法 推荐 CAPTCHAS 郁闷 专利 读图时代 GIF89a LZW 服务器 刀片式 比较 open-source 三维 手机 3D 上网 设计 layout 链接 转让 cpanel html Mysql 便宜 酒店订房 SNS 奖励 MyBlogLog CHARACTER SET WP升级 COLLATION sql server 测试 省钱 make error short tags unexpected $end undefined reference xhtml编辑器 可视化 浏览器 Apache SEO 图像技术 adsense Javascript 鄙视 Wordpress 抱怨 Yahoo PHP5 AS3 教程 出错</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/12/11/e5-86-8d-e6-ac-a1-e9-81-87-e5-88-b0mysql-set-names-e7-bc-96-e7-a0-81-e9-97-ae-e9-a2-98/" data-id="cikqzbbit01ar2drfmrda2f23" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/12/10/e5-8d-9a-e5-ae-a2-e9-87-8d-e7-94-9f/" data-id="cikr0cqal018tz5rfyan8em5f" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/编码/">编码</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/blogger/">blogger</a></li></ul>
 
     </footer>
   </div>
@@ -384,14 +1389,14 @@
 
 
   
-    <article id="post-td-img-padding-under-14-pixels" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-google-e7-9a-84-e5-85-8d-e8-b4-b9-e5-8d-88-e9-a4-90-google-pack-e8-bd-af-e4-bb-b6-e7-b2-be-e9-80-89" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/11/29/td-img-padding-under-14-pixels/" class="article-date">
-  <time datetime="2011-11-29T12:48:49.000Z" itemprop="datePublished">2011-11-29</time>
+    <a href="/zdblog-hexo/2008/11/13/google-e7-9a-84-e5-85-8d-e8-b4-b9-e5-8d-88-e9-a4-90-google-pack-e8-bd-af-e4-bb-b6-e7-b2-be-e9-80-89/" class="article-date">
+  <time datetime="2008-11-13T09:38:55.000Z" itemprop="datePublished">2008-11-13</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/CSS/">CSS</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/Google与Idea/">Google与Idea</a>
   </div>
 
   </div>
@@ -402,7 +1407,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/11/29/td-img-padding-under-14-pixels/">表格TD内高度14像素以下图片的空白问题</a>
+      <a class="article-title" href="/zdblog-hexo/2008/11/13/google-e7-9a-84-e5-85-8d-e8-b4-b9-e5-8d-88-e9-a4-90-google-pack-e8-bd-af-e4-bb-b6-e7-b2-be-e9-80-89/">Google的免费午餐-Google Pack(软件精选)</a>
     </h1>
   
 
@@ -410,18 +1415,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在做网页的时候发现表格的TD内如果只放高度比较小的图片，网页上td图片上方将出现一行多余的空白。用FF3和IE8均发现这个问题。经测试高度小于14像素的图片才会出现空白。在TD上和CSS定义TD的高度和图片一致，均不能解决问题。</p>
-<p><a href="http://www.zhaiduo.com/wp-content/uploads/2011/11/13620111129203320.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/uploads/2011/11/13620111129203320.jpg" alt="" title="13620111129203320"></a></p>
-<p>一般认为问题应该是处在行距上，但是line-height和font-size为0，还是不能解决问题。既然图片高度变化可以影响这个空白，问题应该在图片身上。经测试display:block给图片，问题解决。</p>
-<p>更新：发现排队的DIV也有这个问题，不过只是在IE下，float:left可以解决。</p>
+        <p>由<a href="http://baike.baidu.com/view/1281075.htm" target="_blank" rel="external">美国次贷危机</a>引起的全球经济危机到互联网的萎靡不振，<a href="http://pack.google.com/intl/zh-cn/pack_installer.html" target="_blank" rel="external">Google Pack(软件精选)</a>在 世道低迷的情况下,仍然继续大派免费午餐。Google Pack除了继续免费打包下载自己的软件以外，也不断加入新的其它免费软件，以飨“谷米”。例如：免费的翻译软件：谷歌金山词霸合作版；免费的杀毒软件： 瑞星杀毒软件；反间谍软件：Spyware Doctor™入门版。<br><img src="http://www.zhaiduo.com/wp-content/data/mwsnap194.jpg" alt="" title="Google Pack"><br>对于物价高涨的今天，柴米油盐都要精打细算，有免费的正版软件，为啥不试一下了^_^</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/11/29/td-img-padding-under-14-pixels/" data-id="cikqzbakp00902drfonnawtg8" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/11/13/google-e7-9a-84-e5-85-8d-e8-b4-b9-e5-8d-88-e9-a4-90-google-pack-e8-bd-af-e4-bb-b6-e7-b2-be-e9-80-89/" data-id="cikr0cppq00n2z5rf42ozj9xi" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/免费/">免费</a></li></ul>
 
     </footer>
   </div>
@@ -430,14 +1432,14 @@
 
 
   
-    <article id="post-e7-a7-9f-e8-bd-a6-e7-bb-b4-e4-bf-ae-e8-ae-b0" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-e8-87-aa-e5-b7-b1-e5-8a-a8-e6-89-8b-e8-a3-85-e5-a3-81-e6-9f-9c" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/zdblog-hexo/2011/11/28/e7-a7-9f-e8-bd-a6-e7-bb-b4-e4-bf-ae-e8-ae-b0/" class="article-date">
-  <time datetime="2011-11-28T14:56:13.000Z" itemprop="datePublished">2011-11-28</time>
+    <a href="/zdblog-hexo/2008/11/05/e8-87-aa-e5-b7-b1-e5-8a-a8-e6-89-8b-e8-a3-85-e5-a3-81-e6-9f-9c/" class="article-date">
+  <time datetime="2008-11-05T13:40:02.000Z" itemprop="datePublished">2008-11-05</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/自助游/">自助游</a>
+    <a class="article-category-link" href="/zdblog-hexo/categories/搞搞震/">搞搞震</a>
   </div>
 
   </div>
@@ -448,7 +1450,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/11/28/e7-a7-9f-e8-bd-a6-e7-bb-b4-e4-bf-ae-e8-ae-b0/">租车维修记</a>
+      <a class="article-title" href="/zdblog-hexo/2008/11/05/e8-87-aa-e5-b7-b1-e5-8a-a8-e6-89-8b-e8-a3-85-e5-a3-81-e6-9f-9c/">自己动手装壁柜</a>
     </h1>
   
 
@@ -456,62 +1458,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这一次租车带着家人，考虑到拿车和换车的方便性，我选择了E嗨租车。在机场到达大厅门口拿车，然后在酒店还车。虽然我已经有一些租车的经验，拿车时验车也很充足。但是我还是忽略了一些地方，导致这次租车出现的小风波。</p>
-<p>我拿车的时候，E嗨的工作人员并没有告知我租的马自达有问题。在还车前两天，车上发动机的黄灯亮了起来，由于我对汽车硬件一窍不通，于是拿车去维修点检修，被告知火花塞里的土太多，需要清洗，如果需要更换火花塞，大概需要两百多块的费用。</p>
-<p>好在我在维修之前，电话询问了E嗨，原来他们知道这两马自达发动机线路有问题，并强调不会影响开车。这样才没有继续维修车辆，把事情复杂化。</p>
+        <p>这两天，打算把厨房的杂物整理一下，估量着厨房还有空间装厨柜，所以去宜家买了2个壁柜，准备自己大干一场～<br>需要准备的东西包括：<br>博世冲击钻一套（包括钻头、铁钳、卷尺、铅笔、榔头、螺丝、膨胀螺栓、剪刀等等），还有买来的壁柜。<br><a href="http://www.zhaiduo.com/wp-content/data/bigui_diy.jpg" target="_blank" rel="external"><img src="http://www.zhaiduo.com/wp-content/data/bigui_diy.jpg" alt="" title="bigui diy"></a><br>东西准备好就可以开工了：<br>1、首先开始组装壁柜，根据组装说明书，用螺丝固定柜子的四面，注意每一面的正反，和螺丝与孔的对应关系。需要考虑的是，什么东西可以先固定组装好，什么东西留着柜子上墙再做。<br>2、用卷尺测量壁柜长宽厚度，确定壁柜挂孔的位置，做好标记。<br>3、接着开始钻孔。由于厨房的墙面是瓷砖，所以选择瓷砖钻头，钻头长度应该长于膨胀螺栓。因为所钻孔深需要稍大于膨胀螺栓。钻好后用榔头将膨胀螺栓轻敲进去，将组装好的柜子固定在墙上，通过壁柜挂孔拧上螺丝。<br>4、组装橱柜的玻璃门。<br>通过3天的艰苦奋战，洁白坚固的壁柜终于出现在自己眼前，很有满足感^_^同时也节省64块的上门安装费用。我喜欢DIY～！<br>另外，电钻的重要性不可替代，它让钻孔和拧紧螺丝都变得格外轻松～感觉自己越来越像装修师傅了。嘿嘿~</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/11/28/e7-a7-9f-e8-bd-a6-e7-bb-b4-e4-bf-ae-e8-ae-b0/" data-id="cikqzbb3u00x22drfoczfl36y" class="article-share-link">Share</a>
+      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2008/11/05/e8-87-aa-e5-b7-b1-e5-8a-a8-e6-89-8b-e8-a3-85-e5-a3-81-e6-9f-9c/" data-id="cikr0cpvg00u9z5rfz2n655i8" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/租车/">租车</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-e5-85-b3-e4-ba-8emysql-e7-9a-84gbk-utf8-latin1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zdblog-hexo/2011/11/24/e5-85-b3-e4-ba-8emysql-e7-9a-84gbk-utf8-latin1/" class="article-date">
-  <time datetime="2011-11-23T18:02:05.000Z" itemprop="datePublished">2011-11-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/zdblog-hexo/categories/Mysql/">Mysql</a>►<a class="article-category-link" href="/zdblog-hexo/categories/Mysql/PHP/">PHP</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zdblog-hexo/2011/11/24/e5-85-b3-e4-ba-8emysql-e7-9a-84gbk-utf8-latin1/">关于GBK通过UTF8保存到Mysql的搜索问题</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Mysql的全局字符是latin1，数据源是GBK，通过UTF8客户端存入Mysql的UTF8编码表中。</p>
-<p>在PHP中用GBK的UTF8数据源作为关键字，搜索latin1编码的UTF8表的时候，发现无法匹配关键字。</p>
-<p>解决办法是set names gbk获得关键字，然后用set names latin1来进行utf8搜索。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://zhaiduo.github.io/zdblog-hexo/2011/11/24/e5-85-b3-e4-ba-8emysql-e7-9a-84gbk-utf8-latin1/" data-id="cikqzbbkh01c82drfoqfjphv0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/搜索/">搜索</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/问题/">问题</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/zdblog-hexo/tags/DIY/">DIY</a></li></ul>
 
     </footer>
   </div>
@@ -523,7 +1478,7 @@
 
 
   <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/zdblog-hexo/page/9/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/8/">8</a><a class="page-number" href="/zdblog-hexo/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/zdblog-hexo/page/11/">11</a><a class="page-number" href="/zdblog-hexo/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/47/">47</a><a class="extend next" rel="next" href="/zdblog-hexo/page/11/">__('next') &raquo;</a>
+    <a class="extend prev" rel="prev" href="/zdblog-hexo/page/9/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/8/">8</a><a class="page-number" href="/zdblog-hexo/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/zdblog-hexo/page/11/">11</a><a class="page-number" href="/zdblog-hexo/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/zdblog-hexo/page/16/">16</a><a class="extend next" rel="next" href="/zdblog-hexo/page/11/">__('next') &raquo;</a>
   </nav>
 </section>
         
